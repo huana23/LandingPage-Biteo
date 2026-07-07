@@ -1,0 +1,303 @@
+{
+    "app": {
+        "name": "Biteo",
+        "tagline": "Digital Ecosystem for Beauty & Wellness"
+    },
+    "header": {
+        "brand": "Biteo",
+        "home": "Trang chủ",
+        "about": "Giới thiệu",
+        "services": "Dịch vụ",
+        "partners": "Đối tác",
+        "blog": "Blog",
+        "contact": "Liên hệ",
+        "searchPlaceholder": "Tìm kiếm..."
+    },
+    "hero-section": {
+        "label": "Chào mừng đến với",
+        "title": "Nền tảng số {highlight}",
+        "highlight": "cho làm đẹp",
+        "description": "Biteo - Hệ sinh thái số cho ngành làm đẹp và chăm sóc sức khỏe. Kết nối salon, thợ làm tóc và khách hàng trong một hệ sinh thái toàn diện.",
+        "ctaBook": "Khám phá ngay",
+        "ctaExplore": "Tìm hiểu thêm"
+    },
+    "about-section": {
+        "label": "Về Biteo",
+        "title": "Nơi Công Nghệ Gặp Nghệ Thuật Làm Đẹp",
+        "description": "Biteo là nền tảng số toàn diện dành cho ngành làm đẹp và chăm sóc sức khỏe. Chúng tôi kết nối các salon, thợ làm tóc chuyên nghiệp và khách hàng trong một hệ sinh thái số hiện đại, giúp việc quản lý và đặt lịch trở nên dễ dàng hơn bao giờ hết.",
+        "story": "Câu Chuyện Của Chúng Tôi",
+        "storyText": "Được thành lập với sứ mệnh số hóa ngành làm đẹp Việt Nam, Biteo ra đời từ niềm đam mê công nghệ và mong muốn mang đến trải nghiệm tốt nhất cho cả chủ salon và khách hàng. Mỗi tính năng đều được thiết kế để đơn giản hóa công việc kinh doanh và nâng cao trải nghiệm dịch vụ.",
+        "whyUsTitle": "Tại Sao Chọn Biteo",
+        "whyUs": [
+            {
+                "icon": "Heart",
+                "title": "Dễ Sử Dụng",
+                "text": "Giao diện trực quan, dễ học, phù hợp với mọi đối tượng người dùng."
+            },
+            {
+                "icon": "Zap",
+                "title": "Hiệu Quả Cao",
+                "text": "Tự động hóa quy trình quản lý, tiết kiệm thời gian và chi phí vận hành."
+            },
+            {
+                "icon": "Shield",
+                "title": "Bảo Mật An Toàn",
+                "text": "Dữ liệu được bảo vệ an toàn với các tiêu chuẩn bảo mật cao cấp."
+            },
+            {
+                "icon": "Users",
+                "title": "Kết Nối Cộng Đồng",
+                "text": "Xây dựng cộng đồng salon và khách hàng gắn kết, tin cậy."
+            }
+        ]
+    },
+    "services-section": {
+        "label": "Dịch Vụ",
+        "title": "Giải Pháp Toàn Diện",
+        "subtitle": "Biteo cung cấp đầy đủ công cụ để quản lý và phát triển kinh doanh làm đẹp."
+    },
+    "partners-section": {
+        "label": "Đối Tác",
+        "title": "Cùng Biteo Phát Triển"
+    },
+    "stats-section": {
+        "label": "Thành Tựu",
+        "title": "Con Số Ấn Tượng"
+    },
+    "features-section": {
+        "label": "Tính Năng",
+        "title": "Mọi Thứ Bạn Cần"
+    },
+    "cta-section": {
+        "label": "Bắt Đầu Ngay",
+        "title": "Sẵn Sàng Cùng Biteo?",
+        "subtitle": "Tham gia cùng hàng nghìn salon đang phát triển trên nền tảng của chúng tôi."
+    },
+    "rooms-section": {
+        "label": "Dịch Vụ",
+        "title": "Các Dịch Vụ Nổi Bật",
+        "subtitle": "Khám phá các dịch vụ làm đẹp đa dạng từ các salon trên Biteo.",
+        "btnViewAll": "Xem Tất Cả"
+    },
+    "amenities-section": {
+        "label": "Tiện Ích",
+        "title": "Tiện Nghi Hiện Đại",
+        "subtitle": "Các tiện ích và tính năng hỗ trợ trên nền tảng Biteo.",
+        "items": [
+            { "name": "Đặt Lịch Online", "icon": "Calendar", "desc": "Đặt lịch 24/7 dễ dàng" },
+            { "name": "Thanh Toán Số", "icon": "CreditCard", "desc": "Thanh toán không tiền mặt" },
+            { "name": "Quản Lý Khách Hàng", "icon": "Users", "desc": "Theo dõi và chăm sóc khách" },
+            { "name": "Báo Cáo Chi Tiết", "icon": "BarChart", "desc": "Phân tích doanh thu hiệu quả" },
+            { "name": "Hỗ Trợ Đa Nền Tảng", "icon": "Smartphone", "desc": "Sử dụng mọi thiết bị" },
+            { "name": "Bảo Mật Dữ Liệu", "icon": "Shield", "desc": "An toàn thông tin tuyệt đối" }
+        ]
+    },
+    "gallery-section": {
+        "label": "Thư Viện Ảnh",
+        "title": "Hình Ảnh Biteo",
+        "subtitle": "Khám phá hệ sinh thái Biteo qua những hình ảnh thực tế.",
+        "lightboxClose": "Đóng",
+        "lightboxPrev": "Trước",
+        "lightboxNext": "Tiếp"
+    },
+    "reviews-section": {
+        "label": "Đánh Giá",
+        "title": "Khách Hàng Nói Gì Về Biteo",
+        "subtitle": "Những đánh giá tích cực từ các salon và khách hàng đang sử dụng Biteo."
+    },
+    "location-section": {
+        "label": "Vị Trí",
+        "title": "Liên Hệ Với Chúng Tôi",
+        "address": "Tòa nhà TechHub, 123 Đường Công Nghệ, Quận 1, TP. Hồ Chí Minh"
+    },
+    "booking-section": {
+        "label": "Đặt Lịch",
+        "title": "Đặt Lịch Dịch Vụ",
+        "subtitle": "Tìm và đặt lịch các dịch vụ làm đẹp một cách dễ dàng.",
+        "btnBook": "Tìm Salon",
+        "btnClear": "Xóa"
+    },
+    "contact-section": {
+        "label": "Liên Hệ",
+        "title": "Liên Hệ Chúng Tôi",
+        "subtitle": "Chúng tôi luôn sẵn sàng hỗ trợ bạn. Liên hệ để được tư vấn về giải pháp Biteo.",
+        "address": "Tòa nhà TechHub, 123 Đường Công Nghệ, Quận 1, TP. Hồ Chí Minh",
+        "phone": "+84 (0) 24 1234 5678",
+        "email": "contact@biteo.tech",
+        "form": {
+            "name": "Tên Của Bạn",
+            "email": "Email Của Bạn",
+            "subject": "Tiêu Đề",
+            "message": "Nội Dung",
+            "send": "Gửi Tin Nhắn"
+        },
+        "hours": {
+            "title": "Giờ Làm Việc",
+            "weekdays": "Thứ 2 - Thứ 6: 8:00 - 18:00",
+            "weekends": "Thứ 7 - Chủ Nhật: 9:00 - 17:00"
+        },
+        "info": {
+            "address": "Địa chỉ",
+            "phone": "Điện thoại",
+            "email": "Email"
+        }
+    },
+    "footer": {
+        "description": "Biteo - Hệ sinh thái số cho ngành làm đẹp và chăm sóc sức khỏe. Kết nối, quản lý và phát triển cùng Biteo.",
+        "quickLinks": {
+            "title": "Liên Kết Nhanh",
+            "home": "Trang chủ",
+            "about": "Giới thiệu",
+            "services": "Dịch vụ",
+            "partners": "Đối tác",
+            "contact": "Liên hệ"
+        },
+        "contact": {
+            "title": "Liên Hệ",
+            "address": "TechHub Tower, Quận 1, TP. HCM",
+            "phone": "+84 (0) 24 1234 5678",
+            "email": "contact@biteo.tech"
+        },
+        "social": {
+            "title": "Theo Dõi",
+            "facebook": "Facebook",
+            "instagram": "Instagram",
+            "youtube": "YouTube"
+        },
+        "copyright": "© 2026 Biteo. Đã đăng ký bản quyền.",
+        "privacy": "Chính Sách Bảo Mật",
+        "terms": "Điều Khoản Sử Dụng",
+        "brand": "Biteo"
+    },
+    "footer-admin": {
+        "copyright": "Biteo © {{year}} • Quản lý hệ thống."
+    },
+    "sidebar-admin": {
+        "text-admin": "Quản trị viên",
+        "dashboard": "Bảng điều khiển",
+        "manageSalon": "Quản lý Salon",
+        "appointments": "Lịch hẹn",
+        "staff": "Nhân viên",
+        "reviews": "Đánh giá",
+        "settings": "Cài đặt",
+        "help": "Trợ giúp",
+        "logout": "Đăng xuất"
+    },
+    "pageAllSalons": {
+        "sideBar": {
+            "title": "Tìm Salon",
+            "quote": "Tìm kiếm salon làm đẹp phù hợp với bạn.",
+            "locationFilter": {
+                "label": "Khu vực",
+                "options": {
+                    "all": "Tất cả khu vực",
+                    "north": "Miền Bắc",
+                    "central": "Miền Trung",
+                    "south": "Miền Nam"
+                }
+            },
+            "filters": {
+                "amenities": {
+                    "title": "Tiện Nghi",
+                    "parking": "Đậu xe",
+                    "wifi": "WiFi miễn phí",
+                    "ac": "Điều hòa"
+                },
+                "services": {
+                    "title": "Dịch Vụ",
+                    "hair": "Cắt tóc",
+                    "nails": "Làm móng",
+                    "spa": "Spa",
+                    "makeup": "Trang điểm"
+                }
+            },
+            "priceRange": {
+                "title": "Khoảng Giá"
+            },
+            "filters-rating": {
+                "title": "Đánh Giá",
+                "stars": "Sao",
+                "all": "Tất cả đánh giá"
+            }
+        },
+        "mainContent": {
+            "destinationCard": {
+                "btnBooking": "Đặt Lịch"
+            },
+            "curated_collection": "Salon Nổi Bật",
+            "sydney_artistry": "Khám Phá Salon",
+            "showing_destinations": "Đang hiển thị {{count}} salon",
+            "previous": "Trước",
+            "next": "Tiếp"
+        }
+    },
+    "contact-page": {
+        "hero": {
+            "title": "Kết nối với chúng tôi",
+            "subtitle": "Chúng tôi luôn sẵn sàng lắng nghe và hỗ trợ bạn. Mọi thắc mắc về dịch vụ, hợp tác kinh doanh hoặc cần hỗ trợ kỹ thuật, hãy liên hệ với Biteo ngay hôm nay."
+        },
+        "info": {
+            "email": "Email",
+            "phone": "Điện thoại",
+            "address": "Địa chỉ",
+            "addressValue": "Tòa nhà TechHub, 123 Đường Công Nghệ, Quận 1, TP. Hồ Chí Minh"
+        },
+        "social": {
+            "title": "Theo dõi chúng tôi"
+        },
+        "form": {
+            "name": "Họ và tên",
+            "namePlaceholder": "Nguyễn Văn A",
+            "email": "Email liên hệ",
+            "emailPlaceholder": "example@email.com",
+            "subject": "Chủ đề",
+            "subjectPlaceholder": "Chọn chủ đề",
+            "subjects": {
+                "business": "Hợp tác kinh doanh",
+                "support": "Hỗ trợ kỹ thuật",
+                "quote": "Yêu cầu báo giá",
+                "other": "Khác"
+            },
+            "message": "Nội dung tin nhắn",
+            "messagePlaceholder": "Bạn cần chúng tôi giúp đỡ điều gì?",
+            "submit": "Gửi yêu cầu"
+        },
+        "faq": {
+            "label": "TRỢ GIÚP NHANH",
+            "title": "Bạn có câu hỏi nào khác?",
+            "subtitle": "Trước khi gửi yêu cầu, bạn có thể tìm thấy câu trả lời nhanh chóng tại trung tâm hỗ trợ và câu hỏi thường gặp của chúng tôi.",
+            "link": "Xem trang FAQ chi tiết"
+        },
+        "offices": {
+            "title": "Hệ thống văn phòng",
+            "badges": {
+                "main": "TRỤ SỞ",
+                "rnd": "R&D CENTER",
+                "support": "HỖ TRỢ"
+            },
+            "hcm": {
+                "title": "Trụ sở chính (Hồ Chí Minh)",
+                "address": "TechHub Tower, Quận 1, TP. HCM"
+            },
+            "hanoi": {
+                "title": "Chi nhánh Hà Nội",
+                "address": "D-Building, Quận Cầu Giấy, Hà Nội"
+            },
+            "danang": {
+                "title": "Văn phòng Đà Nẵng",
+                "address": "Seaview Office, Quận Hải Châu, Đà Nẵng"
+            }
+        }
+    },
+    "topSalonsSection": {
+        "label": "Top Salon",
+        "title": "Salon Nổi Bật",
+        "badges": {
+            "topRated": "Top Đánh Giá",
+            "ecoFriendly": "Phổ Biến"
+        },
+        "buttons": {
+            "booking": "Đặt Lịch"
+        }
+    }
+}

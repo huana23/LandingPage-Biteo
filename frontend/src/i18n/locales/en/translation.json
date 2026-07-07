@@ -1,0 +1,303 @@
+{
+    "app": {
+        "name": "Biteo",
+        "tagline": "Digital Ecosystem for Beauty & Wellness"
+    },
+    "header": {
+        "brand": "Biteo",
+        "home": "Home",
+        "about": "About",
+        "services": "Services",
+        "partners": "Partners",
+        "blog": "Blog",
+        "contact": "Contact",
+        "searchPlaceholder": "Search..."
+    },
+    "hero-section": {
+        "label": "Welcome to",
+        "title": "Digital Platform {highlight}",
+        "highlight": "for Beauty",
+        "description": "Biteo - The comprehensive digital ecosystem for the beauty and wellness industry. Connect salons, hairstylists, and customers in a unified platform.",
+        "ctaBook": "Get Started",
+        "ctaExplore": "Learn More"
+    },
+    "about-section": {
+        "label": "About Biteo",
+        "title": "Where Technology Meets Beauty Art",
+        "description": "Biteo is a comprehensive digital platform for the beauty and wellness industry. We connect professional salons, hairstylists, and customers in a modern digital ecosystem, making management and booking easier than ever.",
+        "story": "Our Story",
+        "storyText": "Founded with the mission to digitize Vietnam's beauty industry, Biteo was born from a passion for technology and the desire to provide the best experience for both salon owners and customers. Every feature is designed to simplify business operations and enhance service experiences.",
+        "whyUsTitle": "Why Choose Biteo",
+        "whyUs": [
+            {
+                "icon": "Heart",
+                "title": "Easy to Use",
+                "text": "Intuitive interface, easy to learn, suitable for all users."
+            },
+            {
+                "icon": "Zap",
+                "title": "High Efficiency",
+                "text": "Automate management processes, saving time and operational costs."
+            },
+            {
+                "icon": "Shield",
+                "title": "Secure & Safe",
+                "text": "Data is protected with high-level security standards."
+            },
+            {
+                "icon": "Users",
+                "title": "Community Connection",
+                "text": "Build connected salon and customer community, reliable."
+            }
+        ]
+    },
+    "services-section": {
+        "label": "Services",
+        "title": "Comprehensive Solutions",
+        "subtitle": "Biteo provides complete tools to manage and grow your beauty business."
+    },
+    "partners-section": {
+        "label": "Partners",
+        "title": "Grow With Biteo"
+    },
+    "stats-section": {
+        "label": "Achievements",
+        "title": "Impressive Numbers"
+    },
+    "features-section": {
+        "label": "Features",
+        "title": "Everything You Need"
+    },
+    "cta-section": {
+        "label": "Get Started",
+        "title": "Ready With Biteo?",
+        "subtitle": "Join thousands of growing salons on our platform."
+    },
+    "rooms-section": {
+        "label": "Services",
+        "title": "Featured Services",
+        "subtitle": "Explore diverse beauty services from salons on Biteo.",
+        "btnViewAll": "View All"
+    },
+    "amenities-section": {
+        "label": "Features",
+        "title": "Modern Amenities",
+        "subtitle": "Features and capabilities on the Biteo platform.",
+        "items": [
+            { "name": "Online Booking", "icon": "Calendar", "desc": "Book 24/7 easily" },
+            { "name": "Digital Payment", "icon": "CreditCard", "desc": "Cashless payment" },
+            { "name": "Customer Management", "icon": "Users", "desc": "Track and care for customers" },
+            { "name": "Detailed Reports", "icon": "BarChart", "desc": "Effective revenue analysis" },
+            { "name": "Multi-Platform Support", "icon": "Smartphone", "desc": "Use on any device" },
+            { "name": "Data Security", "icon": "Shield", "desc": "Absolute information safety" }
+        ]
+    },
+    "gallery-section": {
+        "label": "Gallery",
+        "title": "Biteo Images",
+        "subtitle": "Explore the Biteo ecosystem through real images.",
+        "lightboxClose": "Close",
+        "lightboxPrev": "Previous",
+        "lightboxNext": "Next"
+    },
+    "reviews-section": {
+        "label": "Reviews",
+        "title": "What Customers Say About Biteo",
+        "subtitle": "Positive reviews from salons and customers using Biteo."
+    },
+    "location-section": {
+        "label": "Location",
+        "title": "Contact Us",
+        "address": "TechHub Building, 123 Technology Street, District 1, Ho Chi Minh City"
+    },
+    "booking-section": {
+        "label": "Book Now",
+        "title": "Book Services",
+        "subtitle": "Find and book beauty services easily.",
+        "btnBook": "Find Salon",
+        "btnClear": "Clear"
+    },
+    "contact-section": {
+        "label": "Contact",
+        "title": "Contact Us",
+        "subtitle": "We're always ready to support you. Contact us for Biteo solutions consultation.",
+        "address": "TechHub Building, 123 Technology Street, District 1, Ho Chi Minh City",
+        "phone": "+84 (0) 24 1234 5678",
+        "email": "contact@biteo.tech",
+        "form": {
+            "name": "Your Name",
+            "email": "Your Email",
+            "subject": "Subject",
+            "message": "Message",
+            "send": "Send Message"
+        },
+        "hours": {
+            "title": "Working Hours",
+            "weekdays": "Mon - Fri: 8:00 - 18:00",
+            "weekends": "Sat - Sun: 9:00 - 17:00"
+        },
+        "info": {
+            "address": "Address",
+            "phone": "Phone",
+            "email": "Email"
+        }
+    },
+    "footer": {
+        "description": "Biteo - Digital ecosystem for the beauty and wellness industry. Connect, manage and grow with Biteo.",
+        "quickLinks": {
+            "title": "Quick Links",
+            "home": "Home",
+            "about": "About",
+            "services": "Services",
+            "partners": "Partners",
+            "contact": "Contact"
+        },
+        "contact": {
+            "title": "Contact",
+            "address": "TechHub Tower, District 1, HCMC",
+            "phone": "+84 (0) 24 1234 5678",
+            "email": "contact@biteo.tech"
+        },
+        "social": {
+            "title": "Follow Us",
+            "facebook": "Facebook",
+            "instagram": "Instagram",
+            "youtube": "YouTube"
+        },
+        "copyright": "© 2026 Biteo. All rights reserved.",
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Service",
+        "brand": "Biteo"
+    },
+    "footer-admin": {
+        "copyright": "Biteo © {{year}} • System Management."
+    },
+    "sidebar-admin": {
+        "text-admin": "Administrator",
+        "dashboard": "Dashboard",
+        "manageSalon": "Manage Salon",
+        "appointments": "Appointments",
+        "staff": "Staff",
+        "reviews": "Reviews",
+        "settings": "Settings",
+        "help": "Help",
+        "logout": "Logout"
+    },
+    "pageAllSalons": {
+        "sideBar": {
+            "title": "Find Salon",
+            "quote": "Find the perfect beauty salon for you.",
+            "locationFilter": {
+                "label": "Region",
+                "options": {
+                    "all": "All regions",
+                    "north": "Northern",
+                    "central": "Central",
+                    "south": "Southern"
+                }
+            },
+            "filters": {
+                "amenities": {
+                    "title": "Amenities",
+                    "parking": "Parking",
+                    "wifi": "Free WiFi",
+                    "ac": "Air Conditioning"
+                },
+                "services": {
+                    "title": "Services",
+                    "hair": "Haircut",
+                    "nails": "Nails",
+                    "spa": "Spa",
+                    "makeup": "Makeup"
+                }
+            },
+            "priceRange": {
+                "title": "Price Range"
+            },
+            "filters-rating": {
+                "title": "Rating",
+                "stars": "Stars",
+                "all": "All ratings"
+            }
+        },
+        "mainContent": {
+            "destinationCard": {
+                "btnBooking": "Book Now"
+            },
+            "curated_collection": "Featured Salons",
+            "sydney_artistry": "Explore Salons",
+            "showing_destinations": "Showing {{count}} salons",
+            "previous": "Previous",
+            "next": "Next"
+        }
+    },
+    "contact-page": {
+        "hero": {
+            "title": "Connect With Us",
+            "subtitle": "We're always ready to listen and support you. For any questions about services, business partnerships, or technical support, contact Biteo today."
+        },
+        "info": {
+            "email": "Email",
+            "phone": "Phone",
+            "address": "Address",
+            "addressValue": "TechHub Building, 123 Technology Street, District 1, Ho Chi Minh City"
+        },
+        "social": {
+            "title": "Follow Us"
+        },
+        "form": {
+            "name": "Full Name",
+            "namePlaceholder": "John Doe",
+            "email": "Contact Email",
+            "emailPlaceholder": "example@email.com",
+            "subject": "Subject",
+            "subjectPlaceholder": "Select a subject",
+            "subjects": {
+                "business": "Business Partnership",
+                "support": "Technical Support",
+                "quote": "Request a Quote",
+                "other": "Other"
+            },
+            "message": "Message Content",
+            "messagePlaceholder": "How can we help you?",
+            "submit": "Send Request"
+        },
+        "faq": {
+            "label": "QUICK HELP",
+            "title": "Do you have other questions?",
+            "subtitle": "Before sending a request, you may find quick answers in our help center and FAQ page.",
+            "link": "View detailed FAQ page"
+        },
+        "offices": {
+            "title": "Office Locations",
+            "badges": {
+                "main": "HEADQUARTERS",
+                "rnd": "R&D CENTER",
+                "support": "SUPPORT"
+            },
+            "hcm": {
+                "title": "Headquarters (Ho Chi Minh)",
+                "address": "TechHub Tower, District 1, HCMC"
+            },
+            "hanoi": {
+                "title": "Hanoi Branch",
+                "address": "D-Building, Cau Giay District, Hanoi"
+            },
+            "danang": {
+                "title": "Da Nang Office",
+                "address": "Seaview Office, Hai Chau District, Da Nang"
+            }
+        }
+    },
+    "topSalonsSection": {
+        "label": "Top Salon",
+        "title": "Featured Salons",
+        "badges": {
+            "topRated": "Top Rated",
+            "ecoFriendly": "Popular"
+        },
+        "buttons": {
+            "booking": "Book Now"
+        }
+    }
+}
