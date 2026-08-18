@@ -1,0 +1,130 @@
+'use client'
+
+import { motion } from 'framer-motion'
+import Link from 'next/link'
+import { ArrowLeft, Shield, Lock } from 'lucide-react'
+import { useLanguage } from '@/context/LanguageContext'
+
+export default function PrivacyPage() {
+  const { t } = useLanguage()
+
+  const sections = [
+    { title: `${t('legal')} 1. ${t('support')}`, content: t('privacyOverview') },
+    { title: `${t('legal')} 2. ${t('services')}`, content: t('businessDesc') },
+    { title: `${t('legal')} 3. ${t('support')}`, content: t('supportDesc') },
+    { title: `${t('legal')} 4. ${t('privacyData')}`, content: t('privacyDataText') },
+    { title: `${t('legal')} 5. ${t('contact')}`, content: t('privacyOverview') },
+    { title: `${t('legal')} 6. ${t('legal')}`, content: t('termsOverview') },
+    { title: `${t('legal')} 7. ${t('legal')}`, content: t('paymentSettlementText') },
+    { title: `${t('legal')} 8. ${t('services')}`, content: t('supportDesc') },
+    { title: `${t('legal')} 9. ${t('legal')}`, content: t('termsOverview') },
+    { title: `${t('legal')} 10. ${t('contact')}`, content: 'privacy@biteo.vn | 0986498899' },
+  ]
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100">
+      {/* Header */}
+      <header className="bg-white/80 backdrop-blur-md border-b border-gray-100 sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16">
+            <Link href="/" className="flex items-center gap-2">
+              <div className="w-10 h-10 bg-green-600 rounded-xl flex items-center justify-center">
+                <span className="text-white font-bold text-lg">B</span>
+              </div>
+              <span className="text-2xl font-bold text-green-600">Biteo</span>
+            </Link>
+            <Link
+              href="/"
+              className="flex items-center gap-2 text-gray-600 hover:text-green-600 transition-colors"
+            >
+              <ArrowLeft className="w-4 h-4" />
+              <span className="text-sm font-medium">{t('back')}</span>
+            </Link>
+          </div>
+        </div>
+      </header>
+
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        {/* Hero Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-12"
+        >
+          <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
+            <Shield className="w-4 h-4" />
+            {t('legal')}
+          </div>
+          <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+            {t('privacyTitle')}
+          </h1>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            {t('lastUpdated')}: 18 {t('weekdays')} 2026
+          </p>
+        </motion.div>
+
+        {/* Introduction */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+          className="bg-white rounded-3xl shadow-xl p-8 mb-8"
+        >
+          <div className="flex items-start gap-4">
+            <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center flex-shrink-0">
+              <Lock className="w-6 h-6 text-green-600" />
+            </div>
+            <div>
+              <h2 className="text-xl font-bold text-gray-900 mb-3">{t('overview')}</h2>
+              <p className="text-gray-600 leading-relaxed">
+                {t('privacyOverview')}
+              </p>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Privacy Sections */}
+        <div className="space-y-6">
+          {sections.map((section, index) => (
+            <motion.div
+              key={section.title}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 + index * 0.05 }}
+              className="bg-white rounded-2xl shadow-card hover:shadow-card-hover transition-all p-6"
+            >
+              <h3 className="text-lg font-bold text-gray-900 mb-3">
+                {section.title}
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                {section.content}
+              </p>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* Contact CTA */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.8 }}
+          className="mt-10 bg-green-600 rounded-2xl p-8 text-center text-white"
+        >
+          <h3 className="text-2xl font-bold mb-3">
+            {t('privacySupport')}
+          </h3>
+          <p className="text-green-100 mb-6">
+            {t('biteoTeamReady')}
+          </p>
+          <Link
+            href="/contact"
+            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-green-600 font-semibold rounded-xl hover:bg-green-50 transition-colors"
+          >
+            {t('contactNow')}
+          </Link>
+        </motion.div>
+      </div>
+    </div>
+  )
+}

@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Bù trừ chiều cao header fixed khi click anchor link */
+  section[id] {
+    scroll-margin-top: 80px;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: #F7F8F7;
+    color: #17211B;
+    overflow-x: hidden;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-biteo-green to-biteo-dark bg-clip-text text-transparent;
+  }
+  
+  .glassmorphism {
+    @apply bg-white/80 backdrop-blur-lg border border-white/20;
+  }
+  
+  .shadow-soft {
+    box-shadow: 0 4px 40px rgba(0, 177, 79, 0.08);
+  }
+  
+  .shadow-card {
+    box-shadow: 0 8px 32px rgba(23, 33, 27, 0.08);
+  }
+  
+  .shadow-card-hover {
+    box-shadow: 0 16px 48px rgba(23, 33, 27, 0.12);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F7F8F7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00B14F;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #008F3D;
+}
+
+/* Selection color */
+::selection {
+  background: #00B14F;
+  color: white;
+}
