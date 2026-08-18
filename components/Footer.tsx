@@ -34,7 +34,7 @@ export default function Footer() {
     legal: [
       { label: t('termsOfUse'), href: '/terms' },
       { label: t('privacyPolicy'), href: '/privacy' },
-      { label: t('partnerPolicy'), href: '/partner-policy' },
+      { label: t('footerPartnerPolicy'), href: '/partner-policy' },
     ],
   }
 
