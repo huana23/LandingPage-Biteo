@@ -83,7 +83,7 @@ const translations: Record<Language, Record<string, string>> = {
     opportunitiesDesc: 'Không chỉ là một ứng dụng, Biteo còn tạo ra cơ hội cho cộng tác viên và đối tác trên toàn quốc tham gia xây dựng hệ sinh thái số.',
     collaborators: 'Cộng tác viên',
     collabDesc: 'Tham gia hệ sinh thái và tạo thêm nguồn thu nhập.',
-    becomeCollaborator: 'Trở thành cộng tác viên',
+    becomeCollaborator: 'Trở thành nhân viên đi chợ hộ của Biteo',
     businessPartnerTitle: 'Đối tác kinh doanh',
     businessPartnerDesc: 'Đưa sản phẩm và dịch vụ đến hàng triệu khách hàng.',
     registerPartner: 'Đăng ký đối tác',

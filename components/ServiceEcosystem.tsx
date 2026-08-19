@@ -3,13 +3,13 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
+
 import Image1 from '../assets/images/Blog1.jpeg'
 import Image2 from '../assets/images/Blog2.jpeg'
 import Image3 from '../assets/images/Blog3.jpeg'
 import Image4 from '../assets/images/Blog4.jpeg'
 import Image5 from '../assets/images/Blog5.jpeg'
 import Image6 from '../assets/images/Blog6.jpeg'
-
 
 import { useLanguage } from '@/context/LanguageContext'
 
@@ -68,63 +68,125 @@ export default function ServiceEcosystem() {
   ]
 
   return (
-    <section id="ecosystem" className="py-20 md:py-28 bg-biteo-bg">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
+    <section
+      id="ecosystem"
+      className="bg-biteo-bg py-16 sm:py-20 md:py-28"
+    >
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+        {/* =========================
+            SECTION HEADER
+        ========================== */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center max-w-3xl mx-auto mb-16"
+          initial={{
+            opacity: 0,
+            y: 30,
+          }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+          }}
+          viewport={{
+            once: true,
+          }}
+          transition={{
+            duration: 0.6,
+          }}
+          className="mx-auto mb-12 max-w-3xl text-center sm:mb-16"
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-biteo-dark-text mb-4">
-            {t('oneApp')} <span className="text-gradient">{t('millionExperiences')}</span>
+          <h2 className="mb-4 text-3xl font-bold text-biteo-dark-text sm:text-4xl lg:text-5xl">
+            {t('oneApp')}{' '}
+            <span className="text-gradient">
+              {t('millionExperiences')}
+            </span>
           </h2>
-          <p className="text-lg text-biteo-secondary">
+
+          <p className="text-base leading-relaxed text-biteo-secondary sm:text-lg">
             {t('ecosystemDescription')}
           </p>
         </motion.div>
 
-        {/* Service Cards Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        {/* =========================
+            SERVICE CARDS
+        ========================== */}
+        <div className="grid items-stretch gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
           {services.map((service, index) => (
             <motion.div
               key={service.title}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1, duration: 0.5 }}
-              whileHover={{ y: -8 }}
-              className="group bg-white rounded-3xl overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-300 flex flex-col h-full"
+              initial={{
+                opacity: 0,
+                y: 30,
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
+              viewport={{
+                once: true,
+              }}
+              transition={{
+                delay: index * 0.1,
+                duration: 0.5,
+              }}
+              whileHover={{
+                y: -8,
+              }}
+              className="group flex h-full flex-col overflow-hidden rounded-3xl bg-white shadow-card transition-all duration-300 hover:shadow-card-hover"
             >
-              {/* Image */}
-              <div className={`relative h-56 bg-gradient-to-br ${service.color} overflow-hidden`}>
+              {/* =========================
+                  IMAGE
+              ========================== */}
+              <div
+                className={`
+                  relative
+                  h-56
+                  shrink-0
+                  overflow-hidden
+                  bg-gradient-to-br
+                  sm:h-64
+                  lg:h-72
+                  ${service.color}
+                `}
+              >
                 <img
                   src={service.image}
                   alt={service.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
-                <div className="absolute top-4 left-4 w-14 h-14 bg-white/90 backdrop-blur-sm rounded-2xl flex items-center justify-center text-2xl shadow-lg">
+
+                {/* Image overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent" />
+
+                {/* Icon */}
+                <div className="absolute left-4 top-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-white/90 text-2xl shadow-lg backdrop-blur-sm">
                   {service.icon}
                 </div>
               </div>
 
-              {/* Content */}
-              <div className="p-6 flex flex-col h-full">
-                <h3 className="text-xl font-bold text-biteo-dark-text mb-2">
+              {/* =========================
+                  CONTENT
+              ========================== */}
+              <div className="flex flex-1 flex-col p-5 sm:p-6">
+
+                {/* Title */}
+                <h3 className="mb-2 text-xl font-bold text-biteo-dark-text">
                   {service.title}
                 </h3>
-                <p className="text-biteo-secondary mb-4 line-clamp-3">
+
+                {/* Description - FULL CONTENT */}
+                <p className="text-sm leading-relaxed text-biteo-secondary sm:text-base">
                   {service.description}
                 </p>
+
+                {/* Discover */}
                 <Link
                   href={service.href}
-                  className="inline-flex items-center gap-2 text-biteo-green font-medium group-hover:gap-3 transition-all mt-auto"
+                  className="mt-auto inline-flex items-center gap-2 pt-5 text-sm font-medium text-biteo-green transition-all group-hover:gap-3 sm:text-base"
                 >
                   {t('discover')}
-                  <ArrowRight className="w-4 h-4" />
+
+                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
                 </Link>
               </div>
             </motion.div>
