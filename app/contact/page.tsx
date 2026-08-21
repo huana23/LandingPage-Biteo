@@ -110,10 +110,10 @@ export default function ContactPage() {
           className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16"
         >
           {[
-            { icon: Mail, title: t('email'), description: 'Email support', value: 'support@biteo.vn', href: 'mailto:support@biteo.vn', color: 'bg-green-100 text-green-600' },
+            { icon: Mail, title: t('email'), description: 'Email support', value: 'ceo.biteo@gmail.com', href: 'mailto:ceo.biteo@gmail.com', color: 'bg-green-100 text-green-600' },
             { icon: Phone, title: t('hotline'), description: '24/7 support', value: '0986498899', href: 'tel:0986498899', color: 'bg-blue-100 text-blue-600' },
             { icon: MessageCircle, title: t('liveChat'), description: 'Chat with us', value: 'Zalo: Biteo', href: 'https://zalo.me/biteo', color: 'bg-purple-100 text-purple-600' },
-            { icon: MapPin, title: t('address'), description: 'Biteo Office', value: '123 Nguyen Hue, Q.1, HCMC', href: '#', color: 'bg-orange-100 text-orange-600' },
+            { icon: MapPin, title: t('address'), description: 'Biteo Office', value: '12 Ngô Thì Sỹ, Phan Đình Phùng, Thái Nguyên, Việt Nam', href: '#', color: 'bg-orange-100 text-orange-600' },
           ].map((method, index) => (
             <motion.a
               key={method.title}
@@ -200,26 +200,48 @@ export default function ContactPage() {
                       className="w-full px-4 py-3.5 border border-gray-200 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all bg-gray-50/50 hover:bg-gray-50"
                     />
                   </div>
-                  <div>
-                    <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
-                      {t('subject')} <span className="text-red-500">*</span>
-                    </label>
-                    <select
-                      id="subject"
-                      name="subject"
-                      value={formData.subject}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-3.5 border border-gray-200 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all bg-gray-50/50 hover:bg-gray-50"
-                    >
-                      <option value="">{t('subject')}</option>
-                      <option value="support">{t('support')}</option>
-                      <option value="partner">{t('registerBusiness')}</option>
-                      <option value="feedback">{t('feedback')}</option>
-                      <option value="report">{t('report')}</option>
-                      <option value="other">{t('other')}</option>
-                    </select>
-                  </div>
+                  <div className="relative">
+  <label
+    htmlFor="subject"
+    className="block text-sm font-medium text-gray-700 mb-2"
+  >
+    {t('subject')} <span className="text-red-500">*</span>
+  </label>
+
+  <div className="relative">
+    <select
+      id="subject"
+      name="subject"
+      value={formData.subject}
+      onChange={handleChange}
+      required
+      className="w-full appearance-none px-4 py-3.5 pr-12 border border-gray-200 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all bg-gray-50/50 hover:bg-gray-50"
+    >
+      <option value="">{t('subject')}</option>
+      <option value="support">{t('support')}</option>
+      <option value="partner">{t('registerBusiness')}</option>
+      <option value="feedback">{t('feedback')}</option>
+      <option value="report">{t('report')}</option>
+      <option value="other">{t('other')}</option>
+    </select>
+
+    {/* Custom dropdown icon */}
+    <svg
+      className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400"
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M5 7.5L10 12.5L15 7.5"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  </div>
+</div>
                 </div>
 
                 <div>

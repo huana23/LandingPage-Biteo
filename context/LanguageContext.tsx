@@ -126,7 +126,7 @@ const translations: Record<Language, Record<string, string>> = {
     faqQ2: 'Biteo có hỗ trợ giao hàng trên toàn quốc không?',
     faqA2: 'Hiện tại Biteo đang mở rộng dịch vụ tại các tỉnh thành lớn.',
     faqQ3: 'Tôi gặp sự cố khi sử dụng ứng dụng?',
-    faqA3: 'Liên hệ hotline 0986498899 hoặc gửi email về support@biteo.vn.',
+    faqA3: 'Liên hệ hotline 0986498899 hoặc gửi email về ceo.biteo@gmail.com.',
 
     // Download App
     platformExperiences: 'Một nền tảng, mọi trải nghiệm.',
@@ -805,7 +805,7 @@ const translations: Record<Language, Record<string, string>> = {
     faqQ2: 'Does Biteo support delivery nationwide?',
     faqA2: 'Currently, Biteo is expanding services in major provinces and cities.',
     faqQ3: 'I encounter issues when using the app?',
-    faqA3: 'Contact hotline 0986498899 or send email to support@biteo.vn.',
+    faqA3: 'Contact hotline 0986498899 or send email to ceo.biteo@gmail.com.',
 
     // Download App
     platformExperiences: 'One Platform, Every Experience.',

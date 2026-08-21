@@ -18,7 +18,7 @@ export default function PrivacyPage() {
     { title: `${t('legal')} 7. ${t('legal')}`, content: t('paymentSettlementText') },
     { title: `${t('legal')} 8. ${t('services')}`, content: t('supportDesc') },
     { title: `${t('legal')} 9. ${t('legal')}`, content: t('termsOverview') },
-    { title: `${t('legal')} 10. ${t('contact')}`, content: 'privacy@biteo.vn | 0986498899' },
+    { title: `${t('legal')} 10. ${t('contact')}`, content: 'ceo.biteo@gmail.com | 0986498899' },
   ]
 
   return (

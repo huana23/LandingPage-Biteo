@@ -18,7 +18,7 @@ export default function TermsPage() {
     { title: `${t('legal')} 7. ${t('privacyPolicy')}`, content: t('privacyDataText') },
     { title: `${t('legal')} 8. ${t('legal')}`, content: t('termsOverview') },
     { title: `${t('legal')} 9. ${t('terminateCooperation')}`, content: t('terminateCooperationText') },
-    { title: `${t('legal')} 10. ${t('contact')}`, content: 'support@biteo.vn | 0986498899' },
+    { title: `${t('legal')} 10. ${t('contact')}`, content: 'ceo.biteo@gmail.com | 0986498899' },
   ]
 
   return (
