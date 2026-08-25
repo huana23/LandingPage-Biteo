@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { ArrowLeft, Mail, Phone, MapPin, Clock, MessageCircle, Send, CheckCircle } from 'lucide-react'
 import { useLanguage } from '@/context/LanguageContext'
+import PageHeader from '@/components/PageHeader'
 
 export default function ContactPage() {
   const { t } = useLanguage()
@@ -61,26 +62,7 @@ export default function ContactPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-white to-green-50">
-      {/* Header */}
-      <header className="bg-white/80 backdrop-blur-md border-b border-gray-100 sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
-            <Link href="/" className="flex items-center gap-2">
-              <div className="w-10 h-10 bg-green-600 rounded-xl flex items-center justify-center">
-                <span className="text-white font-bold text-lg">B</span>
-              </div>
-              <span className="text-2xl font-bold text-green-600">Biteo</span>
-            </Link>
-            <Link
-              href="/"
-              className="flex items-center gap-2 text-gray-600 hover:text-green-600 transition-colors"
-            >
-              <ArrowLeft className="w-4 h-4" />
-              <span className="text-sm font-medium">{t('back')}</span>
-            </Link>
-          </div>
-        </div>
-      </header>
+      <PageHeader backHref="/" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Hero Section */}
@@ -95,7 +77,7 @@ export default function ContactPage() {
             {t('contact')}
           </div>
           <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            {t('supportDesc')}
+            {t('contact')}
           </h1>
           <p className="text-lg text-gray-600">
             {t('supportDesc')}

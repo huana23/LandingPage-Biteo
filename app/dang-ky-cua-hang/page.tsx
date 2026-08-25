@@ -20,6 +20,7 @@ import {
 } from 'lucide-react'
 import Link from 'next/link'
 import { useLanguage } from '@/context/LanguageContext'
+import PageHeader from '@/components/PageHeader'
 
 export default function StoreRegister() {
   const { t } = useLanguage()
@@ -359,40 +360,7 @@ export default function StoreRegister() {
           HEADER
       ========================================= */}
 
-      <header className="sticky top-0 z-50 border-b border-gray-100 bg-white/80 backdrop-blur-md">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex h-16 items-center justify-between">
-
-            {/* Logo */}
-            <Link
-              href="/"
-              className="flex items-center gap-2"
-            >
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-green-600">
-                <span className="text-lg font-bold text-white">
-                  B
-                </span>
-              </div>
-
-              <span className="text-2xl font-bold text-green-600">
-                Biteo
-              </span>
-            </Link>
-
-            {/* Back */}
-            <Link
-              href="/"
-              className="flex items-center gap-2 text-gray-600 transition-colors hover:text-green-600"
-            >
-              <ArrowLeft className="h-4 w-4" />
-
-              <span className="text-sm font-medium">
-                {t('back')}
-              </span>
-            </Link>
-          </div>
-        </div>
-      </header>
+      <PageHeader backHref="/" />
 
       {/* =========================================
           CONTENT

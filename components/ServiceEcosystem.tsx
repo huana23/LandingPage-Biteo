@@ -23,7 +23,7 @@ export default function ServiceEcosystem() {
       description: t('entertainmentDesc'),
       image: Image1.src,
       color: 'from-red-100 to-pink-100',
-      href: '/video-giai-tri',
+      href: '/blog/video-giai-tri',
     },
     {
       icon: '🍜',
@@ -31,7 +31,7 @@ export default function ServiceEcosystem() {
       description: t('culinaryDesc'),
       image: Image2.src,
       color: 'from-orange-100 to-amber-100',
-      href: '/am-thuc',
+      href: '/blog/am-thuc',
     },
     {
       icon: '✈️',
@@ -39,7 +39,7 @@ export default function ServiceEcosystem() {
       description: t('travelDesc'),
       image: Image3.src,
       color: 'from-blue-100 to-cyan-100',
-      href: '/du-lich',
+      href: '/blog/du-lich',
     },
     {
       icon: '🛍️',
@@ -47,7 +47,7 @@ export default function ServiceEcosystem() {
       description: t('shoppingDesc'),
       image: Image4.src,
       color: 'from-purple-100 to-violet-100',
-      href: '/mua-sam',
+      href: '/blog/mua-sam',
     },
     {
       icon: '🛒',
@@ -55,7 +55,7 @@ export default function ServiceEcosystem() {
       description: t('groceryDesc'),
       image: Image5.src,
       color: 'from-green-100 to-emerald-100',
-      href: '/di-cho-ho',
+      href: '/blog/di-cho-ho',
     },
     {
       icon: '📍',
@@ -63,7 +63,7 @@ export default function ServiceEcosystem() {
       description: t('localDiscoverDesc'),
       image: Image6.src,
       color: 'from-teal-100 to-cyan-100',
-      href: '/kham-pha-dia-phuong',
+      href: '/blog/kham-pha-dia-phuong',
     },
   ]
 

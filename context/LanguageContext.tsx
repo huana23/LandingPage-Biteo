@@ -152,6 +152,15 @@ const translations: Record<Language, Record<string, string>> = {
     termsOfUse: 'Điều khoản sử dụng',
     privacyPolicy: 'Chính sách bảo mật',
     footerPartnerPolicy: 'Chính sách đối tác',
+    pricingPolicyLink: 'Chính sách giá & phí',
+    servicePolicyLink: 'Chính sách Dịch vụ',
+    returnPolicyLink: 'Chính sách Đổi/Trả',
+    deliveryPolicyLink: 'Chính sách Giao hàng',
+    paymentPolicyLink: 'Chính sách Thanh toán',
+    displayPolicyLink: 'Chính sách Hiển thị',
+    complaintHandlingLink: 'Khiếu nại',
+    operatingRegulationsLink: 'Quy chế Hoạt động',
+    livestreamRegulationsLink: 'Quy chế Livestream',
     footerDesc: 'Biteo – Nền tảng công nghệ đa dịch vụ kết nối người dùng, doanh nghiệp và đối tác trong một hệ sinh thái số toàn diện.',
     biteo: 'Biteo',
     legal: 'Pháp lý',
@@ -256,6 +265,430 @@ const translations: Record<Language, Record<string, string>> = {
     privacyDataText: 'Đối tác cam kết bảo mật mọi thông tin khách hàng và không sử dụng dữ liệu cho mục đích cá nhân.',
     terminateCooperation: 'Chấm dứt Hợp tác',
     terminateCooperationText: 'Mỗi bên có thể chấm dứt hợp tác với thông báo trước 30 ngày.',
+
+    // Pricing Policy Page
+    pricingPolicyTitle: 'Chính sách Giá, Phí và Hoa hồng',
+    pricingPolicySubtitle: 'Thông tin chi tiết về giá cả, phí dịch vụ và hoa hồng trên nền tảng Biteo',
+    pricingPolicyIntroTitle: 'Tổng quan',
+    pricingPolicyIntro: 'Chính sách này quy định nguyên tắc công khai và xác định giá hàng hóa/dịch vụ, các khoản phí, phụ phí, hoa hồng, chiết khấu và khoản khấu trừ, đối soát, thanh toán, hoàn/thu hồi trên Nền tảng Biteo.',
+    pricingPolicySection1: 'Công khai',
+    pricingPolicySection1Content: 'Mọi thông tin giá và phí được công bố rõ ràng',
+    pricingPolicySection2: 'Minh bạch',
+    pricingPolicySection2Content: 'Chi tiết các khoản phí được thể hiện rõ ràng',
+    pricingPolicySection3: 'Cập nhật',
+    pricingPolicySection3Content: 'Thông báo trước 20 ngày khi có thay đổi',
+
+    // Part I - General
+    pricingPolicyPart1: 'PHẦN I - QUY ĐỊNH CHUNG',
+    pricingPolicyPart1Title1: 'Điều 1. Phạm vi và đối tượng áp dụng',
+    pricingPolicyPart1Content1: 'Chính sách này áp dụng đối với người mua/người dùng, người bán, người livestream bán hàng, Affiliate/người tiếp thị liên kết, nhà quảng cáo, đối tác cung cấp dịch vụ và các chủ thể khác phát sinh quyền hoặc nghĩa vụ tài chính với Biteo.',
+    pricingPolicyPart1Title2: 'Điều 2. Nguyên tắc chung',
+    pricingPolicyPart1Content2: 'Giá, phí, hoa hồng và chi phí liên quan phải rõ ràng, có căn cứ tính, thể hiện bằng Đồng Việt Nam và không gây nhầm lẫn. Trước khi đặt hàng hoặc mua dịch vụ, người trả tiền được biết tổng số tiền phải thanh toán.',
+    pricingPolicyPart1Title3: 'Điều 3. Giải thích từ ngữ',
+    pricingPolicyPart1Content3: 'Giá bán là số tiền người mua phải trả. Phí dịch vụ là khoản Biteo thu để cung cấp chức năng hoặc dịch vụ. Hoa hồng giao dịch là khoản khấu trừ từ doanh thu người bán. Biểu phí là tài liệu điện tử công bố mức/tỷ lệ và phương pháp tính.',
+
+    // Part II - Pricing
+    pricingPolicyPart2: 'PHẦN II - GIÁ HÀNG HÓA, DỊCH VỤ',
+    pricingPolicyPart2Title1: 'Điều 4. Thông tin giá hàng hóa, dịch vụ',
+    pricingPolicyPart2Content1: 'Biteo yêu cầu công khai tại vị trí chào bán và trước khi đặt hàng: Giá bán hiện tại, giá gốc/giá trước khuyến mại, giá đã bao gồm hay chưa bao gồm thuế, phí giao hàng, phí dịch vụ, phụ phí và tổng số tiền phải thanh toán.',
+    pricingPolicyPart2Title2: 'Điều 5. Trách nhiệm của người bán về giá',
+    pricingPolicyPart2Content2: 'Người bán được quyết định giá trong phạm vi quyền kinh doanh hợp pháp nhưng phải đảm bảo chính xác, nhất quán, không gây nhầm lẫn. Không được nâng giá giả tạo để tạo mức giảm ảo hoặc quảng cáo một giá nhưng tính giá khác.',
+    pricingPolicyPart2Title3: 'Điều 6. Khuyến mại và mã giảm giá',
+    pricingPolicyPart2Content3: 'Mọi chương trình khuyến mại phải công khai chủ thể tài trợ, đối tượng, hàng hóa, thời gian, mức/giá trị, điều kiện và giới hạn số lượng. Mã giảm giá hoặc điểm thưởng chỉ được trừ khi đủ điều kiện.',
+
+    // Part III - Fees
+    pricingPolicyPart3: 'PHẦN III - CÁC LOẠI PHÍ CỦA BITEO',
+    pricingPolicyPart3Title1: 'Điều 7. Danh mục phí có thể áp dụng',
+    pricingPolicyPart3Content1: 'Tùy mô hình thực tế và Biểu phí có hiệu lực, Biteo có thể áp dụng: Phí mở/duy trì tài khoản premium, phí gian hàng, phí đăng sản phẩm, phí xử lý đơn hàng, hoa hồng giao dịch, phí quảng cáo, phí boosting/ưu tiên hiển thị và phí dịch vụ gia tăng khác.',
+    pricingPolicyPart3Title2: 'Điều 8. Phương pháp tính và thời điểm thu',
+    pricingPolicyPart3Content2: 'Phí có thể được tính theo mức cố định, tỷ lệ phần trăm, kỳ tháng/năm, số sản phẩm, thời lượng, lượt hiển thị/nhấp/chuyển đổi, giá trị giao dịch hoặc công thức khác được công khai. Biểu phí phải nêu tên phí, bên trả, mức/tỷ lệ và đã gồm/chưa gồm thuế.',
+    pricingPolicyPart3Title3: 'Điều 9. Gói định kỳ và chấm dứt',
+    pricingPolicyPart3Content3: 'Đối với membership/subscription/premium, trước khi đăng ký Biteo công khai giá, chu kỳ, quyền lợi, giới hạn, cơ chế gia hạn và hủy. Tự động gia hạn chỉ được thực hiện khi có cơ chế chấp thuận hợp lệ và thông báo phù hợp.',
+
+    // Part IV - Commission
+    pricingPolicyPart4: 'PHẦN IV - HOA HỒNG VÀ ĐỐI SOÁT NGƯỜI BÁN',
+    pricingPolicyPart4Title1: 'Điều 11. Hoa hồng giao dịch và doanh thu người bán',
+    pricingPolicyPart4Content1: 'Người bán được cung cấp trước tỷ lệ/phương pháp tính hoa hồng, phí liên quan, kỳ đối soát và phương thức nhận tiền. Công thức: Số tiền thanh toán = Doanh thu giao dịch hợp lệ − Khoản hủy/hoàn − Phí và hoa hồng − Thuế/khấu trừ.',
+    pricingPolicyPart4Title2: 'Điều 12. Đối soát và tạm giữ',
+    pricingPolicyPart4Content2: 'Người bán được truy cập báo cáo đơn hàng, hủy/hoàn, phí, hoa hồng, thuế và số tiền dự kiến/thực trả. Biteo có thể tạm giữ trong phạm vi thỏa thuận khi có tranh chấp, gian lận, yêu cầu hoàn tiền hoặc dấu hiệu vi phạm.',
+
+    // Part V - Affiliate
+    pricingPolicyPart5: 'PHẦN V - HOA HỒNG AFFILIATE',
+    pricingPolicyPart5Title1: 'Điều 13. Thông tin chương trình Affiliate',
+    pricingPolicyPart5Content1: 'Trước khi Affiliate tham gia, Biteo công khai: Tỷ lệ hoặc phương pháp tính hoa hồng, điều kiện ghi nhận đơn hợp lệ, thời gian lưu cookie, kỳ đối soát, ngưỡng và phương thức thanh toán, điều kiện tạm giữ và nghĩa vụ thuế.',
+    pricingPolicyPart5Title2: 'Điều 14. Điều kiện ghi nhận hoa hồng Affiliate',
+    pricingPolicyPart5Content2: 'Hoa hồng chỉ được ghi nhận khi giao dịch đáp ứng điều kiện: Phát sinh qua đúng đường dẫn/mã giới thiệu, được hệ thống ghi nhận hợp lệ, đơn hàng đã thanh toán, không bị hủy/hoàn/từ chối và không có gian lận.',
+    pricingPolicyPart5Title3: 'Điều 16. Đối soát và chi trả Affiliate',
+    pricingPolicyPart5Content3: 'Affiliate được xem lượt nhấp, đơn ghi nhận, đơn hủy/hoàn, giá trị giao dịch và hoa hồng tạm tính. Biteo thực hiện khấu trừ/kê khai thuế nếu pháp luật yêu cầu và cung cấp thông tin/chứng từ liên quan.',
+
+    // Part VI - Taxes
+    pricingPolicyPart6: 'PHẦN VI - THUẾ, HOÀN PHÍ VÀ TRANH CHẤP',
+    pricingPolicyPart6Title1: 'Điều 17. Thuế, hóa đơn và chứng từ',
+    pricingPolicyPart6Content1: 'Giá/Phí phải ghi rõ đã bao gồm hay chưa bao gồm thuế. Mỗi bên thực hiện đăng ký, kê khai, nộp thuế và hóa đơn theo vai trò pháp lý. Biteo khấu trừ thuế từ khoản chi trả người bán/Affiliate khi pháp luật yêu cầu.',
+    pricingPolicyPart6Title2: 'Điều 18. Hoàn phí và sai sót',
+    pricingPolicyPart6Content2: 'Hoàn phí được xem xét khi Biteo không cung cấp dịch vụ do lỗi của mình, giao dịch bị thu trùng/sai hoặc dịch vụ bị hủy. Khoản hoàn được xác định theo phần dịch vụ chưa cung cấp, lỗi thực tế và nghĩa vụ còn tồn đọng.',
+    pricingPolicyPart6Title3: 'Điều 19. Tra soát và khiếu nại tài chính',
+    pricingPolicyPart6Content3: 'Chủ thể có thể gửi tra soát về giá, phí, hoa hồng, đối soát hoặc thanh toán qua kênh hỗ trợ của Biteo. Hồ sơ gồm mã giao dịch/đơn hàng, kỳ đối soát, khoản tranh chấp và chứng cứ. Biteo xác nhận, đối chiếu log và thông báo kết quả.',
+
+    // Part VII - Changes
+    pricingPolicyPart7: 'PHẦN VII - THAY ĐỔI BIỂU PHÍ VÀ CÔNG KHAI',
+    pricingPolicyPart7Title1: 'Điều 20. Nguyên tắc thay đổi giá, phí và hoa hồng',
+    pricingPolicyPart7Content1: 'Biteo có thể điều chỉnh Biểu phí do thay đổi dịch vụ, chi phí, thị trường, thuế/pháp luật hoặc lý do hợp pháp khác. Khi thay đổi, Biteo công khai ít nhất 20 ngày trước thời điểm áp dụng, trừ trường hợp pháp luật yêu cầu khác.',
+    pricingPolicyPart7Title2: 'Điều 21. Cách thức thông báo và chấp nhận thay đổi',
+    pricingPolicyPart7Content2: 'Biteo công khai tại trang chủ, Trung tâm pháp lý, Biểu phí và giao diện dịch vụ liên quan. Đồng thời thông báo qua app/email/tài khoản đối với đối tượng bị ảnh hưởng đáng kể. Người dùng có quyền ngừng sử dụng dịch vụ trước ngày hiệu lực.',
+    pricingPolicyPart7Title3: 'Điều 22. Vị trí công khai',
+    pricingPolicyPart7Content3: 'Chính sách và Biểu phí được liên kết rõ ràng từ màn hình chính/trang chủ Biteo. Thông tin áp dụng cụ thể được hiển thị trước khi mua gói, đặt quảng cáo, tham gia Affiliate hoặc xác nhận đơn hàng.',
+
+    pricingPolicyNotice: 'Biểu phí cụ thể, tỷ lệ và điều kiện riêng được quy định tại Biểu phí/Chương trình/Thỏa thuận được Biteo công khai trước khi chủ thể xác nhận sử dụng. Mọi thay đổi sẽ được thông báo trước tối thiểu 20 ngày.',
+    pricingPolicyContactTitle: 'Cần hỗ trợ về giá và phí?',
+    pricingPolicyContactDesc: 'Đội ngũ Biteo sẵn sàng giải đáp mọi thắc mắc về chính sách giá, phí và hoa hồng',
+
+    // Privacy Policy Page
+    privacyPolicyPageTitle: 'Chính sách Bảo mật và Bảo vệ Dữ liệu Cá nhân',
+    privacyPolicyPageSubtitle: 'Thông tin chi tiết về cách Biteo thu thập, sử dụng và bảo vệ dữ liệu cá nhân của bạn',
+    privacyPolicyPart1: 'PHẦN I - QUY ĐỊNH CHUNG',
+    privacyPolicyPart2: 'PHẦN II - DỮ LIỆU ĐƯỢC THU THẬP',
+    privacyPolicyPart3: 'PHẦN III - MỤC ĐÍCH VÀ CĂN CỨ XỬ LÝ',
+    privacyPolicyPart4: 'PHẦN IV - CHIA SẺ DỮ LIỆU',
+    privacyPolicyPart5: 'PHẦN V - LƯU TRỮ VÀ AN TOÀN',
+    privacyPolicyPart6: 'PHẦN VI - QUYỀN CỦA CHỦ THỂ DỮ LIỆU',
+    privacyPolicyPart7: 'PHẦN VII - SỰ CỐ VÀ QUẢN TRỊ',
+    tableOfContents: 'Mục lục',
+
+    // Service Policy Page
+    servicePolicyPageTitle: 'Chính sách Đặt, Cung cấp, Hủy Dịch vụ và Hoàn tiền',
+    servicePolicyPageSubtitle: 'Quy định về việc đặt, xác nhận, thanh toán và hủy dịch vụ trên Biteo',
+    servicePolicyPart1: 'PHẦN I - QUY ĐỊNH CHUNG',
+    servicePolicyPart2: 'PHẦN II - THÔNG TIN VÀ QUY TRÌNH ĐẶT DỊCH VỤ',
+    servicePolicyPart3: 'PHẦN III - CUNG CẤP VÀ XÁC NHẬN HOÀN THÀNH',
+    servicePolicyPart4: 'PHẦN IV - QUY ĐỊNH THEO NHÓM DỊCH VỤ',
+    servicePolicyPart5: 'PHẦN V - ĐỔI LỊCH, HỦY VÀ CHẤM DỨT',
+    servicePolicyPart6: 'PHẦN VI - HOÀN TIỀN, KHIẾU NẠI VÀ HIỆU LỰC',
+    servicePolicyContactTitle: 'Cần hỗ trợ về dịch vụ?',
+
+    // Service Policy Articles
+    servicePolicyArt1Title: 'Điều 1. Phạm vi điều chỉnh',
+    servicePolicyArt1Content: '1. Chính sách này quy định việc tìm kiếm, đặt, xác nhận, thanh toán, cung cấp, đổi lịch, hủy/chấm dứt dịch vụ và hoàn tiền đối với dịch vụ được giới thiệu, đặt hoặc mua qua Biteo.\n2. Dịch vụ có thể gồm đặt bàn/nhà hàng; đi chợ hộ; spa, làm đẹp, massage; du lịch, lưu trú, vé/sự kiện; dịch vụ số; membership, subscription, premium; quảng cáo, boosting, livestream trả phí và dịch vụ khác được công bố.\n3. Hàng hóa vật lý kèm dịch vụ áp dụng đồng thời Chính sách giao hàng/kiểm hàng và Chính sách đổi trả.',
+
+    servicePolicyArt2Title: 'Điều 2. Vai trò của Biteo và nhà cung cấp',
+    servicePolicyArt2Content: '1. Trừ khi giao diện xác định Biteo là nhà cung cấp, hợp đồng dịch vụ được giao kết giữa người dùng và nhà cung cấp được nêu tại giao dịch.\n2. Biteo cung cấp hạ tầng hiển thị, đặt dịch vụ, ghi nhận xác nhận, thanh toán qua đối tác, thông báo và hỗ trợ khiếu nại.\n3. Biteo chịu trách nhiệm riêng đối với dịch vụ do mình trực tiếp cung cấp và lỗi/cam kết/nghĩa vụ nền tảng thuộc mình.',
+
+    servicePolicyArt3Title: 'Điều 3. Nguyên tắc chung',
+    servicePolicyArt3Content: '1. Thông tin dịch vụ, giá, thuế/phí, thời gian, địa điểm, nội dung, điều kiện kỹ thuật, hạn chế, hủy/đổi lịch/no-show và hoàn tiền được công khai trước khi xác nhận.\n2. Người dùng có cơ hội rà soát, sửa thông tin và bày tỏ chấp thuận rõ ràng.\n3. Khoản "không hoàn" chỉ áp dụng nếu hợp pháp, được công khai rõ và tương ứng với dịch vụ/chi phí thực tế.\n4. Quyền bắt buộc của người tiêu dùng, quyền khiếu nại và yêu cầu bồi thường không bị hạn chế.',
+
+    servicePolicyArt4Title: 'Điều 4. Giải thích từ ngữ',
+    servicePolicyArt4Content: '1. Yêu cầu đặt dịch vụ là thông điệp người dùng gửi để đề nghị nhà cung cấp phục vụ.\n2. Xác nhận đặt dịch vụ là thông báo điện tử ghi nhận nhà cung cấp/Biteo đã chấp thuận.\n3. Đổi lịch là thay đổi thời điểm/địa điểm hoặc thông số đặt dịch vụ theo điều kiện được chấp thuận.\n4. No-show là người dùng không có mặt/không truy cập/không đủ điều kiện sử dụng tại thời điểm đã xác nhận mà không hủy đúng hạn.',
+
+    servicePolicyArt5Title: 'Điều 5. Thông tin phải hiển thị',
+    servicePolicyArt5Content: 'Trước khi đặt/mua, Biteo hoặc nhà cung cấp hiển thị: Tên, tư cách, địa chỉ và thông tin xác thực nhà cung cấp; Nội dung, kết quả dự kiến, thời lượng, số lượt, phạm vi bao gồm/không bao gồm; Thời gian, địa điểm, khu vực phục vụ, điều kiện đặt trước; Giá, thuế, phí, tiền đặt cọc, phụ phí, tổng tiền; Yêu cầu tuổi, sức khỏe, giấy tờ, thiết bị, kết nối; Cách xác nhận, đổi lịch, hủy, no-show, chấm dứt, hết hạn và hoàn tiền.',
+
+    servicePolicyArt6Title: 'Điều 6. Các bước đặt dịch vụ',
+    servicePolicyArt6Content: '1. Người dùng chọn dịch vụ, nhà cung cấp, thời gian/địa điểm, số người/số lượng và tùy chọn.\n2. Hệ thống hiển thị tóm tắt, điều kiện và tổng tiền; người dùng rà soát/sửa trước khi bấm nút thanh toán.\n3. Biteo ghi nhận yêu cầu, gửi cho nhà cung cấp hoặc tự động kiểm tra khả dụng.\n4. Sau khi được chấp thuận, hệ thống gửi xác nhận gồm mã đặt, nội dung, thời gian, giá, trạng thái thanh toán và điều kiện hủy/đổi.',
+
+    servicePolicyArt7Title: 'Điều 7. Phân biệt yêu cầu và xác nhận',
+    servicePolicyArt7Content: '1. Nếu dịch vụ cần nhà cung cấp duyệt, thông báo "đã nhận yêu cầu" không phải xác nhận chắc chắn.\n2. Thời hạn nhà cung cấp phản hồi: [BITEO BỔ SUNG]. Hết hạn mà chưa xác nhận, yêu cầu được xử lý theo cấu hình.\n3. Với xác nhận tự động, hợp đồng được ghi nhận khi hệ thống phát thông báo xác nhận hợp lệ.\n4. Nhà cung cấp không được đơn phương tăng giá hoặc giảm nội dung sau xác nhận.',
+
+    servicePolicyArt8Title: 'Điều 8. Thay đổi thông tin đặt dịch vụ',
+    servicePolicyArt8Content: '1. Người dùng yêu cầu đổi người sử dụng, thời gian, địa điểm, số lượng hoặc tùy chọn tại kênh quy định trước hạn được hiển thị.\n2. Thay đổi chỉ có hiệu lực khi nhận xác nhận mới; chênh lệch giá/phí phải được thông báo và chấp thuận trước.\n3. Nếu nhà cung cấp thay đổi trọng yếu, người dùng được lựa chọn chấp thuận, đổi lịch/dịch vụ tương đương hoặc hủy và nhận hoàn phù hợp.',
+
+    servicePolicyArt9Title: 'Điều 9. Thanh toán, đặt cọc và chứng từ',
+    servicePolicyArt9Content: '1. Phương thức thanh toán, thời điểm thu và điều kiện đặt cọc hiển thị trước khi xác nhận.\n2. Tiền đặt cọc/giữ chỗ phải nêu mục đích, điều kiện khấu trừ/hoàn, thời điểm chuyển thành tiền dịch vụ.\n3. Biteo không dùng thuật ngữ "ký quỹ", "tài khoản bảo đảm" hoặc "ví Biteo" nếu mô hình chưa có căn cứ pháp lý.',
+
+    servicePolicyArt10Title: 'Điều 10. Mã đặt dịch vụ, voucher và chuyển nhượng',
+    servicePolicyArt10Content: '1. Mã đặt/voucher chỉ dùng theo thời hạn, phạm vi, chủ thể và điều kiện đã công bố; người dùng bảo mật mã/QR/OTP.\n2. Việc chuyển nhượng/đổi tên chỉ được phép khi điều kiện dịch vụ và pháp luật cho phép.\n3. Nhà cung cấp/Biteo không từ chối mã hợp lệ do lỗi đồng bộ thuộc mình.',
+
+    // Return Policy Page
+    returnPolicyPageTitle: 'Chính sách Đổi, Trả hàng và Hoàn tiền',
+    returnPolicyPageSubtitle: 'Quy định về việc đổi, trả hàng hóa và hoàn tiền trên Biteo',
+    returnPolicyPart1: 'PHẦN I - QUY ĐỊNH CHUNG',
+    returnPolicyPart2: 'PHẦN II - CĂN CỨ VÀ ĐIỀU KIỆN ĐỔI, TRẢ',
+    returnPolicyPart3: 'PHẦN III - THỜI HẠN, HỒ SƠ VÀ QUY TRÌNH',
+    returnPolicyPart4: 'PHẦN IV - CHI PHÍ, ĐỔI HÀNG VÀ HOÀN TIỀN',
+    returnPolicyPart5: 'PHẦN V - TRANH CHẤP, GIAN LẬN VÀ TRÁCH NHIỆM',
+    returnPolicyContactTitle: 'Cần hỗ trợ về đổi trả?',
+
+    // Delivery Policy Page
+    deliveryPolicyPageTitle: 'Chính sách Giao hàng và Kiểm hàng',
+    deliveryPolicyPageSubtitle: 'Quy định về việc giao nhận và kiểm tra hàng hóa trên Biteo',
+    deliveryPolicyPart1: 'PHẦN I - QUY ĐỊNH CHUNG',
+    deliveryPolicyPart2: 'PHẦN II - PHƯƠNG THỨC, PHÍ VÀ THỜI GIAN',
+    deliveryPolicyPart3: 'PHẦN III - TIẾP NHẬN, ĐÓNG GÓI VÀ VẬN CHUYỂN',
+    deliveryPolicyPart4: 'PHẦN IV - GIAO HÀNG VÀ KIỂM HÀNG',
+    deliveryPolicyPart5: 'PHẦN V - GIAO KHÔNG THÀNH CÔNG VÀ SỰ CỐ',
+    deliveryPolicyPart6: 'PHẦN VI - TRÁCH NHIỆM VÀ HIỆU LỰC',
+    deliveryPolicyContactTitle: 'Cần hỗ trợ về giao hàng?',
+
+    // Return Policy Articles
+    returnPolicyArt1Title: 'Điều 1. Phạm vi điều chỉnh',
+    returnPolicyArt1Content: '1. Chính sách quy định căn cứ, điều kiện, thời hạn, hồ sơ và quy trình đổi/trả hàng hóa; xử lý hàng trả; hoàn tiền phát sinh từ kết quả đổi/trả; và trách nhiệm của các bên đối với giao dịch trên Biteo.\n2. Chính sách áp dụng cho người mua, người bán, Biteo, đối tác logistics, đối tác thanh toán và chủ thể liên quan.\n3. Việc hủy/chấm dứt dịch vụ, membership, quảng cáo, boosting, vé, đặt bàn, du lịch hoặc hàng hóa/dịch vụ số tuân theo điều kiện riêng.',
+
+    returnPolicyArt2Title: 'Điều 2. Vai trò và giới hạn trách nhiệm của Biteo',
+    returnPolicyArt2Content: '1. Hợp đồng mua bán được giao kết giữa người mua và người bán. Người bán chịu trách nhiệm chính về hàng hóa, thông tin, chất lượng, bảo hành, đổi/trả, thu hồi và hoàn tiền.\n2. Biteo công khai chính sách, cung cấp công cụ gửi yêu cầu, bảo toàn dữ liệu, phối hợp xác minh và truyền lệnh hoàn tiền trong phạm vi chức năng.\n3. Biteo không trực tiếp trở thành người bán, đơn vị vận chuyển hoặc tổ chức trung gian thanh toán chỉ vì hỗ trợ xử lý yêu cầu.',
+
+    returnPolicyArt3Title: 'Điều 3. Nguyên tắc áp dụng',
+    returnPolicyArt3Content: '1. Quyền bắt buộc theo pháp luật được ưu tiên. Chính sách của người bán chỉ được áp dụng nếu không làm giảm quyền đó.\n2. Không mặc nhiên có quyền trả mọi hàng vì "đổi ý" trong 7 ngày, trừ khi người bán/Biteo công khai cam kết.\n3. Việc chấp nhận hay từ chối phải dựa trên căn cứ và chứng cứ; không được từ chối chỉ vì người mua đã nhận hàng nếu lỗi/khuyết tật không thể nhận biết hợp lý khi kiểm hàng.\n4. Bên có lỗi chịu chi phí hợp lý phát sinh.',
+
+    returnPolicyArt4Title: 'Điều 4. Giải thích từ ngữ',
+    returnPolicyArt4Content: '1. Đổi hàng là thay hàng đã nhận bằng hàng khác phù hợp theo kết quả xử lý.\n2. Trả hàng là người mua hoàn giao hàng cho người bán/chủ thể được chỉ định để hủy toàn bộ hoặc một phần giao dịch.\n3. Hoàn tiền là hoàn toàn bộ hoặc một phần khoản tiền thực trả sau khi căn cứ được phê duyệt.\n4. Khuyết tật ẩn là khuyết tật không thể nhận biết hợp lý bằng việc kiểm tra thông thường tại thời điểm nhận.\n5. Hàng hóa có khuyết tật được hiểu theo pháp luật bảo vệ quyền lợi người tiêu dùng.',
+
+    returnPolicyArt5Title: 'Điều 5. Các trường hợp được yêu cầu đổi, trả',
+    returnPolicyArt5Content: 'Người mua có thể yêu cầu khi:\n1. Giao sai sản phẩm, mẫu, màu, kích thước, số lượng, bộ phận hoặc phụ kiện so với đơn\n2. Hàng thiếu, vỡ, hỏng, biến dạng, rò rỉ, hết hạn/cận hạn trái công bố\n3. Hàng không đúng thông tin đã đăng tải, niêm yết, quảng cáo, giới thiệu, thể hiện trong livestream\n4. Hàng giả, không rõ nguồn gốc, vi phạm điều kiện kinh doanh hoặc xâm phạm quyền hợp pháp\n5. Hàng có khuyết tật, không an toàn, thuộc diện cảnh báo hoặc thu hồi\n6. Người bán không giao đúng thời hạn/cách thức mà việc chậm trễ làm mục đích giao dịch không đạt được\n7. Người bán/Biteo có chương trình "đổi ý", dùng thử hoặc đổi size/màu có lợi hơn',
+
+    returnPolicyArt6Title: 'Điều 6. Biện pháp khắc phục',
+    returnPolicyArt6Content: '1. Tùy căn cứ và lựa chọn hợp pháp, kết quả có thể là: bổ sung phần thiếu; đổi hàng; sửa chữa/bảo hành; giảm giá; trả hàng và hoàn tiền toàn bộ/một phần; cung cấp lại; hoặc bồi thường.\n2. Không buộc người mua nhận voucher, điểm hoặc hàng thay thế thay cho khoản tiền phải hoàn nếu người mua không đồng ý.\n3. Việc đổi hàng không làm mất quyền phản ánh đối với lỗi tiếp tục tồn tại hoặc hàng đổi không phù hợp.\n4. Bồi thường thiệt hại là yêu cầu riêng, không tự động được giải quyết hết bằng việc hoàn giá mua.',
+
+    returnPolicyArt7Title: 'Điều 7. Đổi/trả do thay đổi nhu cầu',
+    returnPolicyArt7Content: '1. Chỉ áp dụng khi trang sản phẩm/đơn hàng hiển thị rõ chính sách tự nguyện của người bán hoặc chương trình Biteo.\n2. Điều kiện có thể gồm: hàng chưa sử dụng, còn nguyên tem/niêm phong, bao bì, quà tặng, phụ kiện, chứng từ; không có dấu hiệu giặt, sửa, kích hoạt hoặc sao chép dữ liệu.\n3. Thời hạn, ngành hàng, phí và bên chịu vận chuyển: [BITEO BỔ SUNG].\n4. Nếu không có công bố nêu trên, Biteo không trình bày giao diện làm người mua hiểu rằng mọi hàng đều được trả vì đổi ý.',
+
+    returnPolicyArt8Title: 'Điều 8. Điều kiện về tình trạng hàng trả',
+    returnPolicyArt8Content: '1. Người mua bảo quản hợp lý và trả đúng hàng, số lượng, phụ kiện, quà tặng, tài liệu và bao bì còn giữ được.\n2. Với yêu cầu do lỗi người bán/hàng hóa, việc bao bì bị mở để kiểm tra hợp lý hoặc hàng được sử dụng đúng mức cần thiết để phát hiện khuyết tật không phải là căn cứ tự động từ chối.\n3. Giảm giá trị do người mua sử dụng vượt mức cần thiết, gây hư hỏng, thiếu phụ kiện hoặc tráo đổi được xác minh riêng.\n4. Hàng tranh chấp phải được bảo quản theo hướng dẫn an toàn; không tiếp tục dùng khi có nguy cơ ảnh hưởng sức khỏe/tài sản.',
+
+    returnPolicyArt9Title: 'Điều 9. Trường hợp có thể không được đổi/trả',
+    returnPolicyArt9Content: 'Trừ quyền bắt buộc hoặc lỗi của người bán/hàng hóa, chính sách đổi ý có thể loại trừ:\n1. Hàng đã sử dụng, giặt, sửa, kích hoạt, cài đặt hoặc mất giá trị đáng kể\n2. Hàng đặt làm riêng, cá nhân hóa hoặc sản xuất theo thông số người mua\n3. Thực phẩm, đồ uống, hàng tươi sống/dễ hỏng\n4. Mỹ phẩm, đồ vệ sinh, đồ lót, sản phẩm tiếp xúc cơ thể đã mở niêm phong\n5. Bản ghi âm/hình, phần mềm, mã số, voucher, hàng số đã mở/kích hoạt/tải\n6. Hàng thiếu tem, phụ kiện, quà tặng hoặc số serial không trùng\n7. Hàng thuộc nhóm khác được công khai hợp pháp trước giao dịch',
+
+    returnPolicyArt10Title: 'Điều 10. Hàng không đúng cam kết hoặc giao sai/thiếu',
+    returnPolicyArt10Content: '1. Người mua được yêu cầu giao bổ sung, đổi đúng hàng, trả hàng/hoàn tiền hoặc biện pháp phù hợp.\n2. Người bán chịu chi phí lấy lại/giao lại khi lỗi thuộc mình; không yêu cầu người mua thanh toán trước phí khắc phục nếu không có căn cứ.\n3. Nội dung video/livestream, thông tin Affiliate, tin nhắn xác nhận và trang sản phẩm có thể là chứng cứ về cam kết giao dịch.\n4. Nếu chỉ một phần đơn bị ảnh hưởng, người mua có thể yêu cầu xử lý phần đó hoặc toàn bộ khi phần còn lại không thể sử dụng hợp lý.',
+
+    returnPolicyArt11Title: 'Điều 11. Hàng hóa có khuyết tật hoặc không an toàn',
+    returnPolicyArt11Content: '1. Người mua ngừng sử dụng, cô lập hàng nếu cần và thông báo ngay cho người bán/Biteo; trường hợp khẩn cấp liên hệ cơ quan chức năng/y tế.\n2. Người bán phải cung cấp cảnh báo, xác định lô/đối tượng, tiếp nhận, thu hồi, sửa/đổi/hoàn tiền và bồi thường theo pháp luật; không che giấu hoặc tiếp tục bán hàng đã biết có khuyết tật.\n3. Biteo thông báo cho người mua bị ảnh hưởng, ngăn giao/bán tiếp, hỗ trợ thu hồi và phối hợp cơ quan có thẩm quyền.\n4. Người mua không phải chịu chi phí thu hồi do lỗi/khuyết tật.',
+
+    returnPolicyArt12Title: 'Điều 12. Hàng tươi sống, thực phẩm và đồ uống',
+    returnPolicyArt12Content: '1. Do tính chất nhanh hỏng, người mua ưu tiên kiểm tra và phản ánh ngay khi nhận hoặc trong thời hạn ngắn được công bố theo nhóm hàng.\n2. Căn cứ gồm: sai món/khối lượng, hư hỏng, ôi thiu, rò rỉ, mất điều kiện nhiệt độ, quá hạn, dị vật, nguy cơ an toàn hoặc khác cam kết.\n3. Để bảo đảm an toàn, Biteo/người bán có thể không yêu cầu gửi trả vật phẩm nguy hiểm/hư hỏng; người mua bảo quản hoặc tiêu hủy theo hướng dẫn và cung cấp bằng chứng hợp lý.',
+
+    returnPolicyArt13Title: 'Điều 13. Mỹ phẩm, hàng vệ sinh và sản phẩm chăm sóc cá nhân',
+    returnPolicyArt13Content: '1. Hàng đã mở niêm phong có thể không được trả vì đổi ý do yêu cầu vệ sinh/an toàn.\n2. Vẫn được xem xét nếu sai hàng, hàng giả, hết hạn, bao bì hỏng/rò rỉ trước nhận, phản ứng do sản phẩm không an toàn hoặc không đúng công bố.\n3. Người mua ngừng dùng khi có phản ứng bất thường; lưu bao bì, số lô, hạn dùng, ảnh và tài liệu y tế nếu có.',
+
+    returnPolicyArt14Title: 'Điều 14. Điện tử, hàng có serial và dữ liệu cá nhân',
+    returnPolicyArt14Content: '1. Người mua cung cấp số serial/IMEI, tình trạng tem và bằng chứng lỗi; đổi/trả có thể cần kiểm tra kỹ thuật hợp lý.\n2. Trước khi trả, người mua sao lưu dữ liệu cần thiết, đăng xuất/xóa tài khoản và tắt khóa kích hoạt theo hướng dẫn, trừ khi không thể do lỗi thiết bị.\n3. Người bán/đơn vị kiểm tra không được truy cập, sao chép hoặc sử dụng dữ liệu cá nhân ngoài mức cần thiết; phải bảo vệ/xóa dữ liệu theo pháp luật.\n4. Việc kích hoạt không tự động loại trừ quyền đối với lỗi, hàng sai hoặc khuyết tật.',
+
+    returnPolicyArt15Title: 'Điều 15. Quà tặng, bộ sản phẩm và mua nhiều giảm giá',
+    returnPolicyArt15Content: '1. Khi trả toàn bộ, người mua hoàn lại quà tặng/phụ kiện còn có thể trả; nếu không, giá trị hợp lý đã công khai có thể được khấu trừ khi có căn cứ hợp pháp.\n2. Khi trả một phần bộ/combo, khoản hoàn được tính lại theo giá phân bổ/điều kiện khuyến mại đã công khai, không áp dụng công thức bất lợi chưa thông báo.\n3. Nếu quà tặng hoặc một phần bộ bị lỗi, áp dụng biện pháp tương xứng; không mặc nhiên buộc trả toàn bộ nếu các phần độc lập.',
+
+    returnPolicyArt16Title: 'Điều 16. Thời hạn gửi yêu cầu',
+    returnPolicyArt16Content: '1. Thời hạn vận hành theo lý do/ngành hàng. Thời điểm tính từ khi hệ thống ghi nhận giao thành công hoặc người mua thực nhận.\n2. Với hàng dễ hỏng/sai thiếu quan sát được, phản ánh sớm giúp bảo toàn chứng cứ; với khuyết tật ẩn, hàng có khuyết tật, bảo hành, gian lận hoặc quyền luật định, áp dụng thời hạn tương ứng theo pháp luật/cam kết.\n3. Nếu người mua không thể gửi do lỗi Biteo, sự kiện bất khả kháng hoặc đang được cơ quan có thẩm quyền xử lý, Biteo xem xét không tính khoảng thời gian trở ngại.\n4. Giao diện không được khóa tuyệt đối việc gửi phản ánh chỉ vì hết thời hạn tự nguyện.',
+
+    returnPolicyArt17Title: 'Điều 17. Kênh gửi và thông tin yêu cầu',
+    returnPolicyArt17Content: '1. Gửi tại trung tâm hỗ trợ trên ứng dụng, email hỗ trợ hoặc hotline.\n2. Thông tin gồm mã đơn/vận đơn, sản phẩm, lý do, biện pháp mong muốn, mô tả và thông tin liên hệ cần thiết.\n3. Biteo cấp mã hồ sơ, xác nhận tiếp nhận và cho phép theo dõi.\n4. Không yêu cầu người mua liên hệ ngoài nền tảng hoặc tự thương lượng như điều kiện duy nhất để được tiếp nhận.',
+
+    returnPolicyArt18Title: 'Điều 18. Bằng chứng',
+    returnPolicyArt18Content: '1. Có thể gồm ảnh/video nguyên kiện và mở kiện, tem/serial/số lô, hạn dùng, sản phẩm lỗi, biên bản giao nhận, tin nhắn, nội dung livestream, hóa đơn và kết quả kiểm tra.\n2. Biteo chỉ yêu cầu chứng cứ hợp lý theo tính chất vụ việc; không đòi video mở kiện như điều kiện tuyệt đối nếu pháp luật không quy định và chứng cứ khác đủ xác minh.\n3. Người bán/đối tác cung cấp ảnh đóng gói, khối lượng, chuỗi bàn giao, trạng thái, chữ ký/OTP và tài liệu có liên quan.\n4. Tệp chứng cứ được bảo vệ, giới hạn truy cập và lưu theo Chính sách bảo mật.',
+
+    returnPolicyArt19Title: 'Điều 19. Tiếp nhận và sàng lọc ban đầu',
+    returnPolicyArt19Content: '1. Biteo kiểm tra đơn, thời hạn, lý do, bằng chứng và phân loại: sai/thiếu; hư hỏng logistics; lỗi chất lượng; khuyết tật/an toàn; đổi ý; bảo hành; gian lận; hoặc nhóm khác.\n2. Nếu hồ sơ thiếu, Biteo hướng dẫn bổ sung một lần đầy đủ trong phạm vi có thể; không yêu cầu lặp lại dữ liệu Biteo đã có.\n3. Vụ việc nguy cơ an toàn, hàng giả/hàng cấm hoặc thu hồi được ưu tiên; Biteo có thể tạm ẩn sản phẩm, dừng giao/giải ngân và bảo toàn dữ liệu.',
+
+    returnPolicyArt20Title: 'Điều 20. Xác minh và quyết định',
+    returnPolicyArt20Content: '1. Biteo chuyển yêu cầu cho người bán/đối tác liên quan và ấn định thời hạn phản hồi. Im lặng không tự động làm mất quyền người mua; Biteo quyết định hỗ trợ trên chứng cứ có được và quy định áp dụng.\n2. Kết quả nêu rõ căn cứ, hàng/phần đơn được chấp nhận, biện pháp, số tiền dự kiến, phí, cách gửi trả, thời hạn và quyền yêu cầu xem xét lại.\n3. Quyết định tự động bất lợi phải có khả năng được con người rà soát khi phù hợp; không dùng duy nhất tỷ lệ khiếu nại hoặc lịch sử tài khoản để bác yêu cầu có chứng cứ.',
+
+    returnPolicyArt21Title: 'Điều 21. Phương thức gửi trả',
+    returnPolicyArt21Content: '1. Chỉ gửi trả sau khi có mã/hướng dẫn, trừ trường hợp pháp luật hoặc Biteo cho phép khác.\n2. Hình thức gồm: đối tác đến lấy, gửi tại bưu cục/điểm nhận, trả tại cửa hàng hoặc phương thức khác.\n3. Người mua đóng gói phù hợp, ghi mã, giữ biên nhận; đối tác cập nhật trạng thái. Không gửi hàng nguy hiểm/dễ hỏng trái hướng dẫn.\n4. Địa chỉ trả hàng và bên nhận phải hiển thị trong hồ sơ; Biteo không công khai địa chỉ cá nhân không cần thiết.',
+
+    returnPolicyArt22Title: 'Điều 22. Kiểm tra hàng trả',
+    returnPolicyArt22Content: '1. Người bán/đơn vị kiểm tra ghi nhận thời điểm, niêm phong, serial, phụ kiện và tình trạng; hoàn tất trong thời hạn quy định kể từ khi nhận.\n2. Nếu cho rằng hàng đã dùng, thiếu, tráo hoặc hư do người mua, bên kiểm tra phải cung cấp căn cứ; người mua được giải trình/yêu cầu rà soát.\n3. Khác biệt nhỏ của bao bì do vận chuyển hoặc việc mở hợp lý để phát hiện lỗi không phải căn cứ duy nhất từ chối.\n4. Kết quả kiểm tra được cập nhật trên hồ sơ và là đầu vào cho đổi hàng/hoàn tiền.',
+
+    returnPolicyArt23Title: 'Điều 23. Chi phí đổi, trả',
+    returnPolicyArt23Content: '1. Người bán/chủ thể có lỗi chịu phí lấy lại, giao đổi, kiểm tra và khoản hợp lý khác khi hàng sai, thiếu, hỏng, không đúng cam kết hoặc có khuyết tật.\n2. Đối tác logistics chịu trách nhiệm chi phí/thiệt hại thuộc lỗi vận chuyển theo pháp luật và hợp đồng.\n3. Với đổi ý theo chính sách tự nguyện, người mua có thể chịu phí đã được công khai trước; không thu phí phạt hoặc phí ẩn.\n4. Biteo chịu chi phí thuộc lỗi hệ thống/cam kết của mình.',
+
+    returnPolicyArt24Title: 'Điều 24. Thực hiện đổi hàng',
+    returnPolicyArt24Content: '1. Hàng đổi phải đúng thỏa thuận, không có chất lượng/quyền bảo hành thấp hơn; chênh lệch giá được thông báo và chấp thuận trước.\n2. Nếu hết hàng hoặc không thể đổi trong thời gian hợp lý, người mua được đề nghị biện pháp khác, gồm hoàn tiền khi có căn cứ.\n3. Ngày bảo hành và quyền đổi/trả của hàng thay thế áp dụng theo pháp luật/chính sách công khai.',
+
+    returnPolicyArt25Title: 'Điều 25. Xác định số tiền hoàn',
+    returnPolicyArt25Content: '1. Số tiền hoàn căn cứ tiền thực trả, phần hàng được chấp nhận, phí giao/hoàn, giảm giá, điểm/voucher và trách nhiệm các bên.\n2. Nếu hoàn toàn bộ do lỗi người bán/hàng hóa, các khoản phí cần thiết mà người mua đã trả cho giao dịch được xử lý theo pháp luật và cam kết.\n3. Đơn dùng tiền, điểm và voucher: hoàn tiền không vượt phần tiền thực trả; điểm/voucher xử lý theo thể lệ và Chính sách thanh toán.\n4. Mọi khấu trừ phải có căn cứ, cách tính và chứng cứ; người mua được thông báo trước khi hoàn.',
+
+    returnPolicyArt26Title: 'Điều 26. Phương thức và thời gian hoàn tiền',
+    returnPolicyArt26Content: '1. Sau khi quyết định hoàn có hiệu lực/đủ điều kiện, Biteo gửi yêu cầu cho đối tác thanh toán hoặc phối hợp người bán/đối tác COD.\n2. Ưu tiên hoàn về phương thức ban đầu; nếu không thể, phương án khác phải hợp pháp, xác minh đúng người nhận và được thông báo.\n3. Người mua được biết số tiền, phương thức, mã hoàn, ngày khởi tạo và dự kiến; quá hạn có quyền tra soát không mất phí nếu lỗi không thuộc mình.\n4. Biteo không yêu cầu OTP, PIN, CVV/CVC, mật khẩu hoặc toàn bộ số thẻ để hoàn tiền.',
+
+    returnPolicyArt27Title: 'Điều 27. Hoàn tiền trước khi nhận lại hàng',
+    returnPolicyArt27Content: '1. Biteo/người bán có thể hoàn không yêu cầu trả lại đối với hàng giá trị nhỏ, hư hỏng/nguy hiểm, thực phẩm không an toàn hoặc khi chi phí thu hồi không hợp lý, nếu đủ chứng cứ.\n2. Với rủi ro gian lận hoặc hàng giá trị cao, việc hoàn có thể chờ hàng được tiếp nhận/kiểm tra, trừ trường hợp pháp luật buộc xử lý khác.\n3. Quyết định không yêu cầu trả không chuyển trách nhiệm tiêu hủy hàng nguy hiểm cho người mua nếu chưa có hướng dẫn an toàn phù hợp.',
+
+    returnPolicyArt28Title: 'Điều 28. Yêu cầu xem xét lại và khiếu nại',
+    returnPolicyArt28Content: '1. Người mua/người bán yêu cầu xem xét lại trong kênh quy định, kèm lý do/chứng cứ mới hoặc chỉ ra sai sót.\n2. Biteo bố trí người không trực tiếp đưa ra quyết định ban đầu rà soát khi khả thi và thông báo kết quả.\n3. Việc dùng quy trình nội bộ không hạn chế quyền yêu cầu cơ quan quản lý, tổ chức bảo vệ người tiêu dùng, hòa giải, trọng tài hoặc tòa án.\n4. Quy trình chi tiết tuân theo "Quy trình tiếp nhận và giải quyết phản ánh, yêu cầu, khiếu nại".',
+
+    returnPolicyArt29Title: 'Điều 29. Phòng chống gian lận',
+    returnPolicyArt29Content: '1. Cấm tạo yêu cầu giả, dùng ảnh của đơn khác, tráo/thay thế hàng, khai không nhận, làm hỏng để đòi hoàn, lợi dụng nhiều tài khoản hoặc thông đồng.\n2. Biteo có thể yêu cầu xác minh, bảo toàn khoản thanh toán qua chủ thể có thẩm quyền, giới hạn tính năng hoặc chuyển cơ quan chức năng theo căn cứ; biện pháp phải tương xứng và có quyền giải trình.\n3. Không được coi việc người mua khiếu nại nhiều lần là gian lận nếu các yêu cầu có căn cứ.',
+
+    returnPolicyArt30Title: 'Điều 30. Trách nhiệm của các bên',
+    returnPolicyArt30Content: '1. Người mua: cung cấp thông tin/chứng cứ trung thực; bảo quản và gửi đúng hàng; không tiếp tục sử dụng gây tăng thiệt hại; phối hợp xác minh.\n2. Người bán: công khai điều kiện; tiếp nhận, kiểm tra, đổi/trả, hoàn tiền, bảo hành, thu hồi; chịu chi phí/lỗi thuộc mình; cung cấp hồ sơ.\n3. Đối tác logistics: lấy/hoàn hàng, bảo quản, cập nhật trạng thái, lưu chứng từ và chịu trách nhiệm lỗi vận chuyển.\n4. Đối tác thanh toán: thực hiện lệnh hoàn/tra soát hợp pháp, cập nhật trạng thái và bảo vệ dữ liệu.\n5. Biteo: duy trì công cụ, lưu vết, phối hợp, thông báo, hỗ trợ xử lý và thực hiện biện pháp nền tảng.',
+
+    returnPolicyArt31Title: 'Điều 31. Công khai, thứ tự áp dụng và hiệu lực',
+    returnPolicyArt31Content: '1. Chính sách được công khai tại trang chủ/màn hình chính, Trung tâm pháp lý và Trung tâm hỗ trợ; điều kiện cốt lõi phải hiển thị tại trang sản phẩm, giỏ/đặt hàng và chi tiết đơn trước khi giao kết.\n2. Thứ tự áp dụng: pháp luật bắt buộc; quyết định hợp lệ của cơ quan có thẩm quyền; điều kiện đơn hàng/chương trình đã chấp thuận; chính sách người bán có lợi hơn; Chính sách này.\n3. Chính sách được đọc cùng Quy chế hoạt động, Chính sách giao hàng và kiểm hàng, Chính sách thanh toán/hoàn tiền/điểm thưởng, Chính sách bảo mật và Quy trình khiếu nại.\n4. Hiệu lực từ ngày được phê duyệt. Chủ quản: [BITEO BỔ SUNG TÊN PHÁP LÝ/MÃ SỐ DOANH NGHIỆP/ĐỊA CHỈ].',
+
+    // Delivery Policy Articles
+    deliveryPolicyArt1Title: 'Điều 1. Phạm vi điều chỉnh',
+    deliveryPolicyArt1Content: '1. Chính sách quy định việc lựa chọn phương thức giao hàng; tiếp nhận, đóng gói, lấy hàng, vận chuyển, giao, kiểm hàng, giao không thành công, hoàn hàng và xử lý sự cố giao nhận đối với đơn hàng phát sinh trên Biteo.\n2. Chính sách áp dụng cho người mua, người bán, người gửi/người nhận, đối tác logistics và chủ thể tham gia xử lý đơn hàng.\n3. Đối với dịch vụ, hàng hóa số, vé điện tử hoặc giao nhận thực hiện hoàn toàn ngoài môi trường vật lý, áp dụng điều kiện riêng hiển thị tại giao dịch.',
+
+    deliveryPolicyArt2Title: 'Điều 2. Vai trò của Biteo',
+    deliveryPolicyArt2Content: '1. Biteo là nền tảng trung gian kết nối người mua, người bán và đối tác logistics; Biteo không trực tiếp cung cấp dịch vụ logistics, trừ khi Biteo công khai rõ và đáp ứng đầy đủ điều kiện pháp luật trước khi triển khai.\n2. Biteo hỗ trợ tạo vận đơn, truyền thông tin cần thiết, hiển thị mã theo dõi và trạng thái; tiếp nhận phản ánh và phối hợp xử lý.\n3. Hợp đồng mua bán được giao kết giữa người mua và người bán. Dịch vụ vận chuyển do đối tác logistics hoặc người bán tự giao cung cấp theo phương thức đã công bố.\n4. Quy định tại khoản 1 không loại trừ trách nhiệm pháp lý riêng của Biteo trong phạm vi lỗi, cam kết hoặc nghĩa vụ bắt buộc của nền tảng.',
+
+    deliveryPolicyArt3Title: 'Điều 3. Giải thích từ ngữ',
+    deliveryPolicyArt3Content: '1. Đối tác logistics là tổ chức cung cấp dịch vụ giao nhận được tích hợp hoặc được chấp nhận trên Biteo.\n2. Người bán tự giao là trường hợp người bán hoặc đơn vị do người bán thuê trực tiếp thực hiện giao hàng theo phương thức được Biteo cho phép.\n3. Kiểm hàng là quan sát bên ngoài kiện hàng và/hoặc mở kiện để đối chiếu hàng nhận với đơn hàng trong phạm vi được công bố.\n4. Đồng kiểm là việc người nhận và nhân viên giao hàng cùng chứng kiến, ghi nhận quá trình kiểm hàng theo quy trình của đơn vị giao hàng.',
+
+    deliveryPolicyArt4Title: 'Điều 4. Nguyên tắc chung',
+    deliveryPolicyArt4Content: '1. Trước khi đặt hàng, người mua được biết phương thức, chi phí, thời gian dự kiến, phạm vi giao, điều kiện kiểm hàng và hạn chế quan trọng có thể áp dụng.\n2. Hàng được giao đúng loại, số lượng, tình trạng, địa chỉ, thời gian và điều kiện đã thỏa thuận.\n3. Đối tác logistics vận chuyển, bảo quản và cập nhật trạng thái trong phạm vi dịch vụ; xử lý mất, hư hỏng, giao sai hoặc chậm do lỗi của mình theo pháp luật và hợp đồng.\n4. Không điều khoản nào hạn chế quyền bắt buộc của người tiêu dùng hoặc miễn trừ trách nhiệm trái pháp luật.',
+
+    deliveryPolicyArt5Title: 'Điều 5. Phương thức giao hàng',
+    deliveryPolicyArt5Content: 'Tùy đơn hàng và khu vực, Biteo có thể hỗ trợ: Giao qua đối tác logistics tích hợp; Người bán tự giao hoặc thuê đơn vị giao hàng được phép; Người mua nhận tại cửa hàng/điểm nhận; Giao nhanh, giao tiêu chuẩn, giao theo lịch, giao lạnh hoặc phương thức chuyên biệt khác.',
+
+    deliveryPolicyArt6Title: 'Điều 6. Lựa chọn và phân chia đơn vị giao hàng',
+    deliveryPolicyArt6Content: '1. Hệ thống có thể tự động chỉ định đối tác dựa trên vùng phục vụ, loại hàng, cước phí, thời gian dự kiến, năng lực và mức độ uy tín.\n2. Trong trường hợp được hỗ trợ, người bán hoặc người mua lựa chọn trong danh sách hiển thị.\n3. Việc hệ thống phân chia đơn hàng không làm Biteo trở thành bên vận chuyển, nhưng Biteo chịu trách nhiệm đối với lỗi của chức năng điều phối thuộc phạm vi kiểm soát của mình.',
+
+    deliveryPolicyArt7Title: 'Điều 7. Phạm vi và địa chỉ giao hàng',
+    deliveryPolicyArt7Content: '1. Phạm vi phục vụ phụ thuộc địa chỉ lấy/giao, năng lực đối tác, loại hàng, hạn chế khu vực và điều kiện tại thời điểm đặt hàng.\n2. Người mua cung cấp đầy đủ tên, số điện thoại, địa chỉ và chỉ dẫn cần thiết; kiểm tra lại trước khi xác nhận.\n3. Việc đổi địa chỉ sau khi người bán xác nhận chỉ được thực hiện nếu hệ thống và đối tác chấp thuận; có thể phát sinh phí hoặc thay đổi thời gian.\n4. Biteo không yêu cầu công khai địa chỉ cá nhân trên trang sản phẩm; dữ liệu giao hàng chỉ được chuyển cho bên cần thiết để thực hiện đơn và nghĩa vụ hợp pháp.',
+
+    deliveryPolicyArt8Title: 'Điều 8. Phí vận chuyển và phụ phí',
+    deliveryPolicyArt8Content: '1. Phí dự kiến được hiển thị trước khi người mua đặt hàng, căn cứ khoảng cách, khối lượng/kích thước, phương thức, loại hàng, thời điểm, vùng khó tiếp cận và chính sách ưu đãi.\n2. Phụ phí chỉ được thu khi căn cứ, mức hoặc cách tính đã được thông báo trước.\n3. Phí cuối cùng, bên chịu phí, mã miễn/giảm phí và điều kiện hoàn phí được ghi tại đơn hàng.',
+
+    deliveryPolicyArt9Title: 'Điều 9. Thời gian xử lý và giao dự kiến',
+    deliveryPolicyArt9Content: '1. Thời gian gồm thời gian người bán xác nhận, chuẩn bị hàng, đối tác lấy hàng và vận chuyển.\n2. Ngày lễ, thiên tai, dịch bệnh, cấm đường, thời tiết, kiểm tra chuyên ngành, sự kiện bất khả kháng hoặc thông tin người nhận không chính xác có thể làm thay đổi thời gian.\n3. Khi biết có chậm trễ đáng kể, Biteo/người bán/đối tác thông báo trạng thái và phương án tiếp tục, hủy, đổi hoặc hoàn tiền theo pháp luật và chính sách liên quan.',
+
+    deliveryPolicyArt10Title: 'Điều 10. Trách nhiệm chuẩn bị và đóng gói của người bán',
+    deliveryPolicyArt10Content: '1. Xác nhận đúng đơn; chuẩn bị đúng hàng, số lượng, phụ kiện, chứng từ, hạn dùng và cam kết công bố.\n2. Đóng gói phù hợp tính chất hàng; niêm phong, chống sốc, chống ẩm/rò rỉ và ghi cảnh báo cần thiết.\n3. Khai đúng tên/nhóm hàng, giá trị, khối lượng, kích thước và điều kiện bảo quản; cung cấp giấy tờ bắt buộc.\n4. Không gửi hàng cấm, hàng giả, hàng không rõ nguồn gốc, hàng nguy hiểm không khai báo hoặc hàng không đáp ứng điều kiện vận chuyển.',
+
+    deliveryPolicyArt11Title: 'Điều 11. Hàng đặc thù và hàng không nhận vận chuyển',
+    deliveryPolicyArt11Content: '1. Thực phẩm tươi sống, đông lạnh, dễ hỏng; đồ uống; mỹ phẩm; hàng dễ vỡ; hàng cần kiểm soát nhiệt độ; hàng có pin/chất lỏng; hàng giới hạn độ tuổi hoặc hàng giá trị cao chỉ được giao khi đáp ứng điều kiện tương ứng.\n2. Người bán phải lựa chọn đúng dịch vụ, bao bì, thời gian và cảnh báo; người mua phải bảo đảm có người nhận đúng thời điểm đối với hàng dễ hỏng.\n3. Đối tác được kiểm tra bao bì, nhãn, hồ sơ; từ chối hoặc tạm dừng vận chuyển khi phát hiện dấu hiệu vi phạm, không an toàn hoặc có yêu cầu hợp lệ.',
+
+    deliveryPolicyArt12Title: 'Điều 12. Lấy hàng và bàn giao',
+    deliveryPolicyArt12Content: '1. Người bán bàn giao đúng thời gian, địa điểm và vận đơn; đối tác ghi nhận việc tiếp nhận bằng trạng thái/chứng từ phù hợp.\n2. Khi số liệu cân đo thực tế khác khai báo, phí và khả năng vận chuyển được điều chỉnh theo biểu phí đã công khai; người bán được thông báo và có quyền phản hồi.\n3. Mã vận đơn hiển thị cho người mua và người bán sau khi được tạo/tiếp nhận theo luồng thực tế.',
+
+    deliveryPolicyArt13Title: 'Điều 13. Theo dõi hành trình và trạng thái đơn',
+    deliveryPolicyArt13Content: '1. Trạng thái có thể gồm: chờ xác nhận, chờ lấy hàng, đã lấy hàng, đang vận chuyển, đang giao, giao thành công, giao không thành công, đang hoàn và hoàn thành.\n2. Dữ liệu được đồng bộ qua API hoặc cập nhật bởi chủ thể giao hàng; có thể có độ trễ kỹ thuật. Khi có mâu thuẫn, Biteo xác minh bằng chứng giao nhận và dữ liệu nguồn.',
+
+    deliveryPolicyArt14Title: 'Điều 14. Xác minh người nhận và giao hàng',
+    deliveryPolicyArt14Content: '1. Đơn vị giao hàng có thể gọi điện, nhắn tin, yêu cầu mã OTP, chữ ký, ảnh giao hàng hoặc thông tin xác minh phù hợp.\n2. Người mua bố trí người nhận tại địa chỉ, bảo mật OTP và chỉ cung cấp mã khi nhận đúng kiện hàng theo hướng dẫn.\n3. Giao cho lễ tân, bảo vệ, người được ủy quyền, điểm nhận hoặc giao không tiếp xúc chỉ thực hiện theo lựa chọn/chấp thuận hợp lệ.',
+
+    deliveryPolicyArt15Title: 'Điều 15. Phạm vi kiểm hàng',
+    deliveryPolicyArt15Content: '1. Trước khi nhận, người mua kiểm tra tình trạng bên ngoài, mã vận đơn, người gửi/người bán, dấu niêm phong, số kiện và dấu hiệu rách, móp, ướt, mở hoặc thay thế.\n2. Việc mở kiện để đối chiếu tên hàng, mẫu mã, màu sắc, kích thước, số lượng và tình trạng quan sát được chỉ áp dụng khi đơn hàng/đối tác hiển thị "được kiểm hàng".\n3. Trừ khi điều kiện sản phẩm cho phép rõ, người mua không được dùng thử, vận hành, cắm điện, kích hoạt, tháo seal/tem chống giả/tem bảo hành, làm mất bao bì hoặc tiêu dùng hàng hóa trong lúc kiểm.',
+
+    // Payment Policy Page
+    paymentPolicyPageTitle: 'Chính sách Thanh toán, Hoàn tiền và Điểm thưởng',
+    paymentPolicyPageSubtitle: 'Quy định về phương thức thanh toán, hoàn tiền và tích điểm thưởng trên Biteo',
+    paymentPolicyPart1: 'PHẦN I - QUY ĐỊNH CHUNG',
+    paymentPolicyPart2: 'PHẦN II - PHƯƠNG THỨC VÀ QUY TRÌNH THANH TOÁN',
+    paymentPolicyPart3: 'PHẦN III - HOÀN TIỀN',
+    paymentPolicyPart4: 'PHẦN IV - ĐIỂM THƯỞNG VÀ HẠNG THÀNH VIÊN',
+    paymentPolicyPart5: 'PHẦN V - ĐỐI SOÁT, TRA SOÁT VÀ BẢO VỆ THÔNG TIN',
+    paymentPolicyContactTitle: 'Cần hỗ trợ về thanh toán?',
+
+    // Payment Policy Articles - Part I
+    paymentPolicyArt1Title: 'Điều 1. Phạm vi điều chỉnh',
+    paymentPolicyArt1Content: '1. Chính sách này quy định phương thức và quy trình thanh toán; xác nhận, tra soát và xử lý giao dịch lỗi; hoàn tiền; đối soát khoản thanh toán; và việc tích, hoàn, sử dụng, điều chỉnh, thu hồi điểm thưởng trên Nền tảng Biteo.\n2. Chính sách áp dụng đối với người mua/người dùng, người bán, người livestream bán hàng, Affiliate/người tiếp thị liên kết, tổ chức cung ứng dịch vụ thanh toán, đối tác logistics và các chủ thể liên quan.\n3. Việc đổi, trả hàng hóa hoặc chấm dứt dịch vụ còn tuân theo Chính sách giao hàng, đổi trả và thu hồi hàng hóa; điều kiện của người bán; điều kiện riêng của hàng hóa/dịch vụ; và quy định pháp luật bắt buộc.',
+
+    paymentPolicyArt2Title: 'Điều 2. Vai trò của Biteo và đối tác thanh toán',
+    paymentPolicyArt2Content: '1. Biteo cung cấp giao diện đặt hàng, kết nối kỹ thuật, ghi nhận trạng thái, hỗ trợ tra soát và điều phối xử lý giao dịch trên Nền tảng.\n2. Thanh toán trực tuyến được cung ứng thông qua ngân hàng, tổ chức cung ứng dịch vụ thanh toán hoặc tổ chức cung ứng dịch vụ trung gian thanh toán có quyền cung ứng dịch vụ theo pháp luật và theo hợp đồng với Biteo.\n3. Biteo không tự nhận là tổ chức cung ứng dịch vụ trung gian thanh toán, không phát hành phương tiện thanh toán và không nhận tiền gửi của người dùng, trừ khi Biteo được cấp phép hoặc pháp luật cho phép.\n4. Việc thu hộ, giữ, chuyển, giải ngân hoặc hoàn tiền chỉ được thực hiện bởi chủ thể có thẩm quyền và theo mô hình thực tế đã được phê duyệt.',
+
+    paymentPolicyArt3Title: 'Điều 3. Nguyên tắc chung',
+    paymentPolicyArt3Content: '1. Người mua được lựa chọn trong số các phương thức thanh toán hợp pháp được hiển thị cho giao dịch cụ thể.\n2. Trước khi xác nhận đặt hàng, hệ thống hiển thị giá hàng hóa/dịch vụ, thuế, phí giao hàng, phí dịch vụ, phụ phí, khoản giảm giá, điểm sử dụng và tổng số tiền phải thanh toán.\n3. Biteo và các bên liên quan không được thu khoản chưa được công khai hoặc tự ý thay đổi tổng tiền sau khi hợp đồng được giao kết, trừ trường hợp có căn cứ pháp luật và sự chấp thuận hợp lệ của người mua.\n4. Trạng thái thanh toán, hoàn tiền và điểm thưởng phải có khả năng tra cứu; sai lệch được tra soát và điều chỉnh trên cơ sở dữ liệu giao dịch, chứng từ và quy định pháp luật.\n5. Không điều khoản nào của Chính sách này được hiểu là loại trừ quyền bắt buộc của người tiêu dùng hoặc miễn trách nhiệm mà pháp luật quy định một chủ thể phải chịu.',
+
+    paymentPolicyArt4Title: 'Điều 4. Giải thích từ ngữ',
+    paymentPolicyArt4Content: '1. Thanh toán thành công là giao dịch được đối tác thanh toán xác nhận thành công và Biteo nhận được thông điệp dữ liệu hợp lệ để cập nhật trạng thái.\n2. Giao dịch lỗi gồm trường hợp bị trừ tiền nhưng không ghi nhận đơn; ghi nhận trùng; sai số tiền; trạng thái giữa các hệ thống không thống nhất; giao dịch nghi ngờ hoặc trường hợp kỹ thuật khác cần tra soát.\n3. Hoàn tiền là việc hoàn trả toàn bộ hoặc một phần khoản đã thanh toán theo kết quả hủy đơn, đổi trả, chấm dứt dịch vụ, tra soát lỗi hoặc căn cứ hợp pháp khác.\n4. Điểm thưởng/điểm tích lũy là quyền lợi khuyến mại hoặc khách hàng thân thiết do Biteo/chủ thể tài trợ ghi nhận theo thể lệ; không phải tiền, tiền gửi, tiền điện tử, tài sản mã hóa hoặc phương tiện thanh toán.\n5. Điểm chờ ghi nhận là điểm chưa đủ điều kiện sử dụng do giao dịch chưa hoàn tất hoặc đang trong thời hạn đổi trả, tra soát hay kiểm tra gian lận.\n6. Đối soát là việc đối chiếu đơn hàng, dòng tiền, hoàn tiền, phí, giảm giá, điểm và khoản điều chỉnh giữa các hệ thống/bên liên quan.',
+
+    // Payment Policy Articles - Part II
+    paymentPolicyArt5Title: 'Điều 5. Phương thức thanh toán',
+    paymentPolicyArt5Content: 'Tùy giao dịch và cấu hình thực tế, Biteo có thể hỗ trợ:\n1. Thanh toán khi nhận hàng (COD)\n2. Thẻ ngân hàng nội địa hoặc quốc tế\n3. Chuyển khoản hoặc mã QR qua ngân hàng\n4. Ví điện tử hoặc cổng thanh toán của đối tác\n5. Phương thức thanh toán hợp pháp khác được công khai trước khi người mua xác nhận.\n\nBiteo không sử dụng dịch vụ thanh toán di động của doanh nghiệp viễn thông nếu chưa được phép và chưa công khai hợp lệ.',
+
+    paymentPolicyArt6Title: 'Điều 6. Quy trình thanh toán COD',
+    paymentPolicyArt6Content: '1. Người mua lựa chọn COD nếu người bán, đối tác logistics và loại hàng hóa/khu vực giao hàng hỗ trợ.\n2. Người mua thanh toán số tiền hiển thị trên đơn hàng cho nhân viên giao nhận bằng phương thức được đơn vị logistics chấp nhận và nhận xác nhận/biên nhận phù hợp.\n3. Đối tác logistics thực hiện thu hộ, đối soát và chuyển tiền cho người bán/chủ thể nhận tiền theo hợp đồng, giấy phép và quy định pháp luật áp dụng.\n4. Trạng thái "đã giao" hoặc "đã thu COD" được cập nhật từ dữ liệu của đối tác. Nếu có sai lệch, Biteo phối hợp tra soát.\n5. Người mua không chuyển tiền COD vào tài khoản cá nhân hoặc đường dẫn ngoài hệ thống theo yêu cầu không được Biteo/người bán xác nhận chính thức.',
+
+    paymentPolicyArt7Title: 'Điều 7. Quy trình thanh toán trực tuyến',
+    paymentPolicyArt7Content: '1. Người mua kiểm tra đơn hàng, địa chỉ, mã khuyến mại, điểm sử dụng, phí và tổng tiền; chọn phương thức thanh toán và xác nhận.\n2. Hệ thống chuyển người mua đến giao diện/kết nối an toàn của đối tác thanh toán. Người mua thực hiện xác thực theo yêu cầu của đối tác.\n3. Đối tác xử lý giao dịch và gửi kết quả. Biteo ghi nhận mã đơn hàng, mã giao dịch, số tiền, phương thức, thời điểm và trạng thái cần thiết.\n4. Đối với đơn thanh toán trước, hệ thống có thể tự động xác nhận đơn khi nhận tín hiệu thanh toán thành công.\n5. Tiền được chuyển, quản lý và giải ngân theo mô hình của đối tác có thẩm quyền và thỏa thuận áp dụng.',
+
+    paymentPolicyArt8Title: 'Điều 8. Xác nhận và thời điểm ghi nhận thanh toán',
+    paymentPolicyArt8Content: '1. Thanh toán trực tuyến được ghi nhận thành công khi Biteo nhận được thông điệp xác nhận hợp lệ từ đối tác và cập nhật trạng thái "Thanh toán thành công" hoặc trạng thái tương đương.\n2. Thông báo trừ tiền từ ngân hàng nhưng đơn hàng chưa được Biteo ghi nhận là trường hợp cần tra soát, không tự động chứng minh Biteo/người bán đã nhận tiền.\n3. Đối với COD, thanh toán được ghi nhận theo dữ liệu thu hộ/giao nhận của đối tác và kết quả đối soát.\n4. Biteo gửi hoặc hiển thị xác nhận điện tử gồm tối thiểu mã đơn hàng, số tiền, phương thức, trạng thái và thời điểm.\n5. Người mua phải kiểm tra trạng thái trước khi thanh toán lại để tránh giao dịch trùng.',
+
+    paymentPolicyArt9Title: 'Điều 9. Giao dịch đang xử lý, thất bại hoặc lỗi',
+    paymentPolicyArt9Content: '1. Nếu trạng thái là "đang xử lý", người mua không thực hiện lại cho đến khi hết thời gian chờ hoặc nhận hướng dẫn từ Biteo.\n2. Nếu giao dịch thất bại và không bị trừ tiền, người mua có thể lựa chọn phương thức khác hoặc đặt lại theo hướng dẫn.\n3. Nếu bị trừ tiền nhưng đơn không ghi nhận, thanh toán trùng, sai số tiền hoặc có chênh lệch trạng thái, người mua gửi yêu cầu tra soát.\n4. Biteo khóa việc xác nhận trùng khi có thể, bảo toàn log, phối hợp đối tác thanh toán và không yêu cầu người mua cung cấp mật khẩu, mã PIN, OTP, mã CVV/CVC.\n5. Kết quả có thể là xác nhận giao dịch, cập nhật đơn, hủy bút toán, hoàn tiền hoặc biện pháp khác.',
+
+    paymentPolicyArt10Title: 'Điều 10. An toàn thanh toán và phòng chống gian lận',
+    paymentPolicyArt10Content: '1. Người dùng chỉ thanh toán qua chức năng, tài khoản và mã được hiển thị/xác nhận chính thức trên Biteo; không chuyển tiền ngoài quy trình cho người tự xưng là nhân viên Biteo.\n2. Người dùng bảo mật tài khoản, thiết bị và yếu tố xác thực; thông báo ngay khi nghi ngờ giao dịch trái phép.\n3. Biteo/đối tác có thể xác minh, tạm dừng xử lý hoặc tra soát giao dịch có dấu hiệu gian lận, chiếm quyền tài khoản, rửa tiền, giao dịch vòng tròn, lạm dụng khuyến mại.\n4. Biện pháp kiểm soát phải có căn cứ, tương xứng và không được tùy tiện chiếm giữ tiền. Chủ thể bị ảnh hưởng được thông báo trong phạm vi pháp luật cho phép và có quyền giải trình.',
+
+    // Payment Policy Articles - Part III
+    paymentPolicyArt11Title: 'Điều 11. Các căn cứ hoàn tiền',
+    paymentPolicyArt11Content: 'Hoàn tiền được xem xét khi:\n1. Giao dịch bị trừ tiền nhưng không ghi nhận đơn và kết quả tra soát xác định phải hoàn\n2. Giao dịch bị thu trùng hoặc thu sai số tiền\n3. Đơn hàng bị hủy hợp lệ trước khi thực hiện\n4. Yêu cầu đổi/trả, hàng hóa khuyết tật, giao sai/thiếu/hỏng hoặc dịch vụ không đúng thỏa thuận được chấp thuận\n5. Dịch vụ/gói trả phí bị chấm dứt và thuộc trường hợp được hoàn\n6. Người bán/Biteo không thể cung cấp hàng hóa/dịch vụ\n7. Giao dịch giả mạo/trái phép được xác minh thuộc trường hợp hoàn\n8. Có quyết định của cơ quan có thẩm quyền hoặc căn cứ khác theo pháp luật, thỏa thuận và chính sách đã công khai.',
+
+    paymentPolicyArt12Title: 'Điều 12. Phân biệt loại yêu cầu hoàn tiền',
+    paymentPolicyArt12Content: '1. Hoàn do lỗi thanh toán: Biteo phối hợp trực tiếp với đối tác thanh toán để tra soát dòng tiền.\n2. Hoàn do hủy/đổi trả hàng hóa: trước hết phải xác định điều kiện hủy/đổi trả, trách nhiệm của người bán, logistics hoặc bên liên quan; sau khi phương án được duyệt mới thực hiện hoàn.\n3. Hoàn do chấm dứt dịch vụ: căn cứ điều kiện của gói, phần dịch vụ đã sử dụng, khoản không hoàn lại hợp pháp và quyền bắt buộc của người tiêu dùng.\n4. Một vụ việc có thể đồng thời thuộc nhiều nhóm; Biteo cấp một mã hồ sơ hoặc liên kết các mã để người mua theo dõi xuyên suốt.',
+
+    paymentPolicyArt13Title: 'Điều 13. Số tiền và thứ tự hoàn',
+    paymentPolicyArt13Content: '1. Số tiền hoàn có thể toàn bộ hoặc một phần, căn cứ số tiền thực trả, giá trị hàng/dịch vụ được chấp thuận hoàn, phí giao hàng/hoàn hàng, trách nhiệm của các bên và pháp luật.\n2. Đối với đơn dùng đồng thời tiền, voucher và điểm, nguyên tắc dự kiến là: hoàn tiền trước, sau đó voucher, cuối cùng là điểm (hoặc theo thứ tự sử dụng ngược lại).\n3. Điểm đã dùng được hoàn lại theo hạn gốc; nếu đã hết hạn, áp dụng cơ chế gia hạn hoặc điểm thay thế.\n4. Phí giao hàng được hoàn khi toàn bộ đơn bị hủy/hoàn do lỗi không thuộc người mua.',
+
+    paymentPolicyArt14Title: 'Điều 14. Thời hạn hoàn tiền',
+    paymentPolicyArt14Content: '1. Thời hạn dự kiến được công khai tại thời điểm duyệt hoàn.\n2. Đối với hoàn do hủy/đổi trả, thời hạn dự kiến: [BITEO BỔ SUNG] kể từ khi đủ hồ sơ/căn cứ và phương án được duyệt.\n3. Đối với hoàn do lỗi thanh toán, thời hạn dự kiến: 03-07 ngày làm việc kể từ khi các bên xác nhận lỗi.\n4. Biteo thông báo số tiền, phương thức, mã hoàn, ngày khởi tạo và thời gian dự kiến. Nếu quá hạn dự kiến, người mua có thể yêu cầu tra soát.',
+
+    paymentPolicyArt15Title: 'Điều 15. Hồ sơ và quy trình hoàn tiền',
+    paymentPolicyArt15Content: '1. Người mua gửi yêu cầu qua đơn hàng/Trung tâm hỗ trợ, nêu mã đơn, giao dịch, lý do, khoản yêu cầu và chứng cứ cần thiết.\n2. Biteo xác nhận tiếp nhận, phân loại theo Điều 12 và yêu cầu bổ sung một lần hoặc theo nhu cầu hợp lý nếu hồ sơ chưa đủ.\n3. Người bán, logistics và đối tác thanh toán phải cung cấp thông tin, log, biên nhận hoặc giải trình trong phạm vi trách nhiệm.\n4. Biteo thông báo quyết định chấp thuận/từ chối, căn cứ, khoản hoàn, bên chịu chi phí và cơ chế yêu cầu xem xét lại.\n5. Sau khi khởi tạo hoàn, Biteo cập nhật trạng thái và lưu hồ sơ phục vụ tra soát, khiếu nại và yêu cầu hợp pháp.',
+
+    paymentPolicyArt16Title: 'Điều 16. Tạm giữ, bù trừ và thu hồi khoản hoàn sai',
+    paymentPolicyArt16Content: '1. Tiền của người bán chỉ bị tạm giữ hoặc bù trừ trong phạm vi thỏa thuận và pháp luật khi có yêu cầu hoàn, tranh chấp, dấu hiệu gian lận, nghĩa vụ bồi hoàn hoặc yêu cầu hợp lệ của cơ quan có thẩm quyền.\n2. Biteo phải ghi nhận lý do, số tiền, thời điểm và trạng thái; cung cấp dữ liệu đối soát và cơ chế giải trình cho người bán.\n3. Nếu hoàn trùng, hoàn nhầm hoặc người nhận đồng thời nhận được hàng/quyền lợi trái căn cứ, Biteo có thể yêu cầu hoàn trả hoặc bù trừ sau khi thông báo và cung cấp căn cứ.\n4. Khi sai sót thuộc Biteo/đối tác, quyền lợi hợp pháp của người dùng được khôi phục và chi phí xử lý không được chuyển cho người dùng trái pháp luật.',
+
+    // Payment Policy Articles - Part IV
+    paymentPolicyArt17Title: 'Điều 17. Bản chất và phạm vi điểm thưởng',
+    paymentPolicyArt17Content: '1. Điểm thưởng được quản lý trong mục "Loyalty & Phần thưởng/Điểm tích lũy" của tài khoản và chỉ sử dụng theo thể lệ từng chương trình.\n2. Điểm không được quy đổi để rút tiền mặt, không sinh lãi, không phải số dư thanh toán, không dùng chuyển tiền giữa người dùng và không được mua bán/chuyển nhượng.\n3. Điểm không bảo đảm một giá trị cố định ngoài phạm vi, tỷ lệ và thời hạn được công khai. Biteo không gọi điểm là "tiền", "ví", "tài sản đầu tư" hoặc cam kết bảo toàn giá trị.\n4. Chương trình điểm có thể do Biteo, người bán hoặc đối tác tài trợ; giao diện phải nhận diện chủ thể tài trợ và trách nhiệm thực hiện quyền lợi.',
+
+    paymentPolicyArt18Title: 'Điều 18. Tích và ghi nhận điểm',
+    paymentPolicyArt18Content: '1. Điểm có thể được tích từ đơn hàng hợp lệ, hoạt động thành viên, chiến dịch hoặc hành vi khác được công bố.\n2. Thể lệ phải nêu: đối tượng, hành vi/đơn hàng được tính; tỷ lệ/công thức; giá trị làm căn cứ; thời điểm ghi nhận; giới hạn; thời hạn và trường hợp loại trừ.\n3. Điểm từ giao dịch được ghi ở trạng thái chờ cho đến khi đơn hoàn tất và hết thời hạn đổi trả; sau đó chuyển sang khả dụng.\n4. Giao dịch hủy/hoàn, đơn giả, tự giao dịch/cấu kết, lạm dụng tài khoản, vi phạm điều kiện hoặc lỗi hệ thống không được tích hoặc có thể bị thu hồi điểm tương ứng.',
+
+    paymentPolicyArt19Title: 'Điều 19. Sử dụng, giới hạn và hết hạn điểm',
+    paymentPolicyArt19Content: '1. Điểm khả dụng có thể được dùng để đổi ưu đãi, voucher, quà tặng, quyền lợi hạng thành viên hoặc giảm một phần giá trị đơn hàng theo thể lệ.\n2. Hệ thống hiển thị số điểm sử dụng, giá trị giảm và tổng tiền trước khi xác nhận. Điểm không được dùng cho khoản pháp luật hoặc thể lệ loại trừ.\n3. Biteo hiển thị ngày hết hạn và gửi cảnh báo trước qua email/tin nhắn.\n4. Điểm hết hạn tự động mất hiệu lực nếu thời hạn và cảnh báo đã được công khai hợp lý; không áp dụng hết hạn hồi tố đối với điểm đã tích.',
+
+    paymentPolicyArt20Title: 'Điều 20. Hoàn, điều chỉnh và thu hồi điểm',
+    paymentPolicyArt20Content: '1. Khi đơn bị hủy hoặc hoàn toàn bộ, điểm đã dùng được hoàn lại theo hạn gốc; điểm đã tích từ đơn đó bị hủy hoặc thu hồi.\n2. Khi hoàn một phần, số điểm hoàn/thu hồi được tính theo công thức phân bổ tương ứng.\n3. Nếu điểm hoàn lại đã hết hạn trong thời gian xử lý hợp lệ, Biteo áp dụng cơ chế gia hạn hoặc điểm thay thế.\n4. Biteo có thể điều chỉnh/thu hồi điểm ghi nhận nhầm, giao dịch hủy/hoàn hoặc gian lận có căn cứ; phải hiển thị lịch sử, lý do và cơ chế khiếu nại.',
+
+    paymentPolicyArt21Title: 'Điều 21. Hạng thành viên và thay đổi chương trình điểm',
+    paymentPolicyArt21Content: '1. Điều kiện xếp hạng, kỳ xét hạng, quyền lợi, duy trì, nâng/hạ hạng và tác động của hủy/hoàn phải được công khai trong Thể lệ Loyalty.\n2. Biteo có thể sửa đổi hoặc chấm dứt chương trình vì lý do hợp pháp nhưng phải thông báo rõ nội dung, ngày hiệu lực, điểm đã tích, thời gian chuyển tiếp và phương án sử dụng/hoàn quyền lợi.\n3. Thời hạn thông báo thay đổi bất lợi đối với điểm đã tích: không dưới 20 ngày.\n4. Thể lệ không được cho phép tước toàn bộ điểm đã tích mà không có thời gian sử dụng hợp lý, trừ gian lận, lỗi ghi nhận hoặc căn cứ pháp luật.',
+
+    // Payment Policy Articles - Part V
+    paymentPolicyArt22Title: 'Điều 22. Đối soát với người bán và đối tác',
+    paymentPolicyArt22Content: '1. Biteo/đối tác thanh toán thực hiện đối soát, khấu trừ phí/hoa hồng, hoàn tiền, tạm giữ khi có tranh chấp và thanh toán cho người bán theo hợp đồng và pháp luật.\n2. Kỳ đối soát, thời điểm giải ngân, ngưỡng và phương thức rút/nhận tiền được quy định cụ thể.\n3. Người bán được truy cập báo cáo gồm đơn hàng, số tiền thu, hủy/hoàn, phí, hoa hồng, thuế, điểm/khuyến mại tài trợ, khoản giữ/bù trừ và số tiền thực nhận.\n4. Khi dữ liệu giữa Biteo và đối tác khác nhau, các bên đối chiếu mã giao dịch, log hệ thống, chứng từ dòng tiền và lập kết quả tra soát.',
+
+    paymentPolicyArt23Title: 'Điều 23. Tra soát và khiếu nại',
+    paymentPolicyArt23Content: '1. Kênh tiếp nhận: mục hỗ trợ trên ứng dụng; email hỗ trợ; hotline.\n2. Người yêu cầu cung cấp mã đơn/giao dịch, thời gian, số tiền, phương thức, nội dung tranh chấp và ảnh chụp/biên nhận/sao kê đã che thông tin không cần thiết.\n3. Biteo xác nhận tiếp nhận trong thời hạn quy định; phản hồi kết quả trong thời hạn xử lý, hoặc thông báo lý do và tiến độ nếu cần phối hợp đối tác.\n4. Khiếu nại về điểm gồm trường hợp không ghi nhận, bị trừ sai, hết hạn sai hoặc tranh chấp quyền lợi thành viên; Biteo cung cấp lịch sử biến động và căn cứ xử lý.\n5. Người dùng có quyền yêu cầu xem xét lại, hòa giải, trọng tài, khởi kiện hoặc yêu cầu cơ quan có thẩm quyền theo pháp luật.',
+
+    paymentPolicyArt24Title: 'Điều 24. Thông tin thanh toán và bằng chứng điện tử',
+    paymentPolicyArt24Content: '1. Biteo chỉ xử lý thông tin thanh toán cần thiết như phương thức, mã giao dịch, số tiền, thời gian và trạng thái; không lưu dữ liệu thẻ nhạy cảm nếu không cần thiết/không được phép.\n2. Biteo và đối tác áp dụng xác thực, mã hóa đường truyền, phân quyền, lưu log, giám sát và xử lý sự cố phù hợp; không yêu cầu người dùng gửi OTP, PIN, CVV/CVC hoặc mật khẩu.\n3. Dữ liệu đơn hàng, thanh toán, hoàn tiền, đối soát, điểm và xác nhận điện tử được lưu trong thời hạn pháp luật/chính sách dữ liệu quy định.\n4. Việc xử lý dữ liệu cá nhân tuân theo Chính sách bảo mật và bảo vệ dữ liệu cá nhân của Biteo và pháp luật áp dụng.',
+
+    paymentPolicyArt25Title: 'Điều 25. Vị trí công khai và thông tin phải hiển thị',
+    paymentPolicyArt25Content: '1. Chính sách này được liên kết rõ ràng từ màn hình chính/trang chủ, Trung tâm pháp lý, mục Tài khoản và trang thanh toán/đơn hàng của Biteo.\n2. Tại từng giao dịch, Biteo hiển thị lại phương thức, bên cung ứng thanh toán, tổng tiền, khoản giảm/điểm, điều kiện chính về hủy/hoàn và đường dẫn đến Chính sách trước khi xác nhận.\n3. Thể lệ điểm/loyalty được công khai tại "Loyalty & Phần thưởng", kèm tỷ lệ, giới hạn, thời hạn, lịch sử điểm và kênh khiếu nại.',
+
+    paymentPolicyArt26Title: 'Điều 26. Thứ tự áp dụng',
+    paymentPolicyArt26Content: '1. Khi có khác biệt, thứ tự áp dụng gồm: quy định pháp luật bắt buộc; điều kiện giao dịch/đơn hàng cụ thể đã được chấp thuận; thể lệ khuyến mại/điểm áp dụng cho giao dịch; Chính sách này; Quy chế hoạt động chung.\n2. Điều kiện của đối tác thanh toán áp dụng đối với dịch vụ do đối tác cung cấp nhưng không làm giảm nghĩa vụ mà Biteo/người bán phải chịu theo pháp luật.\n3. Chính sách hoàn tiền không thay thế chính sách đổi trả; quyết định đổi/trả là căn cứ đầu vào cho xử lý dòng tiền, trừ hoàn do lỗi thanh toán.',
+
+    paymentPolicyArt27Title: 'Điều 27. Hiệu lực và liên hệ',
+    paymentPolicyArt27Content: '1. Chính sách có hiệu lực từ ngày được phê duyệt và công bố.\n2. Biteo lưu phiên bản, ngày công khai và lịch sử thay đổi. Thay đổi ảnh hưởng đến giá/phí được thông báo theo thời hạn tối thiểu của pháp luật; thay đổi trọng yếu khác được thông báo trước trong thời gian hợp lý.\n3. Chủ quản Nền tảng: [BITEO BỔ SUNG TÊN PHÁP LÝ]; địa chỉ; email; hotline.\n4. Chính sách này được đọc cùng Quy chế hoạt động, Chính sách giá/phí/hoa hồng, Chính sách giao hàng/đổi trả/thu hồi, Quy trình khiếu nại, Thỏa thuận người bán và Chính sách bảo mật của Biteo.',
+
+    // Display Policy Page
+    displayPolicyPageTitle: 'Chính sách Ưu tiên, Hạn chế và Xếp hạng Hiển thị',
+    displayPolicyPageSubtitle: 'Quy định về cách nội dung được sắp xếp và hiển thị trên Biteo',
+    displayPolicyPart1: 'PHẦN I - QUY ĐỊNH CHUNG',
+    displayPolicyPart2: 'PHẦN II - PHẠM VI VÀ TIÊU CHÍ XẾP HẠNG',
+    displayPolicyPart3: 'PHẦN III - CƠ CHẾ THEO TỪNG BỀ MẶT HIỂN THỊ',
+    displayPolicyPart4: 'PHẦN IV - CÁ NHÂN HÓA VÀ DỮ LIỆU',
+    displayPolicyPart5: 'PHẦN V - HẠN CHẾ HIỂN THỊ VÀ CHỐNG THAO TÚNG',
+    displayPolicyPart6: 'PHẦN VI - THÔNG BÁO VÀ GIẢI TRÌNH',
+    displayPolicyContactTitle: 'Cần hỗ trợ về xếp hạng hiển thị?',
+
+    // Complaint Handling Page
+    complaintHandlingPageTitle: 'Quy trình Tiếp nhận và Giải quyết Phản ánh, Yêu cầu, Khiếu nại',
+    complaintHandlingPageSubtitle: 'Hướng dẫn quy trình khiếu nại và giải quyết tranh chấp trên Biteo',
+    complaintHandlingPart1: 'PHẦN I - QUY ĐỊNH CHUNG',
+    complaintHandlingPart2: 'PHẦN II - PHẠM VI VÀ KÊNH TIẾP NHẬN',
+    complaintHandlingPart3: 'PHẦN III - HỒ SƠ VÀ TIẾP NHẬN',
+    complaintHandlingPart4: 'PHẦN IV - PHÂN LOẠI VÀ QUY TRÌNH GIẢI QUYẾT',
+    complaintHandlingPart5: 'PHẦN V - QUY TRÌNH CHUYÊN BIỆT',
+    complaintHandlingPart6: 'PHẦN VI - QUYỀN, TRÁCH NHIỆM VÀ XEM XÉT LẠI',
+    complaintHandlingContactTitle: 'Cần hỗ trợ về khiếu nại?',
+
+    // Operating Regulations Page
+    operatingRegulationsPageTitle: 'Quy chế Hoạt động của Biteo',
+    operatingRegulationsPageSubtitle: 'Quy chế về việc sử dụng nền tảng Biteo',
+    operatingRegulationsIntro: 'Tổng quan về Quy chế Hoạt động',
+    operatingRegulationsIntroContent: 'Quy chế này quy định các điều khoản và điều kiện áp dụng cho việc sử dụng nền tảng Biteo.',
+    operatingRegulationsContactTitle: 'Cần hỗ trợ về quy chế?',
+
+    // Livestream Regulations Page
+    livestreamRegulationsPageTitle: 'Quy chế Hoạt động Livestream Bán hàng',
+    livestreamRegulationsPageSubtitle: 'Quy định về việc livestream bán hàng trên Biteo',
+    livestreamRegulationsIntro: 'Tổng quan về Quy chế Livestream',
+    livestreamRegulationsIntroContent: 'Quy chế này quy định các điều kiện và trách nhiệm liên quan đến việc livestream bán hàng trên nền tảng Biteo.',
+    livestreamRegulationsContactTitle: 'Cần hỗ trợ về livestream?',
 
     // Registration Pages
     registrationTitle: 'Đăng ký',
@@ -496,6 +929,203 @@ const translations: Record<Language, Record<string, string>> = {
     startShopping: 'Bắt đầu mua sắm ngay hôm nay!',
     startShoppingDesc: 'Tải ứng dụng Biteo và trải nghiệm dịch vụ đi chợ hộ tiện lợi. Đơn hàng đầu tiên được miễn phí giao hàng!',
 
+    // Di Cho Ho Page - Detailed
+    groceryPageTitle: 'ĐI CHỢ HỘ – MUA SẮM TIỆN LỢI NGAY TẠI NƠI BẠN SỐNG',
+    groceryPageHeroTag: 'Mua thực phẩm và nhu yếu phẩm nhanh chóng, tiện lợi – không cần mất thời gian ra chợ',
+    groceryPageIntroTitle: 'Đi chợ hộ Biteo giúp gì cho bạn?',
+    groceryPageIntroDesc: 'Đi chợ hộ Biteo là dịch vụ giúp người dùng dễ dàng mua thực phẩm, hàng tiêu dùng và các nhu yếu phẩm cần thiết từ những cửa hàng, chợ và người bán tại khu vực của mình.',
+    groceryPageIntroText1: 'Thay vì phải dành thời gian đi chợ, tìm kiếm sản phẩm, xách đồ về nhà, người dùng có thể tìm sản phẩm – lựa chọn – đặt mua – thanh toán – nhận hàng tận nơi ngay trên Biteo.',
+    groceryPageIntroText2: 'Mục tiêu là mang đến một trải nghiệm mua sắm nhanh chóng, thuận tiện và phù hợp với nhu cầu thực tế của từng khu vực.',
+    groceryPageSlogan: 'Cần mua → Tìm hàng → Chọn hàng → Đặt hàng → Giao tận nơi',
+    groceryPageIntroText3: 'Đi chợ hộ đặc biệt phù hợp với những lúc người dùng:',
+    groceryPageIntroText4: 'Biteo hướng đến việc biến nhu cầu mua sắm hằng ngày thành một hành trình đơn giản.',
+    groceryPageIntroText5: 'Đồng thời, dịch vụ tạo ra kết nối giữa người tiêu dùng, tiểu thương, cửa hàng, nhà cung cấp và đơn vị logistics, góp phần đưa hoạt động mua sắm truyền thống lên môi trường số.',
+    groceryPageEmoji1: '🥬 Tìm thực phẩm',
+    groceryPageEmoji2: '🧺 Chọn nhu yếu phẩm',
+    groceryPageEmoji3: '🛒 Đặt hàng',
+    groceryPageEmoji4: '🚚 Giao tận nơi',
+    groceryPageOutro: 'Biteo – Đi chợ tiện lợi, kết nối hàng hóa ngay gần bạn.',
+
+    // Section 1
+    groceryS1Title: 'Mua thực phẩm ngay gần bạn',
+    groceryS1SubTitle: '🥬 Tìm thực phẩm tươi sạch',
+    groceryS1Desc: 'Bạn cần mua thực phẩm cho bữa ăn hôm nay? Biteo giúp bạn khám phá và lựa chọn những sản phẩm đang được cung cấp tại khu vực mình sinh sống.',
+    groceryS1SubDesc: 'Người dùng có thể bắt đầu từ nhu cầu đơn giản: "Hôm nay cần mua gì?" và tìm kiếm, lựa chọn những sản phẩm phù hợp ngay trên Biteo.',
+    groceryS1Item1: 'Rau củ quả',
+    groceryS1Item2: 'Thịt, cá, hải sản',
+    groceryS1Item3: 'Trứng',
+    groceryS1Item4: 'Thực phẩm tươi sống',
+    groceryS1Item5: 'Thực phẩm khô',
+    groceryS1Item6: 'Gia vị',
+    groceryS1Item7: 'Đồ uống',
+    groceryS1Item8: 'Đồ dùng thiết yếu',
+    groceryS1Item9: 'Sản phẩm tiêu dùng hằng ngày',
+    groceryS1Note: '"Hôm nay cần mua gì?" - Bắt đầu từ nhu cầu đơn giản, tìm và chọn sản phẩm phù hợp ngay trên Biteo.',
+
+    // Section 2
+    groceryS2Title: 'Đi chợ ngay tại khu vực của bạn',
+    groceryS2Desc: 'Điểm khác biệt quan trọng của Đi chợ hộ là hướng đến nhu cầu mua sắm tại nơi người dùng đang sinh sống. Thay vì chỉ tìm kiếm một sản phẩm chung chung, người dùng có thể tiếp cận những cửa hàng, người bán và nguồn hàng trong khu vực.',
+    groceryS2Flow: 'Hành trình đi chợ hộ',
+    groceryS2Step1: 'Xác định khu vực',
+    groceryS2Step2: 'Tìm cửa hàng',
+    groceryS2Step3: 'Chọn sản phẩm',
+    groceryS2Step4: 'Đặt hàng',
+    groceryS2Step5: 'Thanh toán',
+    groceryS2Step6: 'Giao tận nơi',
+    groceryS2Note: 'Điều này giúp rút ngắn khoảng cách giữa người mua – người bán – sản phẩm – đơn hàng.',
+
+    // Section 3
+    groceryS3Title: 'Mua nhiều loại hàng trong một lần',
+    groceryS3Desc: 'Một chuyến đi chợ thường không chỉ mua một món. Đi chợ hộ Biteo hướng đến việc giúp người dùng tổng hợp những nhu cầu đó thành một trải nghiệm mua sắm thuận tiện hơn.',
+    groceryS3SubDesc: 'Ví dụ một giỏ hàng đi chợ:',
+    groceryS3Item1: 'Rau',
+    groceryS3Item2: 'Thịt',
+    groceryS3Item3: 'Cá',
+    groceryS3Item4: 'Trứng',
+    groceryS3Item5: 'Gia vị',
+    groceryS3Item6: 'Đồ uống',
+    groceryS3Item7: 'Nhu yếu phẩm',
+    groceryS3Note: 'Thay vì phải di chuyển qua nhiều nơi, người dùng có thể tìm kiếm, lựa chọn và đặt những sản phẩm cần thiết trên cùng một nền tảng.',
+
+    // Section 4
+    groceryS4Title: 'Dễ dàng tìm sản phẩm cần mua',
+    groceryS4Desc: 'Người dùng có thể tìm kiếm theo nhu cầu thực tế.',
+    groceryS4SubDesc: 'Ví dụ các từ khóa tìm kiếm:',
+    groceryS4Item1: 'Tên sản phẩm',
+    groceryS4Item2: 'Nhóm thực phẩm',
+    groceryS4Item3: 'Nhu yếu phẩm',
+    groceryS4Item4: 'Cửa hàng',
+    groceryS4Item5: 'Người bán',
+    groceryS4Item6: 'Khu vực',
+    groceryS4Note: 'Từ "Rau xanh", "Thịt bò", "Cá tươi", "Trứng gà", "Gia vị" – nhanh chóng tiếp cận những lựa chọn phù hợp.',
+
+    // Section 5
+    groceryS5Title: 'Kết nối chợ, cửa hàng và người bán địa phương',
+    groceryS5Desc: 'Đi chợ hộ không chỉ phục vụ người mua mà còn tạo thêm kênh tiếp cận khách hàng cho người bán tại địa phương.',
+    groceryS5Item1: 'Tiểu thương',
+    groceryS5Item2: 'Cửa hàng thực phẩm',
+    groceryS5Item3: 'Cửa hàng tiện lợi',
+    groceryS5Item4: 'Hộ kinh doanh',
+    groceryS5Item5: 'Người bán thực phẩm',
+    groceryS5Item6: 'Nhà cung cấp',
+    groceryS5Item7: 'Cơ sở sản xuất',
+    groceryS5Item8: 'Đơn vị kinh doanh hàng tiêu dùng',
+    groceryS5Note: 'Người bán có thể đưa sản phẩm của mình lên nền tảng để tiếp cận khách hàng trong khu vực. Qua đó tạo thành kết nối: Người mua ↔ Người bán ↔ Sản phẩm ↔ Giao hàng',
+
+    // Section 6
+    groceryS6Title: 'Ưu tiên trải nghiệm mua thực phẩm tươi',
+    groceryS6Desc: 'Với nhóm hàng thực phẩm, người dùng đặc biệt quan tâm đến độ tươi, chất lượng, nguồn gốc và tình trạng sản phẩm khi nhận.',
+    groceryS6Item1: 'Độ tươi',
+    groceryS6Item2: 'Chất lượng',
+    groceryS6Item3: 'Nguồn gốc',
+    groceryS6Item4: 'Thời gian giao hàng',
+    groceryS6Item5: 'Cách bảo quản',
+    groceryS6Item6: 'Tình trạng sản phẩm khi nhận',
+    groceryS6Note: 'Đề án Biteo xác định đối tác logistics có thể tham gia kiểm soát chuỗi lạnh/hàng dễ hỏng nếu có, đồng thời phối hợp xử lý khiếu nại giao nhận.',
+
+    // Section 7
+    groceryS7Title: 'Đặt hàng ngay trên Biteo',
+    groceryS7Desc: 'Khi đã lựa chọn xong sản phẩm, người dùng có thể thực hiện hành trình mua sắm hoàn chỉnh.',
+    groceryS7Step1: 'Chọn sản phẩm',
+    groceryS7Step2: 'Thêm vào giỏ hàng',
+    groceryS7Step3: 'Kiểm tra đơn hàng',
+    groceryS7Step4: 'Nhập địa chỉ nhận hàng',
+    groceryS7Step5: 'Chọn phương thức thanh toán',
+    groceryS7Step6: 'Đặt hàng',
+    groceryS7Step7: 'Theo dõi đơn hàng',
+    groceryS7Note: 'Đây phù hợp với mô hình Biteo: người dùng có thể tiếp cận sản phẩm/dịch vụ, đặt hàng trực tuyến, thanh toán và nhận hàng thông qua dịch vụ logistics trên nền tảng.',
+
+    // Section 8
+    groceryS8Title: 'Giao hàng tận nơi',
+    groceryS8Desc: 'Sau khi đặt hàng, người dùng không cần tự mình ra chợ lấy hàng. Đơn hàng được chuyển sang quy trình xử lý và giao nhận.',
+    groceryS8SubDesc: 'Đề án Biteo xác định logistics có vai trò giao hàng, hoàn hàng, kiểm soát chuỗi lạnh/hàng dễ hỏng nếu có.',
+    groceryS8Step1: 'Người bán chuẩn bị hàng',
+    groceryS8Step2: 'Đơn vị giao nhận tiếp nhận',
+    groceryS8Step3: 'Vận chuyển',
+    groceryS8Step4: 'Giao đến địa chỉ',
+    groceryS8Note: 'Không cần ra chợ, không cần xách đồ về – đơn hàng được giao tận nơi theo yêu cầu.',
+
+    // Section 9
+    groceryS9Title: 'Tiết kiệm thời gian cho cuộc sống hằng ngày',
+    groceryS9Desc: 'Đi chợ hộ đặc biệt phù hợp với những lúc người dùng bận rộn hoặc không có thời gian đi chợ.',
+    groceryS9SubDesc: 'Đi chợ hộ giúp bạn khi:',
+    groceryS9Item1: 'Bận công việc',
+    groceryS9Item2: 'Không có thời gian đi chợ',
+    groceryS9Item3: 'Không muốn di chuyển xa',
+    groceryS9Item4: 'Cần mua hàng gấp',
+    groceryS9Item5: 'Cần bổ sung thực phẩm trong ngày',
+    groceryS9Item6: 'Muốn mua hàng ngay tại khu vực mình sống',
+    groceryS9Instead: 'Thay vì:',
+    groceryS9Old: 'Chuẩn bị → Di chuyển → Tìm hàng → Mua → Xách về',
+    groceryS9New: 'Mở Biteo → Chọn hàng → Đặt mua → Nhận hàng',
+
+    // Section 10
+    groceryS10Title: 'Phục vụ nhu cầu của cả gia đình',
+    groceryS10Desc: 'Đi chợ hộ không chỉ dành cho một nhóm người dùng cụ thể. Đây có thể là lựa chọn thuận tiện cho nhiều đối tượng.',
+    groceryS10Item1: 'Gia đình bận rộn',
+    groceryS10Item2: 'Người đi làm',
+    groceryS10Item3: 'Người chăm sóc gia đình',
+    groceryS10Item4: 'Người lớn tuổi cần hỗ trợ',
+    groceryS10Item5: 'Người cần mua thực phẩm thường xuyên',
+    groceryS10Item6: 'Những người muốn chủ động đặt hàng tại nhà',
+    groceryS10Note: 'Nhu cầu có thể thay đổi mỗi ngày, từ một vài món cần bổ sung đến một giỏ hàng đầy đủ cho cả gia đình.',
+
+    // Section 11
+    groceryS11Title: 'Trải nghiệm mua sắm gắn với địa phương',
+    groceryS11Desc: 'Đi chợ hộ Biteo tạo ra sự kết nối trực tiếp giữa người dùng và hệ thống cung cấp hàng hóa tại địa phương.',
+    groceryS11SubDesc: 'Ví dụ một hành trình mua sắm địa phương:',
+    groceryS11Flow: 'Hành trình mua sắm địa phương',
+    groceryS11Step1: 'Người dùng tại khu vực A',
+    groceryS11Step2: 'Tìm cửa hàng gần mình',
+    groceryS11Step3: 'Chọn rau, thịt, cá',
+    groceryS11Step4: 'Đặt hàng',
+    groceryS11Step5: 'Người bán chuẩn bị',
+    groceryS11Step6: 'Đối tác giao hàng',
+    groceryS11Step7: 'Người dùng nhận hàng',
+    groceryS11Note: 'Qua đó, hoạt động mua sắm hằng ngày trở thành một phần của hệ sinh thái kinh tế địa phương.',
+
+    // Section 12
+    groceryS12Title: 'Kết nối Đi chợ hộ với các dịch vụ khác',
+    groceryS12Desc: 'Đi chợ hộ có thể liên kết với nhiều chuyên mục khác trong hệ sinh thái Biteo.',
+    groceryS12Link1: 'Ẩm thực: Xem món ăn → tìm nguyên liệu → đặt mua',
+    groceryS12Link2: 'Video: Xem video hướng dẫn nấu ăn → mua nguyên liệu',
+    groceryS12Link3: 'Mua sắm: Khám phá sản phẩm → tìm người bán → đặt mua',
+    groceryS12Link4: 'Địa phương: Khám phá sản phẩm địa phương → mua đặc sản',
+    groceryS12Note: 'Từ đó tạo thành hành trình: Khám phá → Tìm hiểu → Lựa chọn → Mua hàng → Giao nhận → Trải nghiệm',
+
+    // Section 13
+    groceryS13Title: 'Kết nối với thương mại điện tử Biteo',
+    groceryS13Desc: 'Đi chợ hộ không phải chức năng tách rời khỏi hệ sinh thái Biteo. Biteo là nền tảng mạng xã hội tích hợp thương mại điện tử.',
+    groceryS13Flow: 'Hành trình tích hợp',
+    groceryS13Step1: 'Xem video món ăn',
+    groceryS13Step2: 'Xem nguyên liệu',
+    groceryS13Step3: 'Đi chợ hộ',
+    groceryS13Step4: 'Chọn thực phẩm',
+    groceryS13Step5: 'Đặt hàng & nhận hàng',
+    groceryS13Step6: 'Bắt đầu nấu ăn',
+    groceryS13Note: 'Đây chính là cách Đi chợ hộ có thể trở thành một phần tự nhiên trong hệ sinh thái Biteo.',
+
+    // Section 14
+    groceryS14Title: 'Giá trị của Đi chợ hộ đối với Biteo',
+    groceryS14Desc: 'Đi chợ hộ giải quyết một nhu cầu rất gần với cuộc sống hằng ngày.',
+    groceryS14Question: 'Nhu cầu của người dùng:',
+    groceryS14Quote: 'Tôi cần mua đồ ăn và nhu yếu phẩm nhưng không muốn mất thời gian đi chợ.',
+    groceryS14Flow: 'Cần mua → Tìm hàng → Chọn hàng → Đặt hàng → Giao tận nơi',
+    groceryS14Journey: 'Dịch vụ tạo ra kết nối giữa người tiêu dùng, tiểu thương, cửa hàng, nhà cung cấp và đơn vị logistics.',
+    groceryS14Item1: 'Người tiêu dùng',
+    groceryS14Item2: 'Tiểu thương',
+    groceryS14Item3: 'Cửa hàng',
+    groceryS14Item4: 'Nhà cung cấp',
+    groceryS14Item5: 'Đơn vị logistics',
+    groceryS14Note: 'Góp phần đưa hoạt động mua sắm truyền thống lên môi trường số.',
+
+    // Grocery Stats & CTA
+    groceryProducts: 'Sản phẩm',
+    grocerySellers: 'Người bán',
+    groceryOrders: 'Đơn hàng',
+    groceryCtaTitle: 'Bắt đầu đi chợ hộ ngay hôm nay!',
+    groceryCtaDesc: 'Tải ứng dụng Biteo và trải nghiệm dịch vụ đi chợ hộ tiện lợi. Tiết kiệm thời gian, mua sắm dễ dàng ngay tại nơi bạn sống!',
+
     // Shopping Page
     shoppingHero: 'Mua sắm',
     shoppingTitle: 'Đặc sản Việt Nam trong tầm tay',
@@ -525,6 +1155,15 @@ const translations: Record<Language, Record<string, string>> = {
     topSellers: 'Nhà bán hàng xuất sắc',
     shopNow2: 'Mua sắm đặc sản ngay hôm nay!',
     shopNow2Desc: 'Tải ứng dụng Biteo để khám phá kho đặc sản phong phú từ khắp Việt Nam. Nhận ngay ưu đãi 20% cho đơn hàng đầu tiên!',
+    shopPageTitle: 'MUA SẮM – KHÁM PHÁ ĐẶC SẢN KHẮP VIỆT NAM',
+    shopPageHeroTag: '🛒 Tìm sản phẩm, khám phá đặc sản và mua sắm dễ dàng trên Biteo',
+    shopPageIntroTitle: 'Mua Sắm Biteo',
+    shopPageIntroDesc: 'Tìm sản phẩm, khám phá đặc sản và mua sắm dễ dàng trên Biteo.',
+    shopPageIntroText1: 'Mua sắm Biteo là không gian giúp người dùng khám phá thế giới sản phẩm đa dạng, từ đặc sản vùng miền, sản phẩm OCOP, nông sản đến những sản phẩm được tuyển chọn từ khắp Việt Nam.',
+    shopPageIntroText2: 'Tại đây, người dùng có thể tìm kiếm sản phẩm theo nhu cầu, danh mục hoặc khu vực, xem hình ảnh và video, tham khảo đánh giá từ cộng đồng, xem thông tin người bán và đặt hàng trực tuyến.',
+    shopPageSlogan: 'Tìm một sản phẩm – Khám phá một vùng miền – Trải nghiệm một hương vị – Kết nối cùng cộng đồng.',
+    shopPageIntroText3: 'Biteo – Khám phá, kết nối và tận hưởng mọi trải nghiệm mua sắm.',
+    shopPageIntroText4: 'Không chỉ giúp bạn tìm một sản phẩm để mua, Biteo hướng đến việc giúp mỗi người khám phá thêm những sản phẩm mới, những vùng miền thú vị và những giá trị đặc sản đặc sắc tại Việt Nam.',
 
     // Travel Page
     travelHero: 'Du lịch',
@@ -532,7 +1171,6 @@ const translations: Record<Language, Record<string, string>> = {
     travelDesc: 'Đặt phòng, tìm điểm đến và lên kế hoạch cho những hành trình đáng nhớ. Tất cả trong một ứng dụng với giá tốt nhất.',
     exploreNow: 'Khám phá ngay',
     planTrip: 'Lên kế hoạch',
-    destinations: 'Điểm đến',
     hotels: 'Khách sạn',
     travelers: 'Du khách',
     travelFeatures: 'Tính năng nổi bật',
@@ -680,6 +1318,97 @@ const translations: Record<Language, Record<string, string>> = {
     restPizza: 'Pizza Milano',
     restItaly: 'Ý',
 
+    // Blog Categories
+    blogCatGiaiTri: 'Giải Trí',
+    blogCatAmThuc: 'Ẩm Thực',
+    blogCatDuLich: 'Du Lịch',
+    blogCatMuaSam: 'Mua Sắm',
+    blogCatReview: 'Review',
+    blogCatCongDong: 'Cộng Đồng',
+
+    // Blog Hero Titles
+    blogHeroTimKiem: 'Tìm Kiếm',
+    blogHeroDatBan: 'Đặt Bàn',
+    blogHeroReview: 'Review',
+
+    // Blog Section Titles
+    blogAmThucQuocGia: 'Ẩm Thực Theo Quốc Gia',
+    blogMonAnDacTrung: 'Món Ăn Đặc Trưng',
+    blogLoaiHinhAmThuc: 'Loại Hình Ẩm Thực',
+    blogMonChinh: 'Món Chính',
+    blogDoUong: 'Đồ Uống',
+    blogAnVat: 'Ăn Vặt',
+    blogAnChay: 'Ăn Chay',
+    blogFineDining: 'Fine Dining',
+    blogStreetFood: 'Street Food',
+
+    // Blog Local Titles
+    blogVungMienDuLich: 'Vùng Miền Du Lịch',
+    blogMienBac: 'Miền Bắc',
+    blogMienTrung: 'Miền Trung',
+    blogMienNam: 'Miền Nam',
+    blogMienTay: 'Miền Tây',
+    blogTayBac: 'Tây Bắc',
+    blogDongBac: 'Đông Bắc',
+    blogNamTrungBo: 'Nam Trung Bộ',
+    blogDiaDiemNoiBat: 'Địa Điểm Nổi Bật',
+    blogLoaiHinhDuLich: 'Loại Hình Du Lịch',
+    blogLeoNui: 'Leo Núi',
+    blogBienDao: 'Biển Đảo',
+    blogCityTour: 'City Tour',
+    blogCamTri: 'Cắm Trại',
+    blogNghiDuong: 'Nghỉ Dưỡng',
+    blogDiSan: 'Di Sản',
+
+    // Blog Shopping Titles
+    blogDACSanDiaPhuong: 'Đặc Sản Địa Phương',
+    blogSanPhamNoiBat: 'Sản Phẩm Nổi Bật',
+    blogDACSan: 'Đặc Sản',
+    blogOCOP: 'OCOP',
+    blogNoiBat: 'Nổi Bật',
+    blogQuaTang: 'Quà Tặng',
+    blogHuuCo: 'Hữu Cơ',
+    blogMuaSam: 'Mua Sắm',
+    blogVideoTheoChuDe: 'Video Theo Chủ Đề',
+    blogVideoNoiBat: 'Video Nổi Bật',
+
+    // Blog Grocery Titles
+    blogThucPhamDaDang: 'Thực Phẩm Đa Dạng',
+    blogDanhMucSanPham: 'Danh Mục Sản Phẩm',
+    blogRauCu: 'Rau Củ',
+    blogTraiCay: 'Trái Cây',
+    blogThitCa: 'Thịt & Cá',
+    blogSua: 'Sữa',
+    blogGiaVi: 'Gia Vị',
+    blogDongGoi: 'Đóng Gói',
+    blogThucPhamTuoi: 'Thực Phẩm Tươi',
+    blogMuaHang: 'Mua Hàng',
+    blogGiaoHang: 'Giao Hàng',
+    blogRauCuTuoi: 'Rau Củ Tươi',
+    blogTraiCayNhietDoi: 'Trái Cây Nhiệt Đới',
+    blogThitTuoiSong: 'Thịt Tươi Sống',
+    blogSuaCacSanPham: 'Sữa & Các Sản Phẩm',
+    blogGiaViDiaPhuong: 'Gia Vị Địa Phương',
+    blogThucPhamDongGoi: 'Thực Phẩm Đóng Gói',
+    blogQuangNinh: 'Quảng Ninh',
+    blogLaoCai: 'Lào Cai',
+    blogKhanhHoa: 'Khánh Hòa',
+    blogLamDong: 'Lâm Đồng',
+    blogQuangNam: 'Quảng Nam',
+    blogKienGiang: 'Kiên Giang',
+
+    // Blog Flow Steps
+    blogFlowDiaPhuong: 'Địa phương',
+    blogFlowDACSan: 'Đặc sản',
+    blogFlowSanPham: 'Sản phẩm',
+    blogFlowNguoiBan: 'Người bán',
+    blogFlowCauChuyen: 'Câu chuyện',
+    blogTayNguyen: 'Tây Nguyên',
+    blogCaPhe: 'Cà Phê',
+    blogThoCam: 'Thổ Cẩm',
+    blogNonLa: 'Nón Lá',
+    blogTraSen: 'Trà Sen',
+
     // Video categories
     catShortFilm: 'Phim ngắn',
     catVideoFood: 'Ẩm thực',
@@ -691,6 +1420,805 @@ const translations: Record<Language, Record<string, string>> = {
     creatorFood: 'Food Paradise',
     creatorComedy: 'Comedy VN',
     creatorTravelKid: 'Travel Kid',
+
+    // Video Page - New Sections
+    videoPageTitle: 'VIDEO GIẢI TRÍ – KHÁM PHÁ CÙNG BITEO',
+    videoPageHeroTag: '🎬 Nơi những video thú vị kết nối mọi người mỗi ngày',
+    videoPageIntroTitle: 'Video giải trí',
+    videoPageIntroDesc: 'Khám phá video ngắn, kết nối cộng đồng và tận hưởng những trải nghiệm thú vị mỗi ngày.',
+    videoPageIntroText1: 'Video giải trí Biteo là không gian để bạn xem, khám phá và chia sẻ những nội dung đa dạng từ cộng đồng. Từ giải trí, đời sống, ẩm thực, du lịch đến những câu chuyện, địa điểm và trải nghiệm đặc sắc tại địa phương.',
+    videoPageIntroText2: 'Bạn có thể yêu thích, bình luận, chia sẻ, theo dõi Creator, Affiliate và những tài khoản mình quan tâm. Với các nội dung phù hợp, bạn còn có thể khám phá trực tiếp sản phẩm, dịch vụ, địa điểm hoặc gian hàng được giới thiệu trên Biteo.',
+    videoPageSlogan: 'Xem một video – khám phá một điều mới – kết nối thêm một người – trải nghiệm thêm một giá trị.',
+    videoPageIntroText3: 'Biteo – Khám phá, kết nối và tận hưởng mọi trải nghiệm.',
+    videoPageIntroText4: 'Video giải trí Biteo là không gian dành cho những video ngắn, nội dung sáng tạo, câu chuyện đời sống và những khoảnh khắc thú vị được chia sẻ trên nền tảng.',
+    videoPageIntroText5: 'Tại đây, người dùng có thể xem – khám phá – tương tác – theo dõi – chia sẻ những nội dung phù hợp với sở thích và mối quan tâm của mình.',
+    videoPageIntroText6: 'Không chỉ đơn thuần là nơi xem video, Video giải trí còn là một phần trong hệ sinh thái nội dung và cộng đồng của Biteo, nơi nội dung có thể kết nối người dùng với con người, địa phương, sản phẩm, dịch vụ và những trải nghiệm thực tế.',
+
+    // Section 1
+    videoS1Title: 'Người dùng có thể xem gì?',
+    videoS1Desc: 'Khi truy cập Video giải trí, người dùng có thể khám phá nhiều nhóm nội dung khác nhau như:',
+    videoS1Cat1: '🎭 Giải trí & đời sống',
+    videoS1Cat1List: 'Những video ngắn vui nhộn. Khoảnh khắc đời thường. Câu chuyện thú vị. Nội dung truyền cảm hứng. Nội dung sáng tạo từ cộng đồng. Những xu hướng được nhiều người quan tâm.',
+    videoS1Cat2: '🍜 Ẩm thực',
+    videoS1Cat2List: 'Món ăn ngon. Công thức nấu ăn. Video hướng dẫn chế biến. Trải nghiệm nhà hàng, quán ăn. Đặc sản vùng miền. Những món ăn đặc trưng của địa phương.',
+    videoS1Cat3: '📍 Địa phương',
+    videoS1Cat3List: 'Địa điểm thú vị. Văn hóa địa phương. Những góc đẹp tại các tỉnh thành. Hoạt động cộng đồng. Câu chuyện về con người và cuộc sống địa phương.',
+    videoS1Cat4: '✈️ Du lịch & trải nghiệm',
+    videoS1Cat4List: 'Địa điểm du lịch. Kinh nghiệm khám phá. Khách sạn, homestay. Những trải nghiệm đáng nhớ. Gợi ý địa điểm vui chơi.',
+    videoS1Note: 'Website Biteo cũng xác định hệ sinh thái gồm Video, Ẩm thực, Du lịch, Mua sắm, Đi chợ hộ và Khám phá, vì vậy Video có thể trở thành lớp nội dung giúp người dùng tiếp cận các dịch vụ khác của Biteo.',
+
+    // Section 2
+    videoS2Title: 'Trải nghiệm xem video',
+    videoS2Desc: 'Biteo có thể thiết kế Video giải trí theo dạng luồng video liên tục, giúp người dùng dễ dàng chuyển từ video này sang video khác.',
+    videoS2Flow: 'Xem video → Thích → Bình luận → Chia sẻ → Theo dõi người đăng → Xem thêm nội dung',
+    videoS2Note: 'Đề án cũng mô tả giao diện trang chủ Biteo theo dạng luồng nội dung/video toàn màn hình, với các chức năng như thích, bình luận, chia sẻ và theo dõi tài khoản.',
+    videoS2Conclusion: 'Điều này giúp trải nghiệm xem video trở nên nhanh, trực quan và liên tục.',
+
+    // Section 3
+    videoS3Title: 'Tương tác với nội dung',
+    videoS3Desc: 'Mỗi video không chỉ để xem mà còn cho phép người dùng tham gia vào cộng đồng.',
+    videoS3Like: 'Yêu thích',
+    videoS3LikeDesc: 'Người dùng có thể bấm yêu thích những video mình quan tâm.',
+    videoS3Comment: 'Bình luận',
+    videoS3CommentDesc: 'Người dùng có thể đưa ra ý kiến, chia sẻ cảm nhận hoặc trao đổi với những người khác.',
+    videoS3Share: 'Chia sẻ',
+    videoS3ShareDesc: 'Video có thể được chia sẻ để giới thiệu nội dung thú vị đến bạn bè và cộng đồng.',
+    videoS3Follow: 'Theo dõi',
+    videoS3FollowDesc: 'Người dùng có thể theo dõi tài khoản mình yêu thích để tiếp tục xem những nội dung mới.',
+    videoS3Note: 'Đây là các chức năng mạng xã hội được đề án Biteo xác định rõ gồm yêu thích, bình luận, theo dõi, hoạt động bạn bè và gợi ý người dùng/Affiliate.',
+
+    // Section 4
+    videoS4Title: 'Khám phá nội dung phù hợp',
+    videoS4Desc: 'Video giải trí không nên chỉ hiển thị video ngẫu nhiên.',
+    videoS4SubDesc: 'Hệ thống có thể giúp người dùng tiếp cận những nội dung phù hợp dựa trên:',
+    videoS4Item1: 'Nội dung người dùng thường xem.',
+    videoS4Item2: 'Chủ đề người dùng quan tâm.',
+    videoS4Item3: 'Video đã yêu thích.',
+    videoS4Item4: 'Tài khoản đang theo dõi.',
+    videoS4Item5: 'Nội dung được cộng đồng quan tâm.',
+    videoS4Item6: 'Nội dung theo khu vực/địa phương.',
+    videoS4Item7: 'Các chủ đề đang nổi bật trên Biteo.',
+    videoS4Conclusion: 'Mục tiêu là tạo ra trải nghiệm: Mỗi lần mở Biteo đều có điều mới để khám phá.',
+
+    // Section 5
+    videoS5Title: 'Video kết nối với các dịch vụ khác của Biteo',
+    videoS5Desc: 'Đây là điểm rất quan trọng để Video Biteo khác với một nền tảng chỉ xem video.',
+    videoS5SubDesc: 'Một người dùng có thể bắt đầu bằng một video:',
+    videoS5Flow1Title: 'Xem video món ăn',
+    videoS5Flow1: 'Quan tâm nhà hàng → Xem thông tin địa điểm → Xem đánh giá → Đặt bàn/đặt món',
+    videoS5Flow2Title: 'Xem video sản phẩm',
+    videoS5Flow2: 'Quan tâm sản phẩm → Xem gian hàng → Thêm vào giỏ hàng → Đặt hàng',
+    videoS5Flow3Title: 'Xem video địa điểm',
+    videoS5Flow3: 'Khám phá địa phương → Tìm khách sạn/địa điểm → Đặt dịch vụ',
+    videoS5Note: 'Đề án Biteo xác định các nhóm chức năng được liên thông: người dùng có thể bắt đầu từ nội dung, sau đó theo dõi Affiliate/người bán, xem sản phẩm được gắn, thêm vào giỏ hàng, đặt hàng, thanh toán, nhận hàng và đánh giá.',
+
+    // Section 6
+    videoS6Title: 'Video có thể gắn sản phẩm và dịch vụ',
+    videoS6Desc: 'Đối với những nội dung có yếu tố thương mại, Biteo có thể cho phép gắn sản phẩm/dịch vụ vào video.',
+    videoS6Ex1: '🎥 Video giới thiệu món ăn → Gắn nhà hàng',
+    videoS6Ex2: '🎥 Video giới thiệu đặc sản → Gắn sản phẩm',
+    videoS6Ex3: '🎥 Video trải nghiệm khách sạn → Gắn địa điểm lưu trú',
+    videoS6Ex4: '🎥 Video review sản phẩm → Gắn sản phẩm vào video',
+    videoS6Ex5: '🎥 Video của Affiliate → Gắn sản phẩm + mã ưu đãi',
+    videoS6Note: 'Đề án quy định Affiliate có thể tạo nội dung, quảng bá sản phẩm/dịch vụ, sử dụng mã ưu đãi và gắn sản phẩm vào video/livestream/bài đăng để hỗ trợ phát sinh đơn hàng.',
+
+    // Section 7
+    videoS7Title: 'Dành cho Creator và Affiliate',
+    videoS7Desc: 'Video giải trí cũng có thể trở thành không gian để Creator/Affiliate xây dựng cộng đồng và phát triển nội dung.',
+    videoS7Creator: 'Creator có thể:',
+    videoS7CreatorList: 'Tạo video. Xây dựng trang cá nhân. Thu hút người theo dõi. Chia sẻ trải nghiệm. Giới thiệu địa điểm. Giới thiệu sản phẩm/dịch vụ phù hợp.',
+    videoS7Affiliate: 'Affiliate có thể sử dụng nội dung để giới thiệu sản phẩm/dịch vụ và gắn sản phẩm vào video theo cơ chế của Biteo.',
+
+    // Section 8
+    videoS8Title: 'Kết nối Video với Livestream',
+    videoS8Desc: 'Video và Livestream có thể hoạt động bổ trợ cho nhau.',
+    videoS8Flow: 'Video ngắn → Thu hút người xem → Người xem quan tâm → Theo dõi Creator → Creator phát Livestream → Người dùng tham gia Live → Giới thiệu sản phẩm/dịch vụ → Đặt hàng trên Biteo',
+    videoS8Note: 'Đề án đã xác định riêng nhóm chức năng livestream, video thương mại và Affiliate, trong đó người dùng có thể xem livestream, bình luận, theo dõi người livestream/Affiliate và tiếp cận nội dung mua sắm được tích hợp trong phiên Live.',
+
+    // Section 9
+    videoS9Title: 'Cộng đồng cùng tạo nội dung',
+    videoS9Desc: 'Video giải trí không chỉ do Biteo cung cấp.',
+    videoS9SubDesc: 'Nội dung có thể đến từ:',
+    videoS9Note: 'Đề án xác định người dùng có thể tương tác với nội dung do nền tảng, người dùng, Affiliate hoặc người bán đăng tải.',
+    videoS9Conclusion: 'Qua đó, Biteo xây dựng một hệ sinh thái nội dung do cộng đồng cùng tham gia tạo nên.',
+
+    // Section 10
+    videoS10Title: 'Kiểm soát chất lượng và an toàn nội dung',
+    videoS10Desc: 'Vì Video là khu vực có nội dung do nhiều chủ thể tạo ra, Biteo cần có cơ chế kiểm duyệt và xử lý nội dung vi phạm.',
+    videoS10SubDesc: 'Đặc biệt đối với nội dung thương mại/livestream, đề án yêu cầu các chủ thể tuân thủ quy định về hàng hóa, quảng cáo, quyền sở hữu trí tuệ, dữ liệu cá nhân và nội dung bị cấm.',
+    videoS10Item1: 'Tiếp nhận báo cáo nội dung.',
+    videoS10Item2: 'Kiểm duyệt nội dung.',
+    videoS10Item3: 'Gỡ nội dung vi phạm.',
+    videoS10Item4: 'Hạn chế hoặc khóa tài khoản vi phạm.',
+    videoS10Item5: 'Kiểm soát sản phẩm được gắn trong nội dung.',
+    videoS10Item6: 'Lưu trữ dữ liệu phục vụ kiểm tra/hậu kiểm theo quy định.',
+
+    // Section 11
+    videoS11Title: 'Giá trị của Video giải trí đối với Biteo',
+    videoS11Desc: 'Video không chỉ mang lại giá trị giải trí cho người dùng mà còn đóng vai trò cầu nối giữa nội dung và thương mại.',
+    videoS11Journey: 'Nội dung → Quan tâm → Tương tác → Khám phá → Theo dõi → Sản phẩm/Dịch vụ → Đặt hàng → Trải nghiệm → Đánh giá',
+    videoS11Conclusion: 'Đây chính là điểm phù hợp với định hướng của Biteo: kết nối nội dung, cộng đồng, địa phương và thương mại điện tử trong cùng một hệ sinh thái. Đề án xác định Biteo vừa là môi trường nội dung/cộng đồng, vừa là kênh giới thiệu, quảng bá, bán hàng và hỗ trợ giao kết hợp đồng điện tử.',
+
+    videoS9Contributors: 'Người dùng',
+    videoS9ContribCreator: 'Creator',
+    videoS9ContribAffiliate: 'Affiliate',
+    videoS9ContribSeller: 'Người bán',
+    videoS9ContribRestaurant: 'Nhà hàng/quán ăn',
+    videoS9ContribStore: 'Cửa hàng',
+    videoS9ContribPartner: 'Đối tác',
+    videoS9ContribBiteo: 'Biteo',
+
+    // Culinary Page - Detailed Sections (1-14)
+    culinaryPageTitle: 'ẨM THỰC – KHÁM PHÁ HƯƠNG VỊ KHẮP VIỆT NAM',
+    culinaryPageHeroTag: '🍜 Tìm món ngon, khám phá địa điểm và trải nghiệm ẩm thực quanh bạn',
+    culinaryPageIntroTitle: 'Ẩm thực Biteo',
+    culinaryPageIntroDesc: 'Tìm món ngon, khám phá địa điểm và trải nghiệm ẩm thực quanh bạn.',
+    culinaryPageIntroText1: 'Ẩm thực Biteo là không gian giúp người dùng khám phá thế giới ẩm thực đa dạng, từ những nhà hàng, quán ăn, quán cà phê quen thuộc đến những địa điểm mới, món ăn đặc sắc và những trải nghiệm ẩm thực được cộng đồng chia sẻ.',
+    culinaryPageIntroText2: 'Tại đây, người dùng có thể tìm kiếm địa điểm ăn uống, khám phá món ăn, xem hình ảnh và video, tham khảo đánh giá từ cộng đồng, xem thông tin nhà hàng và đặt bàn trực tuyến.',
+    culinaryPageSlogan: 'Tìm một món ngon – Khám phá một địa điểm – Trải nghiệm một hương vị – Kết nối cùng cộng đồng.',
+    culinaryPageIntroText3: 'Biteo – Khám phá, kết nối và tận hưởng mọi trải nghiệm ẩm thực.',
+    culinaryPageIntroText4: 'Không chỉ giúp bạn tìm một nơi để ăn, Biteo hướng đến việc giúp mỗi người khám phá thêm những hương vị mới, những địa điểm thú vị và những giá trị ẩm thực đặc sắc tại Việt Nam.',
+
+    // Local Explore Page
+    localHero: 'Khám phá địa phương',
+    localHeroTitleLine1: 'Khám phá những điều',
+    localHeroTitleLine2: 'thú vị ngay quanh bạn',
+    localPageTitle: 'KHÁM PHÁ ĐỊA PHƯƠNG – NHỮNG ĐIỀU THÚ VỊ NGAY QUANH BẠN',
+    localPageHeroTag: '📍 Tìm địa điểm, khám phá dịch vụ và trải nghiệm đặc sắc quanh bạn',
+    localPageIntroTitle: 'Khám phá địa phương Biteo',
+    localPageIntroDesc: 'Tìm kiếm những địa điểm, dịch vụ và trải nghiệm đặc sắc quanh bạn.',
+    localPageIntroText1: 'Khám phá địa phương Biteo là nơi giúp bạn tìm thấy những điều thú vị ngay tại nơi mình đang sống hoặc những địa phương bạn muốn ghé thăm.',
+    localPageIntroText2: 'Từ nhà hàng, quán cà phê, điểm vui chơi, cửa hàng, nơi lưu trú đến những trải nghiệm văn hóa, ẩm thực và địa điểm đặc sắc, Biteo giúp bạn dễ dàng tìm kiếm, khám phá và lựa chọn những nơi phù hợp với nhu cầu của mình.',
+    localPageSlogan: '📍 Tìm địa điểm. 🏪 Khám phá dịch vụ. 🍜 Tìm món ngon. 🎭 Trải nghiệm địa phương. ❤️ Lưu những nơi yêu thích.',
+    localIntroHeadline: 'Nơi những điều đặc sắc được khám phá và kết nối',
+    localSideCard1Title: 'Kết nối cộng đồng',
+    localSideCard1Desc: 'Gặp gỡ những người kinh doanh, Creator và doanh nghiệp địa phương ngay trên nền tảng.',
+    localSideCard2Title: 'Lưu & Chia sẻ',
+    localSideCard2Desc: 'Tạo danh sách yêu thích, chia sẻ địa điểm với bạn bè và lên kế hoạch cho những chuyến đi.',
+    localStatProvinces: 'Tỉnh/Thành phố',
+    localStatPlaces: 'Địa điểm',
+    localStatExplore: 'Khám phá',
+    localStatFree: 'Miễn phí',
+    localPageIntroText3: 'Biteo – Kết nối bạn với những điều đặc sắc quanh mình.',
+    localPageIntroText4: 'Một địa điểm có thể mở ra một món ăn mới. Một món ăn có thể đưa bạn đến một địa phương mới. Một trải nghiệm có thể trở thành một câu chuyện đáng nhớ. Khám phá nơi bạn đang sống. Khám phá những vùng đất mới. Khám phá những giá trị đặc sắc của Việt Nam.',
+
+    // Local Explore - Section 1: Find locations
+    localS1Title: '📍 Tìm những địa điểm quanh bạn',
+    localS1Subtitle: 'Những điều thú vị ngay gần nơi bạn sống',
+    localS1Intro: 'Đôi khi những điều thú vị nhất lại nằm ngay gần nơi bạn sống. Biteo giúp bạn khám phá:',
+    localS1Item1: 'Nhà hàng, quán ăn',
+    localS1Item2: 'Quán cà phê',
+    localS1Item3: 'Địa điểm vui chơi',
+    localS1Item4: 'Điểm tham quan',
+    localS1Item5: 'Cửa hàng',
+    localS1Item6: 'Địa điểm mua sắm',
+    localS1Item7: 'Khách sạn, nơi lưu trú',
+    localS1Item8: 'Các địa điểm nổi bật tại địa phương',
+
+    // Local Explore - Section 2: Explore by region
+    localS2Title: '🗺️ Khám phá theo khu vực',
+    localS2Subtitle: 'Từ nơi bạn đang sống đến những tỉnh/thành muốn ghé thăm',
+    localS2Example1City: 'Đang ở Đà Nẵng',
+    localS2Example1Item1: '→ Khám phá nhà hàng',
+    localS2Example1Item2: '→ Tìm quán cà phê',
+    localS2Example1Item3: '→ Tìm điểm vui chơi',
+    localS2Example1Item4: '→ Tìm khách sạn',
+    localS2Example1Item5: '→ Khám phá địa điểm địa phương',
+    localS2Example2City: 'Chuẩn bị đến Lâm Đồng',
+    localS2Example2Item1: '→ Khám phá điểm đến',
+    localS2Example2Item2: '→ Tìm nơi lưu trú',
+    localS2Example2Item3: '→ Tìm món ăn',
+    localS2Example2Item4: '→ Tìm dịch vụ',
+    localS2Example2Item5: '→ Lên kế hoạch trải nghiệm',
+    localS2Desc: 'Đề án Biteo xác định việc khám phá địa phương theo từng tỉnh/thành, giúp người dùng tiếp tục tìm hiểu địa danh, hình ảnh, câu chuyện, trải nghiệm, văn hóa và ẩm thực của từng nơi.',
+
+    // Local Explore - Section 3: Find services
+    localS3Title: '🏪 Tìm kiếm dịch vụ quanh bạn',
+    localS3Subtitle: 'Không chỉ tìm địa điểm, mà còn tìm dịch vụ bạn đang cần',
+    localS3Intro: 'Không chỉ tìm địa điểm, Biteo hướng đến việc giúp người dùng tìm những dịch vụ đang cần:',
+    localS3Item1: 'Ăn uống',
+    localS3Item2: 'Lưu trú',
+    localS3Item3: 'Làm đẹp',
+    localS3Item4: 'Mua sắm',
+    localS3Item5: 'Giải trí',
+    localS3Item6: 'Dịch vụ đời sống',
+
+    // Local Explore - Section 4: Local cuisine
+    localS4Title: '🍜 Khám phá ẩm thực địa phương',
+    localS4Subtitle: 'Mỗi địa phương đều có những hương vị riêng',
+    localS4Intro: 'Bạn có thể khám phá:',
+    localS4Item1: 'Món ăn',
+    localS4Item2: 'Quán ăn',
+    localS4Item3: 'Nhà hàng',
+    localS4Item4: 'Đặc sản',
+    localS4Item5: 'Câu chuyện địa phương',
+    localS4Desc: 'Chuyên mục Ẩm thực trong đề án cũng được kết nối với nhà hàng, quán ăn, đặc sản địa phương, người bán thực phẩm và các nội dung trải nghiệm.',
+
+    // Local Explore - Section 5: Culture & experience
+    localS5Title: '🎭 Khám phá văn hóa và trải nghiệm',
+    localS5Subtitle: 'Không chỉ là tìm một địa chỉ trên bản đồ',
+    localS5Intro: 'Khám phá địa phương không chỉ là tìm một địa chỉ trên bản đồ. Đó còn là cơ hội để tìm hiểu:',
+    localS5Item1: 'Văn hóa',
+    localS5Item2: 'Con người',
+    localS5Item3: 'Đời sống',
+    localS5Item4: 'Lễ hội',
+    localS5Item5: 'Đặc sản',
+    localS5Item6: 'Nghề truyền thống',
+    localS5Item7: 'Làng nghề',
+    localS5Item8: 'Những trải nghiệm đặc trưng',
+    localS5Item9: 'Những câu chuyện của từng vùng miền',
+    localS5Desc: 'Đề án Biteo định hướng nội dung địa phương bao gồm trải nghiệm văn hóa, ẩm thực, địa danh và du lịch tại Việt Nam.',
+
+    // Local Explore - Section 6: Videos & content
+    localS6Title: '🎥 Xem video và nội dung thực tế',
+    localS6Subtitle: 'Một địa điểm sẽ dễ hình dung hơn qua hình ảnh và video',
+    localS6Intro: 'Người dùng có thể khám phá:',
+    localS6Item1: 'Video trải nghiệm',
+    localS6Item2: 'Hình ảnh địa điểm',
+    localS6Item3: 'Review',
+    localS6Item4: 'Bài chia sẻ',
+    localS6Item5: 'Nội dung từ Creator',
+    localS6Item6: 'Nội dung từ cộng đồng',
+    localS6Desc: 'Biteo được thiết kế là nền tảng kết hợp mạng xã hội, nội dung số và thương mại điện tử, cho phép người dùng xem nội dung, yêu thích, bình luận, theo dõi và tương tác với nội dung từ người dùng, Affiliate hoặc người bán.',
+
+    // Local Explore - Section 7: Community experience
+    localS7Title: '⭐ Khám phá từ trải nghiệm cộng đồng',
+    localS7Subtitle: 'Một địa điểm được biết đến nhờ những người đã trải nghiệm',
+    localS7Intro: 'Một địa điểm có thể được biết đến nhờ chính những người đã từng trải nghiệm. Người dùng có thể:',
+    localS7Item1: 'Xem',
+    localS7Item2: 'Thích',
+    localS7Item3: 'Bình luận',
+    localS7Item4: 'Chia sẻ',
+    localS7Item5: 'Theo dõi',
+    localS7Item6: 'Khám phá thêm',
+    localS7Desc: 'Đây cũng là cách Biteo xây dựng lớp khám phá xã hội, nơi nội dung cộng đồng có thể dẫn người dùng đến địa điểm, sản phẩm hoặc dịch vụ.',
+
+    // Local Explore - Section 8: Save favorites
+    localS8Title: '❤️ Lưu những nơi muốn đến',
+    localS8Subtitle: 'Lưu lại những địa điểm để trải nghiệm trong tương lai',
+    localS8Intro: 'Khi tìm được một địa điểm thú vị, người dùng có thể lưu lại để:',
+    localS8Item1: 'Ghé thăm sau',
+    localS8Item2: 'Chia sẻ với bạn bè',
+    localS8Item3: 'Lên kế hoạch cuối tuần',
+    localS8Item4: 'Chuẩn bị cho chuyến du lịch',
+    localS8Item5: 'Tạo danh sách yêu thích',
+    localS8Desc: 'Từ đó, Biteo không chỉ giúp bạn khám phá ngay hôm nay, mà còn lưu lại những địa điểm để bạn trải nghiệm trong tương lai.',
+
+    // Local Explore - Section 9: Connect community
+    localS9Title: '🤝 Kết nối người dùng với cộng đồng địa phương',
+    localS9Subtitle: 'Cầu nối giữa người dùng và những người tạo ra giá trị',
+    localS9Intro: 'Khám phá địa phương còn là cầu nối giữa người dùng và những người đang tạo ra giá trị tại địa phương. Các chủ thể có thể tham gia gồm:',
+    localS9Item1: 'Nhà hàng',
+    localS9Item2: 'Quán ăn',
+    localS9Item3: 'Cửa hàng',
+    localS9Item4: 'Hộ kinh doanh',
+    localS9Item5: 'Hợp tác xã',
+    localS9Item6: 'Doanh nghiệp địa phương',
+    localS9Item7: 'Người bán đặc sản',
+    localS9Item8: 'Đơn vị cung cấp dịch vụ',
+    localS9Item9: 'Affiliate',
+    localS9Item10: 'Creator',
+    localS9Desc: 'Đề án Biteo xác định các chủ thể địa phương này có thể sử dụng nền tảng để giới thiệu địa điểm, sản phẩm, dịch vụ và nội dung đến người dùng.',
+
+    // Local Explore - Section 10: From explore to shopping
+    localS10Title: '🛍️ Từ khám phá đến mua sắm',
+    localS10Subtitle: 'Một địa điểm có thể dẫn đến một sản phẩm',
+    localS10Intro: 'Một địa điểm có thể dẫn đến một sản phẩm. Ví dụ:',
+    localS10Item1: 'Khám phá địa phương',
+    localS10Item2: 'Biết đến đặc sản',
+    localS10Item3: 'Xem sản phẩm',
+    localS10Item4: 'Đặt mua',
+    localS10Desc: 'Đây là sự kết nối giữa Khám phá địa phương và Mua sắm trong hệ sinh thái Biteo.',
+
+    // Local Explore - Section 11: From explore to order
+    localS11Title: '🍽️ Từ khám phá đến đặt món',
+    localS11Subtitle: 'Từ nội dung địa phương đến hoạt động ẩm thực',
+    localS11Intro: 'Tương tự, một nội dung địa phương có thể dẫn đến hoạt động ẩm thực:',
+    localS11Item1: 'Xem địa điểm',
+    localS11Item2: 'Tìm nhà hàng',
+    localS11Item3: 'Xem thực đơn',
+    localS11Item4: 'Xem đánh giá',
+    localS11Item5: 'Đặt bàn/Đặt món',
+    localS11Desc: 'Đề án xác định nội dung Biteo có thể dẫn người dùng từ việc khám phá địa điểm, món ăn, sản phẩm hoặc dịch vụ sang theo dõi tài khoản, xem cửa hàng/livestream và thực hiện hoạt động mua sắm trên nền tảng.',
+
+    // Local Explore - Section 12: Complete journey
+    localS12Title: '🧭 Từ khám phá đến một hành trình hoàn chỉnh',
+    localS12Subtitle: 'Điểm bắt đầu cho cả một hành trình',
+    localS12Intro: 'Khám phá địa phương có thể trở thành điểm bắt đầu cho cả một hành trình:',
+    localS12Item1: 'Tìm địa điểm',
+    localS12Item2: 'Khám phá dịch vụ',
+    localS12Item3: 'Tìm nhà hàng',
+    localS12Item4: 'Tìm nơi lưu trú',
+    localS12Item5: 'Khám phá điểm vui chơi',
+    localS12Item6: 'Mua đặc sản',
+    localS12Item7: 'Chia sẻ trải nghiệm',
+    localS12Desc: 'Như vậy, người dùng không chỉ tìm kiếm một địa điểm mà có thể khám phá cả hệ sinh thái dịch vụ xung quanh địa điểm đó.',
+
+    // Local Explore - Section 13: Spread local values
+    localS13Title: '🇻🇳 Lan tỏa giá trị địa phương',
+    localS13Subtitle: 'Giúp những điều đặc sắc được biết đến rộng rãi hơn',
+    localS13Intro: 'Một trong những giá trị quan trọng của chuyên mục này là giúp những điều đặc sắc tại từng địa phương được biết đến rộng rãi hơn. Tất cả đều có thể trở thành nội dung để cộng đồng cùng khám phá:',
+    localS13Item1: 'Một quán ăn nhỏ',
+    localS13Item2: 'Một sản phẩm đặc sản',
+    localS13Item3: 'Một điểm đến ít người biết',
+    localS13Item4: 'Một làng nghề',
+    localS13Item5: 'Một câu chuyện địa phương',
+    localS13ChainTitle: 'Biteo tạo sự kết nối',
+    localS14User: 'Người dùng',
+    localS14Place: 'Địa phương',
+    localS14Business: 'Người kinh doanh',
+    localS14Product: 'Sản phẩm',
+    localS14Service: 'Dịch vụ',
+    localS14Community: 'Cộng đồng',
+
+    // Local Explore - Section 14: Value for Biteo
+    localS14Title: '🌟 Giá trị của Khám phá địa phương đối với Biteo',
+    localS14Subtitle: 'Cầu nối giữa các chuyên mục trong hệ sinh thái',
+    localS14Intro: 'Khám phá địa phương có thể trở thành cầu nối giữa các chuyên mục trong toàn bộ hệ sinh thái Biteo. Một người dùng có thể bắt đầu bằng câu hỏi:',
+    localS14Question: 'Gần tôi có gì thú vị?',
+    localS14Item1: 'Địa điểm',
+    localS14Item2: 'Ăn uống',
+    localS14Item3: 'Mua sắm',
+    localS14Item4: 'Dịch vụ',
+    localS14Item5: 'Du lịch',
+    localS14Item6: 'Trải nghiệm',
+    localS14Item7: 'Chia sẻ',
+    localS14Desc: 'Đây cũng phù hợp với định hướng của Biteo là nền tảng kết hợp nội dung, cộng đồng và thương mại điện tử, trong đó người dùng có thể bắt đầu từ nội dung xã hội rồi tiếp tục khám phá địa điểm, sản phẩm hoặc dịch vụ.',
+
+    // Local Explore - CTA
+    localCtaTitle: 'Bắt đầu khám phá địa phương của bạn',
+    localCtaDesc: 'Khám phá những điều thú vị ngay quanh bạn — từ nhà hàng, quán cà phê, điểm vui chơi đến những trải nghiệm văn hóa đặc sắc.',
+    localCtaButton1: 'Khám phá ngay',
+    localCtaButton2: 'Khám phá Ẩm thực',
+
+    // Section 1
+    culinaryS1Title: '🔎 Tìm kiếm nhà hàng, quán ăn quanh bạn',
+    culinaryS1Desc: 'Bạn đang muốn tìm một quán ăn gần mình?',
+    culinaryS1SubDesc: 'Biteo hỗ trợ tìm kiếm các địa điểm ẩm thực theo nhu cầu của người dùng, giúp bạn dễ dàng khám phá:',
+    culinaryS1Item1: 'Nhà hàng.',
+    culinaryS1Item2: 'Quán ăn.',
+    culinaryS1Item3: 'Quán cà phê.',
+    culinaryS1Item4: 'Địa điểm ăn uống.',
+    culinaryS1Item5: 'Các món ăn theo sở thích.',
+    culinaryS1Item6: 'Những địa điểm được cộng đồng quan tâm.',
+    culinaryS1Note: 'Người dùng có thể tìm kiếm địa điểm gần vị trí hiện tại hoặc tìm kiếm cụ thể theo nhu cầu. Website Biteo hiện có chức năng tìm quán gần đây và tìm kiếm cụ thể, cùng bộ lọc theo loại món, khoảng cách và đánh giá.',
+
+    // Section 2
+    culinaryS2Title: '📍 Khám phá địa điểm bằng bản đồ',
+    culinaryS2Desc: 'Không chỉ hiển thị thông tin, Biteo giúp người dùng xác định nhà hàng/quán ăn đang ở đâu.',
+    culinaryS2Item1: 'Xem vị trí trên bản đồ.',
+    culinaryS2Item2: 'Xác định khoảng cách.',
+    culinaryS2Item3: 'Tìm địa điểm gần mình.',
+    culinaryS2Item4: 'Xem đường đi.',
+    culinaryS2Item5: 'Di chuyển đến nhà hàng thuận tiện hơn.',
+    culinaryS2Note: 'Đây là chức năng giúp kết nối nội dung ẩm thực với địa điểm thực tế, để người dùng không chỉ xem một món ăn mà còn có thể tìm đến nơi phục vụ món ăn đó.',
+
+    // Section 3
+    culinaryS3Title: '🍜 Khám phá món ăn và hương vị',
+    culinaryS3Desc: 'Chuyên mục Ẩm thực của Biteo không chỉ tập trung vào tên nhà hàng.',
+    culinaryS3SubDesc: 'Đây còn là nơi để người dùng khám phá:',
+    culinaryS3Item1: 'Món ăn.',
+    culinaryS3Item2: 'Công thức nấu ăn.',
+    culinaryS3Item3: 'Hình ảnh món ăn.',
+    culinaryS3Item4: 'Video ẩm thực.',
+    culinaryS3Item5: 'Đặc sản địa phương.',
+    culinaryS3Item6: 'Trải nghiệm tại nhà hàng/quán ăn.',
+    culinaryS3Item7: 'Những xu hướng ẩm thực được quan tâm.',
+    culinaryS3Note: 'Trong đề án, màn hình Ẩm thực được xác định là chuyên mục nội dung và khám phá món ăn, hiển thị các thẻ nội dung gồm món ăn, video, hình ảnh, mô tả ngắn, tài khoản đăng tải và lượt yêu thích. Vì vậy, người dùng có thể bắt đầu từ một video hoặc hình ảnh món ăn, sau đó tiếp tục khám phá địa điểm, tài khoản hoặc các nội dung liên quan.',
+
+    // Section 4
+    culinaryS4Title: '⭐ Đánh giá thực tế từ cộng đồng',
+    culinaryS4Desc: 'Trước khi lựa chọn một địa điểm ăn uống, người dùng có thể tham khảo trải nghiệm của cộng đồng.',
+    culinaryS4SubDesc: 'Các đánh giá giúp người dùng có thêm cơ sở để lựa chọn:',
+    culinaryS4Item1: 'Chất lượng món ăn.',
+    culinaryS4Item2: 'Trải nghiệm tại địa điểm.',
+    culinaryS4Item3: 'Mức độ yêu thích.',
+    culinaryS4Item4: 'Đánh giá của những người đã trải nghiệm.',
+    culinaryS4Note: 'Website Biteo hiện giới thiệu chức năng đánh giá thực tế, với mục tiêu giúp người dùng lựa chọn địa điểm phù hợp hơn. Qua đó, Biteo tạo ra một hệ thống khám phá dựa trên trải nghiệm và tương tác của cộng đồng, thay vì chỉ dựa vào thông tin quảng bá từ nhà hàng.',
+
+    // Section 5
+    culinaryS5Title: '📋 Xem thông tin trước khi đến',
+    culinaryS5Desc: 'Người dùng có thể tìm hiểu những thông tin cần thiết trước khi quyết định lựa chọn một địa điểm.',
+    culinaryS5Item1: 'Tên nhà hàng/quán ăn',
+    culinaryS5Item2: 'Địa chỉ',
+    culinaryS5Item3: 'Vị trí trên bản đồ',
+    culinaryS5Item4: 'Giá cả',
+    culinaryS5Item5: 'Thực đơn',
+    culinaryS5Item6: 'Giờ mở cửa',
+    culinaryS5Item7: 'Đánh giá',
+    culinaryS5Item8: 'Hình ảnh/nội dung',
+    culinaryS5Item9: 'Đặt bàn',
+    culinaryS5Note: 'Website Biteo hiện nêu rõ khả năng xem giá cả, thực đơn và giờ mở cửa trước khi quyết định.',
+
+    // Section 6
+    culinaryS6Title: '📅 Đặt bàn trực tuyến',
+    culinaryS6Desc: 'Khi đã tìm được địa điểm phù hợp, người dùng có thể đặt bàn trực tuyến thay vì phải gọi điện hoặc đến trực tiếp để hỏi còn bàn hay không.',
+    culinaryS6Flow: 'Tìm nhà hàng → Xem thông tin → Xem đánh giá → Chọn thời gian → Đặt bàn → Đến nhà hàng và trải nghiệm',
+    culinaryS6Note: 'Đây là một trong những tính năng nổi bật được Biteo giới thiệu trên trang Ẩm thực.',
+
+    // Section 7
+    culinaryS7Title: '❤️ Lưu những địa điểm yêu thích',
+    culinaryS7Desc: 'Khi tìm được một quán ăn ngon hoặc một nhà hàng muốn quay lại, người dùng có thể lưu địa điểm đó vào danh sách yêu thích.',
+    culinaryS7Item1: 'Quán ăn yêu thích',
+    culinaryS7Item2: 'Nhà hàng muốn thử',
+    culinaryS7Item3: 'Quán cà phê thường ghé',
+    culinaryS7Item4: 'Địa điểm cho lần hẹn tiếp theo',
+    culinaryS7Note: 'Website Biteo hiện có chức năng Lưu yêu thích, đồng thời hỗ trợ chia sẻ danh sách địa điểm với bạn bè.',
+
+    // Section 8
+    culinaryS8Title: '🌎 Khám phá nhiều nền ẩm thực',
+    culinaryS8Desc: 'Ẩm thực Biteo không giới hạn ở một loại món ăn.',
+    culinaryS8SubDesc: 'Website hiện giới thiệu các nhóm ẩm thực như:',
+    culinaryS8Note: 'Qua đó, người dùng có thể khám phá nhiều phong cách ẩm thực khác nhau ngay trên cùng một nền tảng.',
+
+    // Section 9
+    culinaryS9Title: '📍 Khám phá ẩm thực địa phương',
+    culinaryS9Desc: 'Ẩm thực không chỉ là món ăn mà còn gắn liền với con người, địa phương và văn hóa.',
+    culinaryS9Journey: 'Một món ăn → Một quán ăn → Một khu vực → Một địa phương → Một câu chuyện',
+    culinaryS9Note: 'Trong đề án, chuyên mục Ẩm thực được xác định có sự tham gia của Affiliate về ẩm thực, người bán thực phẩm, nhà hàng/quán ăn, hộ kinh doanh, hợp tác xã và cơ sở sản xuất đặc sản địa phương.',
+
+    // Section 10
+    culinaryS10Title: '👥 Cộng đồng cùng chia sẻ trải nghiệm',
+    culinaryS10Desc: 'Ẩm thực Biteo không chỉ dành cho người đi tìm quán ăn.',
+    culinaryS10SubDesc: 'Đây còn là nơi để cộng đồng chia sẻ:',
+    culinaryS10Item1: 'Món ăn mình yêu thích.',
+    culinaryS10Item2: 'Nhà hàng mình đã trải nghiệm.',
+    culinaryS10Item3: 'Quán ăn đáng thử.',
+    culinaryS10Item4: 'Công thức nấu ăn.',
+    culinaryS10Item5: 'Đặc sản quê hương.',
+    culinaryS10Item6: 'Video trải nghiệm.',
+    culinaryS10Item7: 'Những địa điểm ít người biết.',
+    culinaryS10Note: 'Người dùng có thể xem nội dung, yêu thích, bình luận, theo dõi tài khoản và tương tác với nội dung được đăng tải trên nền tảng.',
+
+    // Section 11
+    culinaryS11Title: '🤝 Kết nối nhà hàng, người bán và người dùng',
+    culinaryS11Desc: 'Đối với nhà hàng, quán ăn và người bán thực phẩm, chuyên mục Ẩm thực không chỉ là nơi giới thiệu địa điểm.',
+    culinaryS11SubDesc: 'Đây còn có thể là một kênh để:',
+    culinaryS11Item1: 'Giới thiệu món ăn.',
+    culinaryS11Item2: 'Giới thiệu nhà hàng.',
+    culinaryS11Item3: 'Chia sẻ hình ảnh/video.',
+    culinaryS11Item4: 'Xây dựng cộng đồng khách hàng.',
+    culinaryS11Item5: 'Tăng lượt theo dõi.',
+    culinaryS11Item6: 'Giới thiệu sản phẩm.',
+    culinaryS11Item7: 'Dẫn người dùng đến hoạt động đặt hàng hoặc livestream.',
+    culinaryS11Note: 'Đề án xác định Ẩm thực là một lớp nội dung hỗ trợ trực tiếp cho social commerce của Biteo, kết nối người dùng với Affiliate, người bán, nhà hàng và các sản phẩm/dịch vụ liên quan.',
+
+    // Section 12
+    culinaryS12Title: '🛒 Kết nối Ẩm thực với thương mại điện tử',
+    culinaryS12Desc: 'Đây là điểm quan trọng trong mô hình Biteo.',
+    culinaryS12SubDesc: 'Một nội dung ẩm thực có thể tạo ra hành trình:',
+    culinaryS12Flow: 'Xem video món ăn → Quan tâm món ăn → Xem nhà hàng/người bán → Theo dõi tài khoản → Xem sản phẩm hoặc livestream → Sử dụng mã ưu đãi → Đặt hàng trên Biteo',
+    culinaryS12Note: 'Đề án Biteo mô tả trực tiếp hành trình này và cho phép chuyên mục Ẩm thực liên kết với gắn sản phẩm, giỏ hàng, đặt hàng, mã giảm giá và livestream. Như vậy, Ẩm thực không đứng riêng lẻ mà có thể trở thành cầu nối giữa nội dung – trải nghiệm – nhà hàng – sản phẩm – thương mại điện tử.',
+
+    // Section 13
+    culinaryS13Title: '🎥 Kết nối với Video và Livestream',
+    culinaryS13Desc: 'Một món ăn có thể được giới thiệu bằng:',
+    culinaryS13Flow: 'Hình ảnh → Video → Bài viết/trải nghiệm → Livestream → Nhà hàng/sản phẩm → Đặt hàng',
+    culinaryS13Ex1: 'Bạn nhìn thấy một video giới thiệu món ăn → muốn biết món đó ở đâu → xem nhà hàng → đọc đánh giá → xem thực đơn → đặt bàn.',
+    culinaryS13Ex2: 'Bạn xem video giới thiệu đặc sản → quan tâm sản phẩm → xem gian hàng → xem livestream → đặt mua.',
+    culinaryS13Note: 'Điều này giúp người dùng có nhiều cách tiếp cận cùng một nội dung.',
+
+    // Section 14
+    culinaryS14Title: '🌟 Giá trị của chuyên mục Ẩm thực đối với Biteo',
+    culinaryS14Desc: 'Ẩm thực có thể trở thành một trong những điểm kết nối tự nhiên nhất giữa người dùng và hệ sinh thái Biteo.',
+    culinaryS14Question: 'Người dùng vào Biteo để tìm:',
+    culinaryS14Quote: 'Hôm nay ăn gì?',
+    culinaryS14Journey1: 'Tìm quán → Xem đánh giá → Xem địa điểm → Đặt bàn → Trải nghiệm → Chia sẻ đánh giá',
+    culinaryS14Journey2: 'Xem món ăn → Khám phá sản phẩm → Theo dõi người bán → Xem livestream → Đặt hàng',
+    culinaryS14Note: 'Vì vậy, chuyên mục Ẩm thực vừa đáp ứng nhu cầu khám phá và trải nghiệm, vừa hỗ trợ định hướng mạng xã hội kết hợp thương mại điện tử của Biteo. Đề án xác định Biteo là nền tảng nơi người dùng có thể xem nội dung, tương tác, theo dõi, tiếp cận sản phẩm/dịch vụ và thực hiện các hoạt động thương mại trên cùng một hệ thống.',
+
+    // Travel Page
+    travelPageHeroTag: '✈️ Khám phá Việt Nam – Khám phá thế giới',
+    travelPageTitle: 'Du lịch Biteo - Khám Phá Việt Nam',
+    travelPageIntroTitle: 'Du lịch Biteo',
+    travelPageIntroDesc: 'Du lịch Biteo là nơi tìm cảm hứng cho những hành trình mới – từ khám phá điểm đến, tìm nơi lưu trú đến trải nghiệm văn hóa, ẩm thực và những địa danh đặc sắc.',
+    travelPageIntroText1: 'Tìm hiểu các tỉnh thành, khám phá những địa điểm nổi bật, xem hình ảnh và video trải nghiệm từ cộng đồng, tìm nơi lưu trú phù hợp và khám phá những món ăn, đặc sản địa phương đáng thử.',
+    travelPageIntroText2: 'Bạn có thể bắt đầu từ một điểm đến, sau đó tiếp tục tìm kiếm nơi ở, địa điểm tham quan, nhà hàng, trải nghiệm và đặc sản để từng bước lên kế hoạch cho chuyến đi của mình.',
+    travelPageIntroText3: 'Mỗi địa phương là một câu chuyện. Mỗi hành trình là một trải nghiệm.',
+    travelPageSlogan: 'Hãy để Biteo đồng hành cùng bạn từ lúc tìm cảm hứng → lựa chọn điểm đến → chuẩn bị hành trình → trải nghiệm → chia sẻ.',
+    travelPageIntroText4: 'Tìm điểm đến.',
+    travelPageIntroText5: 'Tìm nơi ở.',
+    travelPageIntroText6: 'Khám phá ẩm thực.',
+    travelPageIntroText7: 'Lên hành trình.',
+    travelPageIntroText8: 'Lưu trải nghiệm.',
+    travelPageIntroText9: 'Biteo – Khám phá nhiều hơn, trải nghiệm trọn vẹn hơn.',
+    travelPageIntroText10: 'Tìm điểm đến, đặt phòng và lên kế hoạch cho hành trình đáng nhớ. Du lịch Biteo là không gian giúp bạn khám phá những điểm đến hấp dẫn, tìm kiếm nơi lưu trú và tìm cảm hứng cho những chuyến đi trong nước và quốc tế.',
+
+    // Section 1: Explore Destinations
+    travelS1Title: 'Khám phá điểm đến',
+    travelS1SubTitle: 'Bạn chưa biết đ đâu cho chuyến đi tiếp theo?',
+    travelS1Desc: 'Biteo giúp bạn tìm cảm hứng thông qua những nội dung về:',
+    travelS1SubDesc: 'Bạn có thể khám phá theo từng tỉnh/thành và địa phương, từ đó tìm hiểu sâu hơn về nơi mình muốn đến.',
+    travelS1Item1: 'Điểm du lịch nổi bật.',
+    travelS1Item2: 'Danh lam thắng cảnh.',
+    travelS1Item3: 'Thành phố và tỉnh thành.',
+    travelS1Item4: 'Địa danh đặc sắc.',
+    travelS1Item5: 'Những địa điểm ít người biết.',
+    travelS1Item6: 'Trải nghiệm văn hóa địa phương.',
+    travelS1Item7: 'Ẩm thực tại điểm đến.',
+    travelS1Item8: 'Những hoạt động đáng thử.',
+    travelS1Note: 'Đề án mô tả Du lịch là chuyên mục khám phá địa phương với các thẻ tỉnh/thành và nội dung liên quan đến điểm đến, địa danh, văn hóa, ẩm thực và trải nghiệm.',
+
+    // Section 2: Find Accommodation
+    travelS2Title: '🏨 Tìm nơi lưu trú',
+    travelS2Desc: 'Một chuyến đi trọn vẹn cần một nơi nghỉ ngơi phù hợp. Biteo hướng đến việc giúp người dùng tìm kiếm và khám phá:',
+    travelS2Item1: 'Khách sạn.',
+    travelS2Item2: 'Resort.',
+    travelS2Item3: 'Homestay.',
+    travelS2Item4: 'Cơ sở lưu trú.',
+    travelS2Item5: 'Địa điểm nghỉ dưỡng.',
+    travelS2Item6: 'Nơi lưu trú phù hợp với hành trình.',
+    travelS2Note: 'Người dùng có thể bắt đầu từ điểm đến, sau đó tìm nơi lưu trú phù hợp với nhu cầu và kế hoạch chuyến đi. Đi đâu → Ở đâu → Chơi gì → Ăn gì → Trải nghiệm gì',
+
+    // Section 3: Explore by Local
+    travelS3Title: '📍 Khám phá theo địa phương',
+    travelS3Desc: 'Du lịch Biteo không chỉ tập trung vào những điểm đến nổi tiếng. Mỗi địa phương đều có những câu chuyện, con người, văn hóa và trải nghiệm riêng.',
+    travelS3SubTitle: 'Bạn có thể bắt đầu bằng việc lựa chọn một tỉnh/thành, sau đó khám phá:',
+    travelS3Item1: 'Địa điểm',
+    travelS3Item2: 'Du lịch',
+    travelS3Item3: 'Văn hóa',
+    travelS3Item4: 'Ẩm thực',
+    travelS3Item5: 'Trải nghiệm',
+    travelS3Item6: 'Lưu trú',
+    travelS3Flow: 'Địa điểm → Du lịch → Văn hóa → Ẩm thực → Trải nghiệm → Lưu trú',
+
+    // Section 4: Explore Local Cuisine
+    travelS4Title: '🍜 Khám phá ẩm thực địa phương',
+    travelS4Desc: 'Một trong những điều làm nên một chuyến đi đáng nhớ chính là ẩm thực. Tại mỗi điểm đến, người dùng có thể tiếp tục khám phá:',
+    travelS4Item1: 'Món ăn đặc sản.',
+    travelS4Item2: 'Nhà hàng.',
+    travelS4Item3: 'Quán ăn địa phương.',
+    travelS4Item4: 'Đặc sản vùng miền.',
+    travelS4Item5: 'Những món ăn nên thử.',
+    travelS4Item6: 'Trải nghiệm ẩm thực.',
+    travelS4Note: 'Điều này tạo sự liên kết tự nhiên giữa Du lịch và Ẩm thực trong hệ sinh thái Biteo. Ví dụ: Đà Nẵng → Điểm đến → Khách sạn → Món ăn → Nhà hàng → Trải nghiệm địa phương.',
+
+    // Section 5: Watch Videos and Experiences
+    travelS5Title: '🎥 Xem video và trải nghiệm thực tế',
+    travelS5Desc: 'Không chỉ đọc thông tin, người dùng có thể khám phá điểm đến thông qua hình ảnh, video và nội dung do cộng đồng chia sẻ. Bạn có thể xem:',
+    travelS5Item1: 'Video trải nghiệm.',
+    travelS5Item2: 'Hình ảnh địa điểm.',
+    travelS5Item3: 'Review chuyến đi.',
+    travelS5Item4: 'Câu chuyện địa phương.',
+    travelS5Item5: 'Kinh nghiệm du lịch.',
+    travelS5Item6: 'Nội dung từ Creator/Affiliate.',
+    travelS5Note: 'Đề án Biteo cho phép nội dung du lịch được cung cấp bởi thành viên, đồng thời xác định các chủ thể tham gia gồm người dùng, Affiliate du lịch, người bán đặc sản, nhà hàng, hộ kinh doanh, hợp tác xã, doanh nghiệp địa phương và đơn vị cung cấp dịch vụ du lịch nếu có.',
+
+    // Section 6: Plan Your Journey
+    travelS6Title: '🧳 Lên kế hoạch cho hành trình',
+    travelS6Desc: 'Biteo hướng đến việc giúp người dùng không chỉ tìm một địa điểm, mà có thể bắt đầu hình thành cả hành trình.',
+    travelS6Flow: 'Chọn điểm đến ↓ Tìm nơi lưu trú ↓ Khám phá địa danh ↓ Tìm món ăn ↓ Tìm nhà hàng ↓ Khám phá hoạt động ↓ Lên lịch trình',
+    travelS6Note: 'Từ đó, người dùng có thể chủ động chuẩn bị cho chuyến đi thay vì phải tìm kiếm thông tin ở nhiều nền tảng khác nhau.',
+
+    // Section 7: Save Favorite Destinations
+    travelS7Title: '❤️ Lưu những điểm đến yêu thích',
+    travelS7Desc: 'Khi tìm được một địa điểm muốn đến, người dùng có thể lưu lại để:',
+    travelS7Item1: 'Xem lại sau',
+    travelS7Item2: 'So sánh các lựa chọn',
+    travelS7Item3: 'Lập danh sách điểm muốn đi',
+    travelS7Item4: 'Chia sẻ với bạn bè',
+    travelS7Item5: 'Chuẩn bị cho chuyến đi tiếp theo',
+    travelS7Note: 'Những địa điểm đã lưu có thể trở thành danh sách cảm hứng du lịch cá nhân của mỗi người dùng.',
+
+    // Section 8: Explore from Community
+    travelS8Title: '👥 Khám phá từ cộng đồng',
+    travelS8Desc: 'Du lịch không chỉ đến từ những thông tin chính thức. Những trải nghiệm thực tế của cộng đồng cũng có thể trở thành nguồn cảm hứng cho chuyến đi.',
+    travelS8SubDesc: 'Người dùng có thể:',
+    travelS8Item1: 'Xem nội dung du lịch.',
+    travelS8Item2: 'Yêu thích bài viết.',
+    travelS8Item3: 'Bình luận chia sẻ.',
+    travelS8Item4: 'Chia sẻ trải nghiệm.',
+    travelS8Item5: 'Theo dõi người dùng khác.',
+    travelS8Item6: 'Lưu nội dung hay.',
+    travelS8View: 'Xem',
+    travelS8Like: 'Yêu thích',
+    travelS8Comment: 'Bình luận',
+    travelS8Share: 'Chia sẻ',
+    travelS8Save: 'Lưu',
+    travelS8Note: 'Một người chia sẻ trải nghiệm tại một địa điểm có thể giúp một người khác tìm thấy nơi họ muốn đến. Đề án Biteo xác định nền tảng cho phép người dùng xem nội dung, yêu thích, bình luận, theo dõi người dùng khác và tương tác với nội dung do nền tảng, người dùng, Affiliate hoặc người bán đăng tải.',
+
+    // Section 9: Connect with Sellers and Local Services
+    travelS9Title: '🤝 Kết nối du lịch với người bán và dịch vụ địa phương',
+    travelS9Desc: 'Du lịch Biteo còn tạo cơ hội để các đơn vị địa phương giới thiệu giá trị của mình đến khách du lịch.',
+    travelS9SubDesc: 'Các chủ thể có thể tham gia gồm:',
+    travelS9Item1: 'Đơn vị lưu trú.',
+    travelS9Item2: 'Đơn vị cung cấp dịch vụ du lịch.',
+    travelS9Item3: 'Nhà hàng/quán ăn.',
+    travelS9Item4: 'Cửa hàng đặc sản.',
+    travelS9Item5: 'Hộ kinh doanh.',
+    travelS9Item6: 'Hợp tác xã.',
+    travelS9Item7: 'Doanh nghiệp địa phương.',
+    travelS9Item8: 'Affiliate du lịch.',
+    travelS9Note: 'Qua nội dung, hình ảnh, video và các hoạt động trên nền tảng, người dùng có thể tiếp cận trực tiếp những dịch vụ và sản phẩm phù hợp với hành trình.',
+
+    // Section 10: Connect with Local Specialties
+    travelS10Title: '🛍️ Kết nối du lịch với đặc sản địa phương',
+    travelS10Desc: 'Một chuyến đi thường không kết thúc khi du khách rời khỏi điểm đến.',
+    travelS10SubDesc: 'Những sản phẩm đặc trưng của địa phương có thể tiếp tục được khám phá và mua sắm trên Biteo.',
+    travelS10Flow: 'Khám phá địa phương → Biết đến đặc sản → Xem sản phẩm → Xem người bán → Tìm hiểu sản phẩm → Đặt hàng',
+    travelS10Note: 'Đề án cũng xác định người bán đặc sản địa phương, nhà hàng, hộ kinh doanh, hợp tác xã và doanh nghiệp địa phương là những chủ thể có thể tham gia vào chuyên mục Du lịch.',
+
+    // Section 11: From Exploration to Experience
+    travelS11Title: '🌏 Từ khám phá đến trải nghiệm',
+    travelS11Desc: 'Mục tiêu của Du lịch Biteo không chỉ là giúp người dùng biết một địa điểm, mà hướng đến việc giúp họ có thể tiếp tục hành trình.',
+    travelS11SubTitle1: 'Hành trình khám phá',
+    travelS11SubTitle2: 'Dẫn dắt người dùng',
+    travelS11Flow1: 'Khám phá → Lựa chọn → Lên kế hoạch → Trải nghiệm → Chia sẻ',
+    travelS11Flow2: 'Khách sạn → Nhà hàng → Địa danh → Đặc sản → Hoạt động → Nội dung cộng đồng',
+    travelS11Item1: 'Tìm cảm hứng',
+    travelS11Item2: 'Lên kế hoạch',
+    travelS11Item3: 'Trải nghiệm thực tế',
+    travelS11Item4: 'Chia sẻ câu chuyện',
+    travelS11Note: 'Tất cả tạo thành một hành trình khám phá liền mạch trong hệ sinh thái Biteo.',
+
+    // Section 12: Value to Biteo
+    travelS12Title: '🌟 Giá trị của Du lịch đối với Biteo',
+    travelS12Desc: 'Du lịch là một trong những chuyên mục có khả năng kết nối nhiều dịch vụ khác nhau trên Biteo.',
+    travelS12Question: 'Một người dùng có thể bắt đầu bằng câu hỏi:',
+    travelS12Quote: 'Cuối tuần này đi đâu?',
+    travelS12Journey: 'Tìm điểm đến → Tìm khách sạn → Tìm nhà hàng → Tìm địa điểm vui chơi → Khám phá đặc sản → Lên kế hoạch → Trải nghiệm → Chia sẻ hành trình',
+    travelS12Note: 'Đề án Biteo định vị chuyên mục Du lịch như một không gian khám phá điểm đến, địa phương, văn hóa, ẩm thực và trải nghiệm, đồng thời liên kết với các nhóm chức năng khác của hệ sinh thái.',
+
+    // Additional labels
+    accommodations: 'Cơ sở lưu trú',
+    readyTravel: 'Sẵn sàng khám phá?',
+    readyTravelDesc: 'Bắt đầu hành trình của bạn ngay hôm nay cùng Biteo. Tìm điểm đến, lên kế hoạch và tạo những kỷ niệm đáng nhớ.',
+
+    // Section 1: Product Discovery
+    shopS1Title: 'Khám phá sản phẩm từ khắp Việt Nam',
+    shopS1SubTitle: '🔎 Nhiều nhóm sản phẩm đa dạng',
+    shopS1Desc: 'Biteo giúp người dùng khám phá nhiều nhóm sản phẩm khác nhau từ khắp Việt Nam.',
+    shopS1Item1: 'Đặc sản vùng miền',
+    shopS1Item2: 'Sản phẩm OCOP',
+    shopS1Item3: 'Nông sản',
+    shopS1Item4: 'Thực phẩm',
+    shopS1Item5: 'Đồ uống',
+    shopS1Item6: 'Sản phẩm thủ công',
+    shopS1Item7: 'Sản phẩm tiêu dùng',
+    shopS1Item8: 'Sản phẩm từ người bán',
+    shopS1Note: 'Người dùng có thể tìm kiếm sản phẩm theo nhu cầu, danh mục hoặc khu vực, từ đó dễ dàng tìm thấy những sản phẩm phù hợp.',
+
+    // Section 2: Local Specialties
+    shopS2Title: 'Khám phá đặc sản địa phương',
+    shopS2Desc: 'Mỗi vùng miền Việt Nam đều có những sản phẩm mang dấu ấn riêng. Biteo tạo không gian để người dùng khám phá những giá trị gắn liền với sản phẩm và địa phương.',
+    shopS2Flow: 'Hành trình khám phá đặc sản',
+    shopS2Item1: 'Tìm hiểu về địa phương',
+    shopS2Item2: 'Khám phá đặc sản nổi tiếng',
+    shopS2Item3: 'Tìm hiểu người bán',
+    shopS2Item4: 'Xem câu chuyện sản phẩm',
+    shopS2Item5: 'Đặt mua sản phẩm',
+    shopS2Item6: 'Nhận hàng và trải nghiệm',
+    shopS2Note: 'Đề án Biteo xác định người bán đặc sản địa phương, hộ kinh doanh, hợp tác xã và doanh nghiệp địa phương là những chủ thể có thể tham gia vào hệ sinh thái nền tảng.',
+
+    // Section 3: OCOP Products
+    shopS3Title: 'Khám phá sản phẩm OCOP',
+    shopS3Desc: 'Biteo có thể trở thành một không gian để người dùng tiếp cận các sản phẩm OCOP đến từ nhiều địa phương.',
+    shopS3SubDesc: 'Người dùng có thể khám phá:',
+    shopS3Item1: 'Sản phẩm OCOP theo địa phương',
+    shopS3Item2: 'Sản phẩm OCOP theo nhóm ngành hàng',
+    shopS3Item3: 'Đặc sản từ nguồn nguyên liệu địa phương',
+    shopS3Item4: 'Sản phẩm gắn với làng nghề',
+    shopS3Item5: 'Sản phẩm từ vùng sản xuất',
+    shopS3Note: 'Qua đó, người mua có thêm cơ hội biết đến những sản phẩm mà trước đây có thể chưa từng tiếp cận.',
+
+    // Section 4: Seller Discovery
+    shopS4Title: 'Tìm kiếm và khám phá người bán',
+    shopS4Desc: 'Mỗi sản phẩm trên Biteo có thể gắn với một người bán/gian hàng.',
+    shopS4SubDesc: 'Người dùng có thể:',
+    shopS4Item1: 'Xem thông tin sản phẩm',
+    shopS4Item2: 'Xem gian hàng',
+    shopS4Item3: 'Khám phá sản phẩm khác',
+    shopS4Item4: 'Theo dõi người bán',
+    shopS4Item5: 'Xem nội dung chia sẻ',
+    shopS4Item6: 'Tìm hiểu trước khi mua',
+    shopS4Note: 'Đề án Biteo xác định nền tảng cho phép người dùng theo dõi Affiliate/người bán, tiếp cận sản phẩm/dịch vụ và đặt hàng trực tuyến trên cùng một hệ thống.',
+
+    // Section 5: Shopping with Content
+    shopS5Title: 'Mua sắm kết hợp nội dung',
+    shopS5Desc: 'Mua sắm trên Biteo không chỉ bắt đầu từ việc tìm kiếm một sản phẩm. Người dùng có thể bắt đầu từ nội dung và chuyển đổi thành đơn hàng.',
+    shopS5SubDesc: 'Hành trình mua sắm:',
+    shopS5Step1: 'Video',
+    shopS5Step2: 'Bài đăng',
+    shopS5Step3: 'Livestream',
+    shopS5Step4: 'Sản phẩm',
+    shopS5Step5: 'Gian hàng',
+    shopS5Step6: 'Đặt hàng',
+    shopS5Ex1: 'Bạn xem một video giới thiệu đặc sản → quan tâm sản phẩm → xem thông tin → truy cập gian hàng → xem thêm sản phẩm → đặt mua.',
+    shopS5Ex2: 'Bạn đọc bài chia sẻ về sản phẩm OCOP → tìm hiểu thêm → xem livestream → thêm vào giỏ hàng → thanh toán.',
+    shopS5Note: 'Đề án Biteo xác định nền tảng kết hợp nội dung số, mạng xã hội, livestream, Affiliate và thương mại điện tử, trong đó sản phẩm có thể được gắn vào video, livestream hoặc bài đăng.',
+
+    // Section 6: Video & Livestream
+    shopS6Title: 'Khám phá sản phẩm qua Video & Livestream',
+    shopS6Desc: 'Sản phẩm có thể được giới thiệu trực quan thông qua video và livestream.',
+    shopS6Item1: 'Video sản phẩm',
+    shopS6Item2: 'Video trải nghiệm',
+    shopS6Item3: 'Livestream giới thiệu',
+    shopS6Item4: 'Nội dung từ người bán',
+    shopS6Item5: 'Nội dung từ Affiliate',
+    shopS6Item6: 'Nội dung cộng đồng',
+    shopS6Note: 'Đặc biệt, Affiliate có thể tạo nội dung quảng bá sản phẩm/dịch vụ và gắn sản phẩm vào video, livestream hoặc bài đăng theo cơ chế của Biteo.',
+
+    // Section 7: Ordering Process
+    shopS7Title: 'Tìm hiểu và đặt hàng',
+    shopS7Desc: 'Khi tìm được sản phẩm phù hợp, người dùng có thể tiếp tục hành trình mua sắm một cách thuận tiện.',
+    shopS7Step1: 'Xem sản phẩm',
+    shopS7Step2: 'Tìm hiểu thông tin',
+    shopS7Step3: 'Chọn sản phẩm',
+    shopS7Step4: 'Thêm vào giỏ hàng',
+    shopS7Step5: 'Đặt hàng',
+    shopS7Step6: 'Thanh toán',
+    shopS7Step7: 'Nhận hàng',
+    shopS7Note: 'Đề án Biteo xác định người dùng có thể tiếp cận sản phẩm/dịch vụ, đặt hàng trực tuyến, nhận hàng thông qua dịch vụ logistics và tham gia các chương trình ưu đãi, điểm thưởng trên nền tảng.',
+
+    // Section 8: Promotions
+    shopS8Title: 'Ưu đãi và chương trình dành cho người mua',
+    shopS8Desc: 'Biteo kết nối hoạt động mua sắm với các chương trình ưu đãi hấp dẫn.',
+    shopS8Item1: 'Mã giảm giá',
+    shopS8Item2: 'Ưu đãi từ người bán',
+    shopS8Item3: 'Chương trình khuyến mại',
+    shopS8Item4: 'Điểm thưởng',
+    shopS8Item5: 'Ưu đãi từ Affiliate',
+    shopS8Item6: 'Chương trình thành viên',
+    shopS8Note: 'Đề án xác định người dùng có thể tham gia các chương trình ưu đãi và điểm thưởng trên cùng nền tảng.',
+
+    // Section 9: Delivery
+    shopS9Title: 'Kết nối giao hàng',
+    shopS9Desc: 'Sau khi đặt hàng, sản phẩm được kết nối với hoạt động giao nhận để đưa hàng hóa đến người mua.',
+    shopS9SubDesc: 'Hành trình giao hàng:',
+    shopS9Step1: 'Đặt hàng',
+    shopS9Step2: 'Xác nhận',
+    shopS9Step3: 'Xử lý',
+    shopS9Step4: 'Giao hàng',
+    shopS9Step5: 'Nhận hàng',
+    shopS9Note: 'Đề án Biteo xác định đối tác logistics có vai trò giao hàng, hoàn hàng, kiểm soát chuỗi lạnh/hàng dễ hỏng nếu có và phối hợp xử lý khiếu nại giao nhận.',
+
+    // Section 10: Product Selection
+    shopS10Title: 'Khám phá và lựa chọn sản phẩm phù hợp',
+    shopS10Desc: 'Mua sắm không chỉ là tìm sản phẩm có giá phù hợp. Người dùng có thể cân nhắc nhiều yếu tố trước khi quyết định.',
+    shopS10SubDesc: 'Người dùng có thể cân nhắc:',
+    shopS10Item1: 'Nguồn gốc sản phẩm',
+    shopS10Item2: 'Thông tin chi tiết',
+    shopS10Item3: 'Người bán',
+    shopS10Item4: 'Nội dung giới thiệu',
+    shopS10Item5: 'Đánh giá từ cộng đồng',
+    shopS10Item6: 'Chính sách mua hàng',
+    shopS10Item7: 'Ưu đãi hiện có',
+    shopS10Note: 'Qua đó, Biteo hướng đến trải nghiệm mua sắm chủ động, giúp người dùng tìm hiểu trước – lựa chọn phù hợp – mua sắm thuận tiện.',
+
+    // Section 11: Buyer-Seller Connection
+    shopS11Title: 'Kết nối người mua với người bán Việt Nam',
+    shopS11Desc: 'Một trong những giá trị quan trọng của Mua sắm Biteo là tạo ra sự kết nối giữa các chủ thể trong hệ sinh thái.',
+    shopS11SubDesc: 'Kết nối chính:',
+    shopS11Item1: 'Người mua có thêm cơ hội khám phá sản phẩm từ nhiều vùng miền',
+    shopS11Item2: 'Người bán có thêm không gian giới thiệu sản phẩm và xây dựng nội dung',
+    shopS11Item3: 'Sản phẩm được tiếp cận đúng đối tượng quan tâm',
+    shopS11Item4: 'Địa phương được quảng bá qua sản phẩm đặc sản',
+    shopS11Buyer: 'Người mua',
+    shopS11Seller: 'Người bán',
+    shopS11Product: 'Sản phẩm',
+    shopS11Local: 'Địa phương',
+    shopS11Note: 'Đây cũng phù hợp với định hướng Biteo là nền tảng kết hợp mạng xã hội và thương mại điện tử, nơi người dùng có thể khám phá nội dung rồi tiếp cận sản phẩm và thực hiện giao dịch.',
+
+    // Section 12: Value to Biteo
+    shopS12Title: 'Giá trị của Mua sắm đối với Biteo',
+    shopS12Desc: 'Mua sắm là nơi kết nối nhiều thành phần trong hệ sinh thái Biteo.',
+    shopS12Question: 'Một sản phẩm địa phương có thể được biết đến như thế nào?',
+    shopS12Quote: 'Từ nội dung → tìm hiểu → khám phá → đặt hàng → nhận hàng',
+    shopS12Flow: 'Video → Khám phá → Sản phẩm → Người bán → Affiliate → Giỏ hàng → Đặt hàng → Thanh toán → Logistics → Nhận hàng & đánh giá',
+    shopS12Journey: 'Nhờ đó, một sản phẩm địa phương có thể được người dùng biết đến qua nội dung, tìm hiểu qua cộng đồng, khám phá người bán và cuối cùng thực hiện mua hàng trên cùng một hệ sinh thái.',
+    shopS12Note: 'Mua sắm Biteo không chỉ là giao dịch thương mại, mà còn là cầu nối giữa người mua, người bán, sản phẩm và địa phương – góp phần phát triển kinh tế địa phương và quảng bá giá trị Việt.',
+
+    // Ecosystem Flow
+    shopFlow1: 'Video',
+    shopFlow2: 'Khám phá',
+    shopFlow3: 'Sản phẩm',
+    shopFlow4: 'Người bán',
+    shopFlow5: 'Affiliate',
+    shopFlow6: 'Giỏ hàng',
+    shopFlow7: 'Đặt hàng',
+    shopFlow8: 'Thanh toán',
+    shopFlow9: 'Logistics',
+    shopFlow10: 'Nhận hàng',
   },
   en: {
     // Header
@@ -831,6 +2359,15 @@ const translations: Record<Language, Record<string, string>> = {
     termsOfUse: 'Terms of Use',
     privacyPolicy: 'Privacy Policy',
     footerPartnerPolicy: 'Partner Policy',
+    pricingPolicyLink: 'Pricing & Fees Policy',
+    servicePolicyLink: 'Service Policy',
+    returnPolicyLink: 'Return Policy',
+    deliveryPolicyLink: 'Delivery Policy',
+    paymentPolicyLink: 'Payment Policy',
+    displayPolicyLink: 'Display Policy',
+    complaintHandlingLink: 'Complaints',
+    operatingRegulationsLink: 'Operating Regulations',
+    livestreamRegulationsLink: 'Livestream Regulations',
     footerDesc: 'Biteo – Multi-service technology platform connecting users, businesses, and partners in a comprehensive digital ecosystem.',
     biteo: 'Biteo',
     legal: 'Legal',
@@ -935,6 +2472,408 @@ const translations: Record<Language, Record<string, string>> = {
     privacyDataText: 'Partners commit to protecting all customer information and not using data for personal purposes.',
     terminateCooperation: 'Terminate Cooperation',
     terminateCooperationText: 'Either party may terminate cooperation with 30 days notice.',
+
+    // Pricing Policy Page
+    pricingPolicyTitle: 'Pricing, Fees and Commission Policy',
+    pricingPolicySubtitle: 'Detailed information about pricing, service fees and commissions on the Biteo platform',
+    pricingPolicyIntroTitle: 'Overview',
+    pricingPolicyIntro: 'This policy defines the principles of transparency and pricing for goods/services, fees, surcharges, commissions, discounts and deductions, reconciliation, payment, refund/recovery on the Biteo Platform.',
+    pricingPolicySection1: 'Transparency',
+    pricingPolicySection1Content: 'All pricing and fee information is clearly disclosed',
+    pricingPolicySection2: 'Clarity',
+    pricingPolicySection2Content: 'Detailed fees are clearly displayed',
+    pricingPolicySection3: 'Updates',
+    pricingPolicySection3Content: '20 days notice before any changes',
+
+    // Part I - General
+    pricingPolicyPart1: 'PART I - GENERAL PROVISIONS',
+    pricingPolicyPart1Title1: 'Article 1. Scope and Applicable Objects',
+    pricingPolicyPart1Content1: 'This policy applies to buyers/users, sellers, live stream sellers, Affiliates, advertisers, service providers and other entities that incur financial rights or obligations with Biteo.',
+    pricingPolicyPart1Title2: 'Article 2. General Principles',
+    pricingPolicyPart1Content2: 'Prices, fees, commissions and related costs must be clear, with valid basis, stated in Vietnamese Dong and not misleading. Before placing an order or purchasing a service, the payer must be informed of the total amount payable.',
+    pricingPolicyPart1Title3: 'Article 3. Terminology',
+    pricingPolicyPart1Content3: 'Selling price is the amount buyers must pay. Service fee is the amount Biteo charges for providing functions or services. Transaction commission is the deduction from seller revenue. Fee schedule is the electronic document disclosing rates and calculation methods.',
+
+    // Part II - Pricing
+    pricingPolicyPart2: 'PART II - PRICING OF GOODS AND SERVICES',
+    pricingPolicyPart2Title1: 'Article 4. Pricing Information for Goods and Services',
+    pricingPolicyPart2Content1: 'Biteo requires disclosure at the point of sale and before ordering: Current selling price, original/discounted price, tax-inclusive/exclusive status, delivery fees, service fees, surcharges and total amount payable.',
+    pricingPolicyPart2Title2: 'Article 5. Seller Responsibilities for Pricing',
+    pricingPolicyPart2Content2: 'Sellers may set prices within their legal business scope but must ensure accuracy, consistency and no confusion. Artificially inflating prices to create fake discounts or advertising one price while charging another is prohibited.',
+    pricingPolicyPart2Title3: 'Article 6. Promotions and Discount Codes',
+    pricingPolicyPart2Content3: 'All promotional programs must disclose sponsor entity, target audience, goods, time period, value/amount, conditions and quantity limits. Discount codes or reward points are only deducted when conditions are met.',
+
+    // Part III - Fees
+    pricingPolicyPart3: 'PART III - BITEO FEE TYPES',
+    pricingPolicyPart3Title1: 'Article 7. List of Applicable Fees',
+    pricingPolicyPart3Content1: 'Depending on the actual model and effective Fee Schedule, Biteo may apply: Account opening/maintenance fees, store fees, product listing fees, order processing fees, transaction commissions, live stream fees, advertising fees, boosting/priority display fees and other value-added service fees.',
+    pricingPolicyPart3Title2: 'Article 8. Calculation Methods and Collection Timing',
+    pricingPolicyPart3Content2: 'Fees may be calculated by fixed amount, percentage, monthly/annual period, product quantity, duration, impressions/clicks/conversions, transaction value or other publicly disclosed formula. Fee schedules must specify fee name, paying party, amount/rate, tax-inclusive/exclusive status.',
+    pricingPolicyPart3Title3: 'Article 9. Periodic Packages and Termination',
+    pricingPolicyPart3Content3: 'For membership/subscription/premium, Biteo must publicly disclose price, cycle, benefits, limits, renewal mechanism and cancellation before registration. Auto-renewal is only performed with valid acceptance mechanism and appropriate notice.',
+
+    // Part IV - Commission
+    pricingPolicyPart4: 'PART IV - COMMISSIONS AND SELLER RECONCILIATION',
+    pricingPolicyPart4Title1: 'Article 11. Transaction Commissions and Seller Revenue',
+    pricingPolicyPart4Content1: 'Sellers are provided with commission rate/calculation method, related fees, reconciliation period and payment method in advance. Formula: Payment = Valid Transaction Revenue − Cancellation/Refund − Fees and Commissions − Taxes/Deductions.',
+    pricingPolicyPart4Title2: 'Article 12. Reconciliation and Hold',
+    pricingPolicyPart4Content2: 'Sellers have access to order reports, cancellations/refunds, fees, commissions, taxes and expected/actual payments. Biteo may hold amounts within agreement scope for disputes, fraud, refund requests or violation indicators.',
+
+    // Part V - Affiliate
+    pricingPolicyPart5: 'PART V - AFFILIATE COMMISSIONS',
+    pricingPolicyPart5Title1: 'Article 13. Affiliate Program Information',
+    pricingPolicyPart5Content1: 'Before Affiliates join, Biteo publicly discloses: Commission rate or calculation method, valid order conditions, cookie duration, reconciliation period, thresholds and payment method, hold conditions and tax obligations.',
+    pricingPolicyPart5Title2: 'Article 14. Affiliate Commission Qualification Conditions',
+    pricingPolicyPart5Content2: 'Commissions are only recognized when transactions meet conditions: Generated through correct referral link/code, validly recorded by system, paid orders, not cancelled/refunded/rejected and without fraud.',
+    pricingPolicyPart5Title3: 'Article 16. Affiliate Reconciliation and Payment',
+    pricingPolicyPart5Content3: 'Affiliates can view clicks, recorded orders, cancelled/refunded orders, transaction value and estimated commissions. Biteo deducts/declares taxes as required by law and provides related information/documents.',
+
+    // Part VI - Taxes
+    pricingPolicyPart6: 'PART VI - TAXES, FEE REFUNDS AND DISPUTES',
+    pricingPolicyPart6Title1: 'Article 17. Taxes, Invoices and Documents',
+    pricingPolicyPart6Content1: 'Prices/Fees must clearly state tax-inclusive or exclusive status. Each party registers, declares, pays taxes and invoices according to their legal role. Biteo deducts taxes from seller/affiliate payments when required by law.',
+    pricingPolicyPart6Title2: 'Article 18. Fee Refunds and Errors',
+    pricingPolicyPart6Content2: 'Fee refunds are considered when Biteo fails to provide services due to its own fault, duplicate/incorrect charges or service cancellation. Refund amounts are determined by undelivered service portion, actual errors and outstanding obligations.',
+    pricingPolicyPart6Title3: 'Article 19. Financial Dispute Resolution',
+    pricingPolicyPart6Content3: 'Entities may submit disputes about prices, fees, commissions, reconciliation or payments through Biteo support channels. Documents include transaction/order/campaign codes, reconciliation period, disputed amount and evidence. Biteo confirms, cross-references logs and notifies results.',
+
+    // Part VII - Changes
+    pricingPolicyPart7: 'PART VII - FEE SCHEDULE CHANGES AND DISCLOSURE',
+    pricingPolicyPart7Title1: 'Article 20. Principles for Changing Prices, Fees and Commissions',
+    pricingPolicyPart7Content1: 'Biteo may adjust Fee Schedules due to service changes, costs, market conditions, tax/legal changes or other legitimate reasons. For policy changes, Biteo discloses at least 20 days before effective date, unless law requires longer notice.',
+    pricingPolicyPart7Title2: 'Article 21. Notification and Acceptance of Changes',
+    pricingPolicyPart7Content2: 'Biteo discloses on homepage, Legal Center, Fee Schedule and related service interfaces. Also notifies via app/email/account for significantly affected parties. Users have the right to stop using services before effective date.',
+    pricingPolicyPart7Title3: 'Article 22. Disclosure Locations',
+    pricingPolicyPart7Content3: 'Policies and Fee Schedules are clearly linked from Biteo main screen/homepage. Specific applicable information is displayed before purchasing packages, placing ads, joining Affiliate or confirming orders.',
+
+    pricingPolicyNotice: 'Specific fees, rates and special conditions are specified in the Fee Schedule/Program/Agreement disclosed by Biteo before entities confirm usage. All changes will be notified at least 20 days in advance.',
+    pricingPolicyContactTitle: 'Need Support with Pricing and Fees?',
+    pricingPolicyContactDesc: 'Biteo team is ready to answer all questions about pricing, fees and commission policies',
+
+    // Privacy Policy Page
+    privacyPolicyPageTitle: 'Privacy and Data Protection Policy',
+    privacyPolicyPageSubtitle: 'Detailed information about how Biteo collects, uses and protects your personal data',
+    privacyPolicyPart1: 'PART I - GENERAL PROVISIONS',
+    privacyPolicyPart2: 'PART II - DATA COLLECTION',
+    privacyPolicyPart3: 'PART III - PURPOSE AND PROCESSING BASIS',
+    privacyPolicyPart4: 'PART IV - DATA SHARING',
+    privacyPolicyPart5: 'PART V - STORAGE AND SECURITY',
+    privacyPolicyPart6: 'PART VI - DATA SUBJECT RIGHTS',
+    privacyPolicyPart7: 'PART VII - INCIDENTS AND MANAGEMENT',
+    tableOfContents: 'Table of Contents',
+
+    // Service Policy Page
+    servicePolicyPageTitle: 'Service Ordering, Provision, Cancellation and Refund Policy',
+    servicePolicyPageSubtitle: 'Regulations on ordering, confirmation, payment and cancellation of services on Biteo',
+    servicePolicyPart1: 'PART I - GENERAL PROVISIONS',
+    servicePolicyPart2: 'PART II - SERVICE ORDERING INFORMATION AND PROCESS',
+    servicePolicyPart3: 'PART III - SERVICE PROVISION AND COMPLETION',
+    servicePolicyPart4: 'PART IV - SERVICE TYPE REGULATIONS',
+    servicePolicyPart5: 'PART V - RESCHEDULING, CANCELLATION AND TERMINATION',
+    servicePolicyPart6: 'PART VI - REFUNDS, COMPLAINTS AND EFFECTIVENESS',
+    servicePolicyContactTitle: 'Need support with services?',
+
+    // Return Policy Page
+    returnPolicyPageTitle: 'Return, Exchange and Refund Policy',
+    returnPolicyPageSubtitle: 'Regulations on exchanging, returning goods and refunds on Biteo',
+    returnPolicyPart1: 'PART I - GENERAL PROVISIONS',
+    returnPolicyPart2: 'PART II - GROUNDS AND CONDITIONS',
+    returnPolicyPart3: 'PART III - DEADLINES, DOCUMENTS AND PROCEDURES',
+    returnPolicyPart4: 'PART IV - COSTS, EXCHANGE AND REFUNDS',
+    returnPolicyPart5: 'PART V - DISPUTES, FRAUD AND RESPONSIBILITIES',
+    returnPolicyContactTitle: 'Need support with returns?',
+
+    // Return Policy Articles (EN)
+    returnPolicyArt1Title: 'Article 1. Scope and Application',
+    returnPolicyArt1Content: '1. This policy regulates grounds, conditions, deadlines, documentation and procedures for exchange/return of goods; handling returned goods; refunds arising from exchange/return results; and responsibilities of parties regarding transactions on Biteo.\n2. This policy applies to buyers, sellers, Biteo, logistics partners, payment partners and related entities.\n3. Cancellation/termination of services, membership, advertising, boosting, tickets, table reservations, travel or digital goods/services are subject to their own conditions.',
+
+    returnPolicyArt2Title: 'Article 2. Role and Limitations of Biteo',
+    returnPolicyArt2Content: '1. Sales contracts are made between buyers and sellers. Sellers bear primary responsibility for goods, information, quality, warranty, exchange/return, recall and refunds.\n2. Biteo publishes policies, provides tools for submitting requests, preserves data, coordinates verification and transmits refund instructions within its functions.\n3. Biteo does not directly become a seller, shipping unit or payment intermediary solely by supporting request processing.',
+
+    returnPolicyArt3Title: 'Article 3. Applicable Principles',
+    returnPolicyArt3Content: '1. Mandatory rights under law take priority. Seller policies can only apply if they do not reduce those rights.\n2. There is no automatic right to return all goods for "change of mind" within 7 days, unless seller/Biteo publicly commits otherwise.\n3. Acceptance or rejection must be based on grounds and evidence; cannot reject solely because buyer received goods if defects could not reasonably be detected at inspection.\n4. Party at fault bears reasonable costs incurred.',
+
+    returnPolicyArt4Title: 'Article 4. Terminology',
+    returnPolicyArt4Content: '1. Exchange is replacing received goods with suitable goods according to processing results.\n2. Return is buyer returning goods to seller/designated entity to cancel fully or partially a transaction or apply remedial measures.\n3. Refund is full or partial return of actual paid amount after basis is approved.\n4. Hidden defect is defect not reasonably detectable by normal inspection at receipt time.\n5. Defective goods are understood per consumer protection law, including cases not guaranteeing safe use with potential for damage despite proper use.',
+
+    returnPolicyArt5Title: 'Article 5. Cases for Exchange/Return Request',
+    returnPolicyArt5Content: 'Buyers may request when:\n1. Wrong product, model, color, size, quantity, parts or accessories delivered compared to order\n2. Missing, broken, damaged, deformed, leaking, expired/near-expired items against disclosure\n3. Goods not matching posted information, listing, advertising, introduction, livestream content or transaction commitment\n4. Counterfeit, unclear origin, violating business conditions or infringing legal rights\n5. Defective, unsafe goods, under warning or recall\n6. Seller fails to deliver on time/method where delay defeats transaction purpose\n7. Seller/Biteo has "change of mind", trial use or size/color exchange program beneficial to buyer',
+
+    returnPolicyArt6Title: 'Article 6. Remedial Measures',
+    returnPolicyArt6Content: '1. Depending on grounds and legal choices, results may include: supplementing missing parts; exchanging goods; repair/warranty; price reduction; returning goods and full/partial refund; replacement; or compensation.\n2. Cannot force buyer to accept voucher, points or replacement goods instead of money refund if buyer disagrees, unless law permits.\n3. Exchange does not waive right to report continued defects or unsuitable exchanged goods.\n4. Damage compensation is a separate request, not automatically resolved by refunding purchase price.',
+
+    returnPolicyArt7Title: 'Article 7. Exchange/Return for Changed Needs',
+    returnPolicyArt7Content: '1. Only applies when product page/order clearly displays seller voluntary policy or Biteo program.\n2. Conditions may include: unused goods, intact tag/seal, packaging, gifts, accessories, documents and commercial value; no signs of washing, alteration, activation or data copying.\n3. Deadline, product categories, fees and shipping responsibility: [BITEO TO COMPLETE].\n4. Without above disclosure, Biteo must not display interface suggesting all goods can be returned for change of mind.',
+
+    returnPolicyArt8Title: 'Article 8. Conditions for Returned Goods Condition',
+    returnPolicyArt8Content: '1. Buyer must reasonably preserve and return correct goods, quantity, accessories, gifts, documents and packaging that can be retained.\n2. For claims due to seller/goods fault, packaging opened for reasonable inspection or goods used minimally to detect defects is not automatic rejection grounds.\n3. Value reduction from excessive use, damage, missing accessories or verified swapping is separately assessed; unfavorable assumptions cannot be made solely from opened seal when opening was necessary/reasonable.\n4. Disputed goods must be preserved per safety guidance; not continue use when health/property risk exists.',
+
+    returnPolicyArt9Title: 'Article 9. Cases That May Not Be Exchanged/Returned',
+    returnPolicyArt9Content: 'Except mandatory rights or seller/goods fault, change-of-mind policy may exclude:\n1. Used, washed, altered, activated, installed goods or significantly lost value\n2. Custom-made, personalized or produced to buyer specifications\n3. Fresh food, beverages, live/perishable goods\n4. Cosmetics, hygiene products, underwear, body-contact products with opened seal\n5. Audio/video recordings, software, codes, vouchers, activated/downloaded digital goods\n6. Goods missing tag, accessories, gifts or mismatched serial numbers due to buyer fault\n7. Other categories legitimately disclosed before transaction\n\nActual exclusions and reasons: [BITEO TO COMPLETE]. This listing does not exclude rights regarding wrong, counterfeit, defective goods or legal violations.',
+
+    returnPolicyArt10Title: 'Article 10. Goods Not Matching Commitment or Wrong/Missing Delivery',
+    returnPolicyArt10Content: '1. Buyer may request supplementary delivery, correct goods exchange, return/refund or appropriate remedy.\n2. Seller bears costs of retrieval/redelivery when fault is theirs; cannot require buyer to prepay remedy costs without basis.\n3. Video/livestream content, Affiliate info, confirmation messages and product pages may serve as transaction commitment evidence.\n4. If only part of order affected, buyer may request handling of that part or entire order when remaining part cannot be reasonably used for transaction purpose.',
+
+    returnPolicyArt11Title: 'Article 11. Defective or Unsafe Goods',
+    returnPolicyArt11Content: '1. Buyer stops using, isolates goods if needed and immediately notifies seller/Biteo; in emergencies contact authorities/medical services.\n2. Seller must provide warning, identify batch/subjects, receive, recall, repair/replace/refund and compensate per law; cannot hide or continue selling known defective goods.\n3. Biteo notifies affected buyers, blocks further delivery/sale, supports recall and coordinates with authorities within obligations.\n4. Buyer need not bear recall costs due to fault/defect.',
+
+    returnPolicyArt12Title: 'Article 12. Fresh Produce, Food and Beverages',
+    returnPolicyArt12Content: '1. Due to perishable nature, buyer prioritizes inspection and reporting upon receipt or within short published deadline per product category.\n2. Grounds include: wrong item/weight, damaged, spoiled, leaking, temperature condition loss, expired, foreign objects, safety risk or other than committed.\n3. For safety, Biteo/seller may not require return of hazardous/damaged items; buyer preserves or disposes per guidance and provides reasonable evidence.',
+
+    returnPolicyArt13Title: 'Article 13. Cosmetics, Hygiene and Personal Care Products',
+    returnPolicyArt13Content: '1. Opened sealed goods may not be returnable for change of mind due to hygiene/safety requirements.\n2. Still considered if wrong goods, counterfeit, expired, damaged/leaking packaging before receipt, reaction to unsafe product or not matching disclosure.\n3. Buyer stops use upon abnormal reaction; retains packaging, batch number, expiry, photos and medical documents if available.',
+
+    returnPolicyArt14Title: 'Article 14. Electronics, Serialized Goods and Personal Data',
+    returnPolicyArt14Content: '1. Buyer provides serial/IMEI number, seal condition and defect evidence; exchange/return may require reasonable technical inspection.\n2. Before returning, buyer backs up necessary data, logs out/deletes accounts and disables activation lock per guidance, unless impossible due to device defect.\n3. Seller/inspection entity must not access, copy or use personal data beyond necessary; must protect/delete data per law.\n4. Activation does not automatically waive rights regarding defects, wrong goods or deficiency.',
+
+    returnPolicyArt15Title: 'Article 15. Gifts, Bundles and Multi-Item Discounts',
+    returnPolicyArt15Content: '1. For full return, buyer returns usable gifts/accessories; if not, reasonable publicly disclosed value may be deducted with legal basis.\n2. For partial bundle/combo return, refund is recalculated per publicly disclosed allocation price/promotion conditions, without applying undisclosed unfavorable formula.\n3. If gift or partial bundle is defective, proportionate remedy applies; not automatically requiring full return if parts are independent.',
+
+    returnPolicyArt16Title: 'Article 16. Deadline for Submitting Requests',
+    returnPolicyArt16Content: '1. Operational deadline varies by reason/product category. Start time is when system records successful delivery or buyer actually receives.\n2. For observable perishable/wrong-missing goods, early reporting helps preserve evidence; for hidden defects, warranty, fraud or statutory rights, corresponding deadline per law/commitment applies.\n3. If buyer cannot submit due to Biteo fault, force majeure or ongoing authority processing, Biteo considers not counting impeding period.\n4. Interface must not absolutely block report submission solely for voluntary deadline expiration; must have channel for safe, hidden defect and mandatory rights cases.',
+
+    returnPolicyArt17Title: 'Article 17. Submission Channels and Request Information',
+    returnPolicyArt17Content: '1. Submit via app support section, support email or hotline.\n2. Information includes order/tracking number, product, reason, desired remedy, description and necessary contact info.\n3. Biteo issues case ID, confirms receipt and allows tracking.\n4. Cannot require buyer to contact outside platform or self-negotiate as sole condition for acceptance.',
+
+    returnPolicyArt18Title: 'Article 18. Evidence',
+    returnPolicyArt18Content: '1. May include photos/video of sealed and opened package, tag/serial/batch number, expiry, defective product, delivery record, messages, livestream content, invoice and inspection results.\n2. Biteo only requests reasonable evidence per case nature; cannot require unboxing video as absolute condition if law does not mandate and other evidence sufficiently verifies.\n3. Seller/partner provides packaging photos, weight, delivery chain, condition, signature/OTP and related documents.\n4. Evidence files are protected, access-limited and retained per Privacy Policy; user redacts others unnecessary data.',
+
+    returnPolicyArt19Title: 'Article 19. Receipt and Initial Screening',
+    returnPolicyArt19Content: '1. Biteo checks order, deadline, reason, evidence and classifies: wrong/missing; logistics damage; quality defect; defect/safety; change of mind; warranty; fraud; or other.\n2. If documentation incomplete, Biteo guides one-time complete supplementation within possibility; cannot repeat data Biteo already has.\n3. Safety risk, counterfeit/prohibited goods or recall cases are prioritized; Biteo may temporarily hide product, pause delivery/disbursement and preserve data.',
+
+    returnPolicyArt20Title: 'Article 20. Verification and Decision',
+    returnPolicyArt20Content: '1. Biteo forwards request to relevant seller/partner and sets response deadline. Silence does not automatically waive buyer rights; Biteo decides support based on available evidence and applicable regulations.\n2. Result states basis, accepted goods/order parts, remedy, expected amount, fees, return method, deadline and right to request review.\n3. Automated unfavorable decisions must allow human review when appropriate; cannot use solely complaint rate or account history to reject evidenced requests.\n4. Verification/decision SLA by case category: [BITEO TO COMPLETE].',
+
+    returnPolicyArt21Title: 'Article 21. Return Method',
+    returnPolicyArt21Content: '1. Only return after getting code/guidance, except law or Biteo allows otherwise.\n2. Methods include: partner pickup, postal/collection point drop-off, store return or other methods.\n3. Buyer packs appropriately, writes code, retains receipt; partner updates status. Do not send dangerous/perishable goods against guidance.\n4. Return address and recipient must display in case; Biteo does not publicly disclose unnecessary personal address.',
+
+    returnPolicyArt22Title: 'Article 22. Inspecting Returned Goods',
+    returnPolicyArt22Content: '1. Seller/inspection entity records time, seal, serial, accessories and condition; completes within regulated deadline from receipt.\n2. If claiming goods were used, missing, swapped or damaged by buyer, inspecting party must provide basis; buyer may explain or request review.\n3. Minor packaging differences from shipping or reasonable opening to detect defects are not sole rejection grounds.\n4. Inspection result updates case record and serves as input for exchange/refund.',
+
+    returnPolicyArt23Title: 'Article 23. Exchange/Return Costs',
+    returnPolicyArt23Content: '1. Seller/entity at fault bears retrieval, redelivery, inspection and other reasonable costs for wrong, missing, damaged, not-as-committed or defective goods.\n2. Logistics partner bears cost/damage responsibility for shipping fault per law and contract.\n3. For voluntary change-of-mind policy, buyer may bear publicly disclosed fee; cannot charge penalty or hidden fees.\n4. Biteo bears costs from system/error or its own commitments; internal allocation does not delay reasonable buyer remedy.',
+
+    returnPolicyArt24Title: 'Article 24. Executing Exchange',
+    returnPolicyArt24Content: '1. Exchanged goods must match agreement, not have lower quality/warranty rights; price difference is notified and accepted beforehand.\n2. Standard preparation/delivery time: [BITEO TO COMPLETE]. If out of stock or cannot exchange within reasonable time, buyer may propose other remedy including refund when justified.\n3. Warranty date and exchange/return rights for replacement goods apply per publicly disclosed policy/law, cannot be shortened contrary to law for having exchanged once.',
+
+    returnPolicyArt25Title: 'Article 25. Determining Refund Amount',
+    returnPolicyArt25Content: '1. Refund amount based on actual paid amount, accepted goods portion, delivery/refund fees, discount, points/voucher and party responsibility.\n2. If fully refunding due to seller/goods fault, necessary fees buyer paid for transaction are processed per law and commitment; cannot retain fees for unprovided or failed services from providing party.\n3. Orders using cash, points and voucher: refund cash does not exceed actual cash paid; points/voucher processed per rules and Payment/Refund/Points Policy. Actual formula: [BITEO TO COMPLETE].\n4. All deductions must have basis, calculation method and evidence; buyer notified before refund.',
+
+    returnPolicyArt26Title: 'Article 26. Refund Method and Time',
+    returnPolicyArt26Content: '1. After effective/qualified refund decision, Biteo sends request to payment partner or coordinates seller/COD partner.\n2. Priority is original payment method; if impossible, other method must be legal, verify correct recipient and be notified.\n3. Biteo initiates order: [BITEO TO COMPLETE]; time for funds to arrive depends on partner/method: [BITEO TO COMPLETE BY METHOD].\n4. Buyer is informed of amount, method, refund ID, creation date and estimate; exceeding estimate grants free verification if fault not theirs.\n5. Biteo does not request OTP, PIN, CVV/CVC, password or full card number for refund.',
+
+    returnPolicyArt27Title: 'Article 27. Refund Before Receiving Returned Goods',
+    returnPolicyArt27Content: '1. Biteo/seller may refund without requiring return for low-value, damaged/hazardous, unsafe food or when recovery cost is unreasonable, if sufficient evidence exists.\n2. For fraud risk or high-value goods, refund may wait for goods receipt/inspection, except law requires otherwise.\n3. Decision not requiring return does not transfer responsibility for hazardous goods disposal to buyer without appropriate safe guidance.',
+
+    returnPolicyArt28Title: 'Article 28. Request for Review and Complaints',
+    returnPolicyArt28Content: '1. Buyer/seller requests review in designated channel within [BITEO TO COMPLETE], with reasons/new evidence or pointing out errors.\n2. Biteo arranges someone not directly involved in initial decision to review when feasible and notifies result within [BITEO TO COMPLETE].\n3. Using internal process does not restrict right to request regulatory authority, consumer protection organization, mediation, arbitration or court.\n4. Detailed procedure follows "Feedback, Request and Complaint Handling Process".',
+
+    returnPolicyArt29Title: 'Article 29. Fraud Prevention',
+    returnPolicyArt29Content: '1. Prohibited: creating false requests, using other order photos, swapping/replacing goods, claiming non-receipt, damaging to claim refund, exploiting multiple accounts or collusion.\n2. Biteo may require verification, preserve payment via authorized entity, limit features or transfer to authorities with basis; measures must be proportionate and include right to explain.\n3. Cannot consider buyer filing multiple complaints as fraud if requests are justified; automated system is only signal, not sole conclusion.',
+
+    returnPolicyArt30Title: 'Article 30. Party Responsibilities',
+    returnPolicyArt30Content: '1. Buyer: provides truthful information/evidence; reasonably preserves and correctly returns goods; does not continue use increasing damage; cooperates in verification.\n2. Seller: publishes conditions; receives, inspects, exchanges/returns, refunds, warranties, recalls; bears costs/faults theirs; provides documentation.\n3. Logistics partner: picks up/returns goods, preserves, updates status, retains documents and bears shipping fault responsibility.\n4. Payment partner: executes lawful refund/verification instruction, updates status and protects data.\n5. Biteo: maintains tools, retains records, coordinates, notifies, supports processing and implements platform measures.',
+
+    returnPolicyArt31Title: 'Article 31. Disclosure, Order of Application and Effectiveness',
+    returnPolicyArt31Content: '1. Policy is disclosed on homepage/main screen, Legal Center and Support Center; core conditions must display on product page, cart/checkout and order details before contracting.\n2. Order of application: mandatory law; valid authority decision; accepted order/program conditions; more beneficial seller policy; this Policy.\n3. Policy is read together with Operating Regulations, Delivery and Inspection Policy, Payment/Refund/Rewards Policy, Privacy Policy and Complaint Procedure.\n4. Effective from approval date. Administrator: [BITEO TO COMPLETE LEGAL NAME/ENTERPRISE ID/ADDRESS].',
+
+    // Delivery Policy Page
+    deliveryPolicyPageTitle: 'Delivery and Inspection Policy',
+    deliveryPolicyPageSubtitle: 'Regulations on delivery and inspection of goods on Biteo',
+    deliveryPolicyPart1: 'PART I - GENERAL PROVISIONS',
+    deliveryPolicyPart2: 'PART II - METHODS, FEES AND TIMELINES',
+    deliveryPolicyPart3: 'PART III - RECEIVING, PACKAGING AND SHIPPING',
+    deliveryPolicyPart4: 'PART IV - DELIVERY AND INSPECTION',
+    deliveryPolicyPart5: 'PART V - FAILED DELIVERY AND ISSUES',
+    deliveryPolicyPart6: 'PART VI - RESPONSIBILITIES AND EFFECTIVENESS',
+    deliveryPolicyContactTitle: 'Need support with delivery?',
+
+    // Delivery Policy Articles (EN)
+    deliveryPolicyArt1Title: 'Article 1. Scope and Application',
+    deliveryPolicyArt1Content: '1. This policy regulates delivery method selection; receiving, packaging, pickup, shipping, delivery, inspection, failed delivery, return and issue handling for orders on Biteo.\n2. This policy applies to buyers, sellers, sender/receiver, logistics partners and entities involved in order processing.\n3. For services, digital goods, electronic tickets or deliveries entirely outside physical environment, apply separate conditions displayed at transaction.',
+
+    deliveryPolicyArt2Title: 'Article 2. Role of Biteo',
+    deliveryPolicyArt2Content: '1. Biteo is an intermediary platform connecting buyers, sellers and logistics partners; Biteo does not directly provide logistics services unless clearly disclosed and meeting legal requirements before deployment.\n2. Biteo supports order creation, transmits necessary information, displays tracking codes and status; receives feedback and coordinates handling.\n3. Sales contracts are made between buyers and sellers. Shipping service is provided by logistics partners or sellers self-delivering per disclosed method.\n4. Section 1 does not exclude Biteo separate legal liability for errors, commitments or mandatory platform obligations.',
+
+    deliveryPolicyArt3Title: 'Article 3. Terminology',
+    deliveryPolicyArt3Content: '1. Logistics partner is an organization providing delivery services integrated or accepted on Biteo.\n2. Self-delivery is when seller or seller hired unit directly delivers per method permitted by Biteo.\n3. Inspection is observing external package condition and/or opening to verify received goods against order within disclosed scope.\n4. Joint inspection is when receiver and delivery staff both witness and record inspection process per delivery unit procedures.',
+
+    deliveryPolicyArt4Title: 'Article 4. General Principles',
+    deliveryPolicyArt4Content: '1. Before ordering, buyer knows method, cost, expected time, delivery scope, inspection conditions and important applicable restrictions.\n2. Goods are delivered correct type, quantity, condition, address, time and agreed conditions. Seller bears responsibility for information accuracy and packaging.\n3. Logistics partners transport, preserve and update status within service scope; handle loss, damage, wrong delivery or delay from their fault per law and contract.\n4. No provision restricts mandatory consumer rights or exempts liability contrary to law.',
+
+    deliveryPolicyArt5Title: 'Article 5. Delivery Methods',
+    deliveryPolicyArt5Content: 'Depending on order and area, Biteo may support: Integrated logistics partner delivery; Seller self-delivery or hired unit; Buyer pickup at store/collection point; Express, standard, scheduled, cold delivery or other specialized methods displayed before ordering.\n\nActual methods being deployed: [BITEO TO COMPLETE]',
+
+    deliveryPolicyArt6Title: 'Article 6. Selection and Assignment of Delivery Unit',
+    deliveryPolicyArt6Content: '1. System may auto-assign partner based on service area, item type, fee, expected time, capacity and credibility level.\n2. When supported, seller or buyer selects from displayed list.\n3. System order assignment does not make Biteo carrier, but Biteo bears responsibility for dispatch function errors within its control.\n4. Actual partner/criteria list: [BITEO TO COMPLETE]',
+
+    deliveryPolicyArt7Title: 'Article 7. Scope and Delivery Address',
+    deliveryPolicyArt7Content: '1. Service scope depends on pickup/delivery address, partner capability, item type, area restrictions and conditions at ordering time.\n2. Buyer provides full name, phone, address and necessary guidance; verifies before confirming.\n3. Address change after seller confirmation only if system and partner accept; fees or time changes may apply.\n4. Biteo does not require public disclosure of personal address on product page; delivery data only transferred to necessary party for order fulfillment and legal obligations.',
+
+    deliveryPolicyArt8Title: 'Article 8. Shipping Fees and Surcharges',
+    deliveryPolicyArt8Content: '1. Estimated fee displayed before buyer orders, based on distance, weight/dimensions, method, item type, timing, hard-to-reach area and promotional policies.\n2. Surcharges only collected when basis, amount or calculation method was disclosed beforehand.\n3. Final fee, fee-bearing party, fee exemption/reduction codes and refund conditions are recorded in order.',
+
+    deliveryPolicyArt9Title: 'Article 9. Processing and Expected Delivery Time',
+    deliveryPolicyArt9Content: '1. Time includes seller confirmation, preparation, partner pickup and shipping.\n2. Holidays, natural disasters, epidemics, road blocks, weather, industry inspection, force majeure or inaccurate receiver info may change time; relevant parties must reasonably update.\n3. When significant delay known, Biteo/seller/partner in responsibility scope notifies status and option to continue, cancel, exchange or refund per law and related policies.',
+
+    deliveryPolicyArt10Title: 'Article 10. Seller Preparation and Packaging Responsibility',
+    deliveryPolicyArt10Content: '1. Confirm correct order; prepare correct goods, quantity, accessories, documents, expiry and public commitments.\n2. Package appropriately for item nature; seal, shock-proof, moisture/leak-proof and label necessary warnings.\n3. Declare correct name/item category, value, weight, dimensions and storage conditions; provide required documents.\n4. Do not ship prohibited, counterfeit, unclear origin, undeclared hazardous or non-compliant items.',
+
+    deliveryPolicyArt11Title: 'Article 11. Special Items and Non-Accepted Items',
+    deliveryPolicyArt11Content: '1. Fresh, frozen, perishable; beverages; cosmetics; fragile; temperature-controlled; items with battery/liquid; age-restricted or high-value items only delivered when meeting corresponding conditions.\n2. Seller must select correct service, packaging, time and warnings; buyer must ensure receiver available at time for perishables.\n3. Prohibited/restricted list and limits by size, value, temperature or time: [BITEO TO COMPLETE/LINK PARTNER REGULATIONS].\n4. Partners may inspect packaging, labels, documents; refuse or pause shipping when violations, unsafe or valid requests found.',
+
+    deliveryPolicyArt12Title: 'Article 12. Pickup and Handover',
+    deliveryPolicyArt12Content: '1. Seller hands over at correct time, location and waybill; partner records receipt with appropriate status/documents.\n2. When actual weight differs from declared, fees and shipping ability adjusted per published fee schedule; seller notified and has right to respond.\n3. Tracking code displayed to buyer and seller after created/received per actual flow.\n4. Seller does not deliver unregistered packages or unilaterally change content after sealing.',
+
+    deliveryPolicyArt13Title: 'Article 13. Journey Tracking and Order Status',
+    deliveryPolicy13Content: '1. Status may include: pending confirmation, pending pickup, picked up, shipping, delivering, delivered successfully, delivery failed, returning, return completed.\n2. Data synced via API or updated by shipping entity; technical delays may occur. When conflicts arise, Biteo verifies with delivery proof and source data.',
+
+    deliveryPolicyArt14Title: 'Article 14. Receiver Verification and Delivery',
+    deliveryPolicy14Content: '1. Delivery unit may call, message, require OTP code, signature, delivery photo or appropriate verification info.\n2. Buyer arranges receiver at address, secures OTP and only provides code when receiving correct package per guidance.\n3. Delivery to receptionist, security, authorized person, collection point or contact-free only per valid selection/acceptance; risk determined by fault and evidence per case.',
+
+    deliveryPolicyArt15Title: 'Article 15. Inspection Scope',
+    deliveryPolicyArt15Content: '1. Before receiving, buyer checks external condition, tracking code, sender/seller, seal, package count and signs of tear, dent, wet, opened or replaced.\n2. Opening to verify name, model, color, size, quantity and observable condition only applies when order/partner displays "inspection allowed".\n3. Unless product conditions clearly allow, buyer cannot test, operate, plug in, activate, remove anti-counterfeit/warranty seal, damage packaging or consume goods during inspection.\n4. Hygiene, safety, copyright sealed items; perishables; cosmetics; food; underwear; digital; custom and special items may not be opened for inspection. Restrictions must be displayed before ordering or at product conditions.',
+
+    // Payment Policy Page
+    paymentPolicyPageTitle: 'Payment, Refund and Reward Points Policy',
+    paymentPolicyPageSubtitle: 'Regulations on payment methods, refunds and reward points on Biteo',
+    paymentPolicyPart1: 'PART I - GENERAL PROVISIONS',
+    paymentPolicyPart2: 'PART II - PAYMENT METHODS AND PROCESS',
+    paymentPolicyPart3: 'PART III - REFUNDS',
+    paymentPolicyPart4: 'PART IV - REWARD POINTS AND MEMBERSHIP TIERS',
+    paymentPolicyPart5: 'PART V - RECONCILIATION, DISPUTES AND DATA PROTECTION',
+    paymentPolicyContactTitle: 'Need support with payments?',
+
+    // Payment Policy Articles - Part I (EN)
+    paymentPolicyArt1Title: 'Article 1. Scope and Application',
+    paymentPolicyArt1Content: '1. This policy regulates payment methods and processes; confirmation, dispute resolution and error transaction handling; refunds; payment reconciliation; and accumulation, redemption, usage, adjustment, and withdrawal of reward points on the Biteo Platform.\n2. This policy applies to buyers/users, sellers, livestream sellers, Affiliates/affiliate marketers, payment service providers, logistics partners and related entities.\n3. Exchange, return of goods or service termination is subject to Delivery, Return and Recovery Policy; seller conditions; goods/services specific conditions; and mandatory legal provisions.',
+
+    paymentPolicyArt2Title: 'Article 2. Role of Biteo and Payment Partners',
+    paymentPolicyArt2Content: '1. Biteo provides ordering interface, technical connection, status recording, dispute support and transaction processing coordination on the Platform.\n2. Online payments are provided through banks, payment service providers or payment intermediaries with legal authority and contract with Biteo.\n3. Biteo does not claim to be a payment intermediary, does not issue payment instruments and does not accept user deposits, unless licensed or legally permitted.\n4. Collection, holding, transfer, disbursement or refund can only be done by authorized entities following approved models.',
+
+    paymentPolicyArt3Title: 'Article 3. General Principles',
+    paymentPolicyArt3Content: '1. Buyers can choose among legal payment methods displayed for specific transactions.\n2. Before confirming orders, the system displays goods/services prices, taxes, delivery fees, service fees, surcharges, discounts, points usage and total amount payable.\n3. Biteo and related parties cannot collect undisclosed amounts or arbitrarily change total after contract execution, except with legal basis and valid buyer acceptance.\n4. Payment, refund and point status must be traceable; discrepancies are verified based on transaction data, vouchers and legal provisions.\n5. No provision of this policy shall be construed to waive mandatory consumer rights or exempt liability that law requires an entity to bear.',
+
+    paymentPolicyArt4Title: 'Article 4. Terminology',
+    paymentPolicyArt4Content: '1. Successful payment is a transaction confirmed by payment partner and validated data message received by Biteo for status update.\n2. Error transactions include: deducted but not recorded orders; duplicate recording; wrong amounts; inconsistent status between systems; suspicious transactions or other technical cases requiring verification.\n3. Refund is full or partial return of paid amount based on order cancellation, return, service termination, error verification or other legal basis.\n4. Reward/accumulated points are promotional or loyalty benefits recorded by Biteo/sponsor entity per program rules; not money, deposits, e-money, crypto assets or payment instruments.\n5. Pending points are points not yet eligible for use due to incomplete transaction or pending return, verification or fraud check period.\n6. Reconciliation is matching of orders, cash flow, refunds, fees, discounts, points and adjustments between systems/parties.',
+
+    paymentPolicyArt5Title: 'Article 5. Payment Methods',
+    paymentPolicyArt5Content: 'Depending on transaction and actual configuration, Biteo may support:\n1. Cash on Delivery (COD)\n2. Domestic or international bank cards\n3. Bank transfer or QR codes\n4. E-wallets or partner payment gateways\n5. Other legal payment methods disclosed before buyer confirmation.\n\nBiteo does not use mobile payment services from telecommunications companies without permission and valid disclosure.',
+
+    paymentPolicyArt6Title: 'Article 6. COD Payment Process',
+    paymentPolicyArt6Content: '1. Buyer selects COD if seller, logistics partner and goods type/delivery area support it.\n2. Buyer pays the displayed amount to delivery staff via method accepted by logistics provider and receives appropriate confirmation/receipt.\n3. Logistics partner collects, reconciles and transfers money to seller/recipient per contract, license and applicable law.\n4. "Delivered" or "COD collected" status is updated from partner data. If discrepancies exist, Biteo coordinates verification.\n5. Buyer must not transfer COD to personal accounts or external links based on unconfirmed requests.',
+
+    paymentPolicyArt7Title: 'Article 7. Online Payment Process',
+    paymentPolicyArt7Content: '1. Buyer reviews order, address, promo codes, point usage, fees and total; selects payment method and confirms.\n2. System redirects buyer to secure interface/connection of payment partner. Buyer authenticates per partner requirements.\n3. Partner processes transaction and sends result. Biteo records order ID, transaction ID, amount, method, time and necessary status.\n4. For prepaid orders, system may auto-confirm upon successful payment signal.\n5. Money is transferred, managed and disbursed per model of authorized partner and applicable agreement.',
+
+    paymentPolicyArt8Title: 'Article 8. Confirmation and Payment Recording Time',
+    paymentPolicyArt8Content: '1. Online payment is recorded successful when Biteo receives valid confirmation message from partner and updates "Payment Successful" or equivalent status.\n2. Bank deduction notification but unrecorded order on Biteo requires verification, not automatic proof of payment receipt.\n3. For COD, payment is recorded per collection/delivery data from partner and reconciliation result.\n4. Biteo sends or displays electronic confirmation including minimum: order ID, amount, method, status and time.\n5. Buyer must check status before re-paying to avoid duplicate transactions.',
+
+    paymentPolicyArt9Title: 'Article 9. Processing, Failed or Error Transactions',
+    paymentPolicyArt9Content: '1. If status is "processing", buyer should not retry until wait time expires or receives Biteo guidance.\n2. If transaction fails without deduction, buyer may select other method or reorder per guidance.\n3. If deducted but unrecorded, duplicate payment, wrong amount or status discrepancy, buyer submits verification request.\n4. Biteo blocks duplicate confirmation when possible, preserves logs, coordinates with payment partner and does not request password, PIN, OTP, CVV/CVC.\n5. Results may be: transaction confirmation, order update, reversal, refund or other measures.',
+
+    paymentPolicyArt10Title: 'Article 10. Payment Security and Fraud Prevention',
+    paymentPolicyArt10Content: '1. Users only pay through functions, accounts and codes displayed/officially confirmed on Biteo; do not transfer money outside process to自称 Biteo staff.\n2. Users secure accounts, devices and authentication factors; report immediately when suspecting unauthorized transactions.\n3. Biteo/partners may verify, suspend processing or investigate transactions with fraud indicators, account takeover, money laundering, round-trip transactions, promo abuse.\n4. Control measures must be justified, proportionate and not arbitrarily seize funds. Affected parties are notified within legal scope and have right to explain.',
+
+    paymentPolicyArt11Title: 'Article 11. Refund Bases',
+    paymentPolicyArt11Content: 'Refund is considered when:\n1. Transaction deducted but not recorded and verification result determines refund required\n2. Duplicate or incorrect amount collection\n3. Valid order cancellation before execution\n4. Return request, defective goods, wrong/missing/damaged delivery or incorrect service accepted\n5. Paid service/package terminated and eligible for refund\n6. Seller/Biteo cannot provide goods/services\n7. Confirmed fraudulent/unauthorized transaction\n8. Decision from competent authority or other legal basis, agreement and public policy.',
+
+    paymentPolicyArt12Title: 'Article 12. Distinguishing Refund Request Types',
+    paymentPolicyArt12Content: '1. Payment error refund: Biteo coordinates directly with payment partner to trace cash flow.\n2. Cancellation/return refund: first determine return conditions, seller, logistics or party responsibility; only execute refund after plan approval.\n3. Service termination refund: basis on package conditions, used portion, non-refundable amount and mandatory consumer rights.\n4. One case may simultaneously fall under multiple categories; Biteo issues one case ID or links IDs for buyer to track throughout.',
+
+    paymentPolicyArt13Title: 'Article 13. Refund Amount and Order',
+    paymentPolicyArt13Content: '1. Refund amount may be full or partial, based on actual paid amount, approved refund goods/services value, delivery/refund fees, party responsibility and law.\n2. For orders using cash, voucher and points simultaneously, expected principle is: refund cash first, then voucher, finally points (or reverse usage order).\n3. Used points are refunded per original expiry; if expired, extension or replacement points apply.\n4. Delivery fees are refunded when entire order cancelled/refunded due to non-buyer error.',
+
+    paymentPolicyArt14Title: 'Article 14. Refund Timeline',
+    paymentPolicyArt14Content: '1. Expected timeline is disclosed at approval time.\n2. For cancellation/return refund, expected timeline: [BITEo TO COMPLETE] from complete documentation/basis and approved plan.\n3. For payment error refund, expected timeline: 03-07 business days from parties confirming error.\n4. Biteo notifies amount, method, refund ID, creation date and expected time. If beyond expected, buyer may request verification.',
+
+    paymentPolicyArt15Title: 'Article 15. Documentation and Refund Process',
+    paymentPolicyArt15Content: '1. Buyer submits request via order/Support Center, stating order ID, transaction, reason, requested amount and necessary evidence.\n2. Biteo confirms receipt, classifies per Article 12 and requests one-time or reasonable additional documentation if incomplete.\n3. Seller, logistics and payment partner must provide information, logs, receipts or explanation within responsibility scope.\n4. Biteo notifies approval/rejection decision, basis, refund amount, responsible party for costs and review mechanism.\n5. After refund initiation, Biteo updates status and retains records for verification, complaints and legal requests.',
+
+    paymentPolicyArt16Title: 'Article 16. Hold, Set-off and Recovery of Incorrect Refunds',
+    paymentPolicyArt16Content: '1. Seller funds can only be held or set off within agreement and legal scope when refund requests, disputes, fraud indicators, indemnification obligations or valid authority requests exist.\n2. Biteo must record reason, amount, time and status; provide reconciliation data and explanation mechanism for seller.\n3. If duplicate, mistaken refund or recipient also received goods/benefits without basis, Biteo may request return or set off after notification and basis provided.\n4. When error belongs to Biteo/partner, user legal rights are restored and processing costs cannot be transferred to user illegally.',
+
+    paymentPolicyArt17Title: 'Article 17. Nature and Scope of Reward Points',
+    paymentPolicyArt17Content: '1. Reward points are managed in "Loyalty & Rewards/Accumulated Points" section of account and only used per individual program rules.\n2. Points cannot be exchanged for cash withdrawal, do not earn interest, are not payment balance, cannot be transferred between users and cannot be bought/sold/transferred.\n3. Points do not guarantee fixed value beyond disclosed scope, rate and period. Biteo does not call points "money", "wallet", "investment asset" or commit to value preservation.\n4. Point programs may be sponsored by Biteo, seller or partner; interface must identify sponsor entity and responsibility for benefits.',
+
+    paymentPolicyArt18Title: 'Article 18. Point Accumulation and Recording',
+    paymentPolicyArt18Content: '1. Points may be accumulated from valid orders, membership activities, campaigns or other disclosed behaviors.\n2. Rules must state: eligible subjects, behaviors/orders; rate/formula; basis value; recording time; limits; period and exclusion cases.\n3. Points from transactions are recorded pending until order completes and return period expires; then transferred to available.\n4. Cancelled/refunded transactions, fake orders, self-dealing/cartels, account abuse, condition violations or system errors are not accumulated or may have corresponding points withdrawn.',
+
+    paymentPolicyArt19Title: 'Article 19. Point Usage, Limits and Expiration',
+    paymentPolicyArt19Content: '1. Available points may be used to exchange offers, vouchers, gifts, membership benefits or reduce partial order value per rules.\n2. System displays point usage, discount value and total before confirmation. Points cannot be used for legally or rule-excluded amounts.\n3. Biteo displays expiration date and sends advance warning via email/message.\n4. Expired points automatically lose validity if period and warning were reasonably disclosed; retroactive expiration does not apply to accumulated points.',
+
+    paymentPolicyArt20Title: 'Article 20. Point Redemption, Adjustment and Withdrawal',
+    paymentPolicyArt20Content: '1. When order is cancelled or fully refunded, used points are returned per original expiry; points accumulated from that order are cancelled or withdrawn.\n2. For partial refund, returned/withdrawn points are calculated per corresponding allocation formula.\n3. If returned points expired during valid processing time, Biteo applies extension or replacement points mechanism.\n4. Biteo may adjust/withdraw points for erroneous recording, cancelled/refunded transactions or justified fraud; must display history, reason and complaint mechanism.',
+
+    paymentPolicyArt21Title: 'Article 21. Membership Tiers and Point Program Changes',
+    paymentPolicyArt21Content: '1. Tier conditions, review periods, benefits, maintenance, tier up/down and impact of cancellation/refund must be disclosed in Loyalty Rules.\n2. Biteo may amend or terminate program for legal reasons but must clearly notify content, effective date, accumulated points, transition time and benefit usage/return plan.\n3. Notification period for adverse changes to accumulated points: no less than 20 days.\n4. Rules must not allow stripping all accumulated points without reasonable usage time, except fraud, recording error or legal basis.',
+
+    paymentPolicyArt22Title: 'Article 22. Reconciliation with Sellers and Partners',
+    paymentPolicyArt22Content: '1. Biteo/payment partner reconciles, deducts fees/commissions, refunds, holds for disputes and pays sellers per contract and law.\n2. Reconciliation period, disbursement time, thresholds and withdrawal/deposit methods are specifically regulated.\n3. Sellers access reports including orders, collected amount, cancellations/refunds, fees, commissions, taxes, sponsored points/promos, hold/set-off amounts and actual received amount.\n4. When data differs between Biteo and partner, parties match transaction IDs, system logs, cash flow vouchers and establish verification result.',
+
+    paymentPolicyArt23Title: 'Article 23. Verification and Complaints',
+    paymentPolicyArt23Content: '1. Receipt channels: support section in app; support email; hotline.\n2. Requester provides order/transaction ID, time, amount, method, dispute content and photos/receipts/statements with unnecessary info redacted.\n3. Biteo confirms receipt within regulated period; responds with result within processing period, or notifies reason and progress if partner coordination needed.\n4. Point complaints include: not recorded, incorrectly deducted, wrongly expired or membership benefit disputes; Biteo provides change history and processing basis.\n5. Users have right to request review, mediation, arbitration, lawsuit or authority request per law.',
+
+    paymentPolicyArt24Title: 'Article 24. Payment Information and Electronic Evidence',
+    paymentPolicyArt24Content: '1. Biteo only processes necessary payment info like method, transaction ID, amount, time and status; does not store sensitive card data if unnecessary/unauthorized.\n2. Biteo and partners apply authentication, encryption, access control, log retention, monitoring and incident handling appropriately; do not request OTP, PIN, CVV/CVC or password from users.\n3. Order, payment, refund, reconciliation, point and electronic confirmation data are retained for legally/policy mandated period.\n4. Personal data processing follows Biteo Privacy and Data Protection Policy and applicable law.',
+
+    paymentPolicyArt25Title: 'Article 25. Disclosure Location and Required Information',
+    paymentPolicyArt25Content: '1. This policy is clearly linked from main screen/homepage, Legal Center, Account section and Biteo payment/order pages.\n2. For each transaction, Biteo redisplay method, payment provider, total amount, discount/points, key cancellation/refund conditions and policy link before confirmation.\n3. Point/loyalty rules are disclosed at "Loyalty & Rewards" with rate, limits, period, point history and complaint channels.',
+
+    paymentPolicyArt26Title: 'Article 26. Order of Application',
+    paymentPolicyArt26Content: '1. When conflicts exist, order of application: mandatory legal provisions; specific transaction/order conditions accepted; applicable promo/point rules for transaction; this Policy; General Operating Regulations.\n2. Payment partner conditions apply to services provided by partner but do not reduce obligations Biteo/seller must bear by law.\n3. Refund policy does not replace return policy; return decision is input basis for cash flow processing, except refund due to payment error.',
+
+    paymentPolicyArt27Title: 'Article 27. Effectiveness and Contact',
+    paymentPolicyArt27Content: '1. This policy is effective from approval and publication date.\n2. Biteo retains version, disclosure date and change history. Changes affecting price/fees are notified per legal minimum period; other significant changes are notified in advance within reasonable time.\n3. Platform Administrator: [BITEo TO COMPLETE LEGAL NAME]; address; email; hotline.\n4. This policy should be read together with Operating Regulations, Price/Fee/Commission Policy, Delivery/Return/Recovery Policy, Complaint Procedure, Seller Agreement and Biteo Privacy Policy.',
+
+    // Display Policy Page
+    displayPolicyPageTitle: 'Priority, Restriction and Display Ranking Policy',
+    displayPolicyPageSubtitle: 'Regulations on how content is organized and displayed on Biteo',
+    displayPolicyPart1: 'PART I - GENERAL PROVISIONS',
+    displayPolicyPart2: 'PART II - SCOPE AND RANKING CRITERIA',
+    displayPolicyPart3: 'PART III - MECHANISMS BY DISPLAY SURFACE',
+    displayPolicyPart4: 'PART IV - PERSONALIZATION AND DATA',
+    displayPolicyPart5: 'PART V - DISPLAY RESTRICTIONS AND MANIPULATION PREVENTION',
+    displayPolicyPart6: 'PART VI - NOTIFICATION AND ESCALATION',
+    displayPolicyContactTitle: 'Need support with display rankings?',
+
+    // Display Policy Articles
+    displayPolicyArt1Title: 'Điều 1. Phạm vi điều chỉnh',
+    displayPolicyArt1Content: '1. Chính sách này quy định nguyên tắc, tiêu chí chính và cơ chế xếp hạng, đề xuất, ưu tiên, quảng cáo/boosting, hạn chế, hạ bậc, tạm ẩn và ngừng hiển thị đối với nội dung, tài khoản, gian hàng, hàng hóa, dịch vụ, livestream và kết quả tìm kiếm trên Nền tảng Biteo.\n2. Chính sách áp dụng đối với người dùng/người mua, người bán, người livestream, Affiliate/người tiếp thị liên kết, nhà quảng cáo, đối tác và chủ thể có nội dung hoặc quyền lợi chịu ảnh hưởng bởi việc hiển thị.\n3. Việc gỡ bỏ nội dung, khóa tài khoản hoặc dừng livestream còn tuân theo Quy chế hoạt động, Quy chế livestream, quy trình xử lý vi phạm và pháp luật.',
+
+    displayPolicyArt2Title: 'Điều 2. Mục tiêu xếp hạng và phân phối',
+    displayPolicyArt2Content: '1. Giúp người dùng tìm thấy nội dung, hàng hóa và dịch vụ phù hợp với truy vấn, nhu cầu và ngữ cảnh sử dụng.\n2. Hỗ trợ giao dịch an toàn, minh bạch; ưu tiên thông tin đầy đủ, đáng tin cậy và chủ thể tuân thủ.\n3. Duy trì chất lượng cộng đồng, hạn chế nội dung rác, gian lận, nguy hiểm, vi phạm hoặc gây nhầm lẫn.\n4. Tạo cơ hội tiếp cận hợp lý cho nội dung mới và đa dạng; không bảo đảm mọi nội dung được phân phối như nhau.\n5. Cho phép thương mại hóa hợp pháp thông qua quảng cáo, bài tài trợ và boosting nhưng phải nhận diện rõ yếu tố trả phí.',
+
+    displayPolicyArt3Title: 'Điều 3. Nguyên tắc chung',
+    displayPolicyArt3Content: '1. Biteo công khai các tiêu chí chính có thể ảnh hưởng thứ tự hiển thị và phân biệt kết quả tự nhiên với nội dung trả phí.\n2. Việc xếp hạng không được dùng để che giấu khoản phí, quảng cáo trá hình, review giả hoặc dẫn dắt người tiêu dùng bằng thông tin sai lệch.\n3. Biện pháp hạn chế phải có căn cứ, phù hợp và có khả năng truy xuất.\n4. Biteo không hạn chế đánh giá trung thực chỉ vì đánh giá bất lợi cho người bán.',
+
+    displayPolicyArt4Title: 'Điều 4. Giải thích từ ngữ',
+    displayPolicyArt4Content: '1. Xếp hạng tự nhiên là việc sắp xếp không phát sinh chỉ vì chủ thể trả tiền cho vị trí đó.\n2. Đề xuất/cá nhân hóa là việc lựa chọn nội dung dự kiến phù hợp với từng người dùng.\n3. Ưu tiên trả phí/boosting là dịch vụ có trả phí làm tăng cơ hội, vị trí, tần suất hoặc phạm vi hiển thị.\n4. Hạn chế hiển thị gồm giảm phân phối, hạ thứ tự, loại khỏi đề xuất/tìm kiếm, giới hạn đối tượng hoặc tạm ẩn.',
+
+    // Complaint Handling Page
+    complaintHandlingPageTitle: 'Feedback, Request and Complaint Handling Process',
+    complaintHandlingPageSubtitle: 'Guidelines for complaints and dispute resolution on Biteo',
+    complaintHandlingPart1: 'PART I - GENERAL PROVISIONS',
+    complaintHandlingPart2: 'PART II - SCOPE AND RECEIVING CHANNELS',
+    complaintHandlingPart3: 'PART III - DOCUMENTS AND RECEIPT',
+    complaintHandlingPart4: 'PART IV - CLASSIFICATION AND RESOLUTION PROCESS',
+    complaintHandlingPart5: 'PART V - SPECIAL PROCEDURES',
+    complaintHandlingPart6: 'PART VI - RIGHTS, RESPONSIBILITIES AND REVIEW',
+    complaintHandlingContactTitle: 'Need support with complaints?',
+
+    // Operating Regulations Page
+    operatingRegulationsPageTitle: 'Biteo Operating Regulations',
+    operatingRegulationsPageSubtitle: 'Regulations on using the Biteo platform',
+    operatingRegulationsIntro: 'Overview of Operating Regulations',
+    operatingRegulationsIntroContent: 'These regulations define the terms and conditions applicable to using the Biteo platform.',
+    operatingRegulationsContactTitle: 'Need support with regulations?',
+
+    // Livestream Regulations Page
+    livestreamRegulationsPageTitle: 'Live Stream Sales Operating Regulations',
+    livestreamRegulationsPageSubtitle: 'Regulations on live streaming sales on Biteo',
+    livestreamRegulationsIntro: 'Overview of Livestream Regulations',
+    livestreamRegulationsIntroContent: 'These regulations define the conditions and responsibilities related to live streaming sales on the Biteo platform.',
+    livestreamRegulationsContactTitle: 'Need support with livestream?',
 
     // Registration Pages
     registrationTitle: 'Register',
@@ -1175,6 +3114,203 @@ const translations: Record<Language, Record<string, string>> = {
     startShopping: 'Start Shopping Today!',
     startShoppingDesc: 'Download the Biteo app and experience convenient grocery shopping. Free delivery on your first order!',
 
+    // Di Cho Ho Page - Detailed (English)
+    groceryPageTitle: 'GROCERY SHOPPING – CONVENIENT SHOPPING RIGHT WHERE YOU LIVE',
+    groceryPageHeroTag: 'Buy groceries and essentials quickly – no need to spend time going to the market',
+    groceryPageIntroTitle: 'How does Biteo Grocery Shopping help you?',
+    groceryPageIntroDesc: 'Biteo Grocery Shopping is a service that helps users easily buy food, consumer goods, and essential items from stores, markets, and sellers in their area.',
+    groceryPageIntroText1: 'Instead of spending time going to the market, searching for products, and carrying groceries home, users can find products – choose – order – pay – receive delivery right on Biteo.',
+    groceryPageIntroText2: 'The goal is to provide a fast, convenient shopping experience tailored to the specific needs of each area.',
+    groceryPageSlogan: 'Need to buy → Find products → Choose products → Place order → Deliver to doorstep',
+    groceryPageIntroText3: 'Grocery Shopping is especially suitable when users:',
+    groceryPageIntroText4: 'Biteo aims to transform daily shopping needs into a simple journey.',
+    groceryPageIntroText5: 'The service also creates connections between consumers, small vendors, stores, suppliers, and logistics partners, helping bring traditional shopping to the digital environment.',
+    groceryPageEmoji1: '🥬 Find fresh food',
+    groceryPageEmoji2: '🧺 Choose essentials',
+    groceryPageEmoji3: '🛒 Place orders',
+    groceryPageEmoji4: '🚚 Deliver to doorstep',
+    groceryPageOutro: 'Biteo – Convenient grocery shopping, connecting goods right near you.',
+
+    // Section 1
+    groceryS1Title: 'Buy fresh food near you',
+    groceryS1SubTitle: '🥬 Find fresh, clean food',
+    groceryS1Desc: 'Need to buy food for today\'s meal? Biteo helps you discover and choose products available in your area.',
+    groceryS1SubDesc: 'Users can start from a simple need: "What do I need to buy today?" and search for and choose suitable products right on Biteo.',
+    groceryS1Item1: 'Vegetables & fruits',
+    groceryS1Item2: 'Meat, fish, seafood',
+    groceryS1Item3: 'Eggs',
+    groceryS1Item4: 'Fresh food',
+    groceryS1Item5: 'Dry food',
+    groceryS1Item6: 'Spices',
+    groceryS1Item7: 'Beverages',
+    groceryS1Item8: 'Essential items',
+    groceryS1Item9: 'Daily consumer products',
+    groceryS1Note: '"What do I need to buy today?" - Start from a simple need, find and choose suitable products right on Biteo.',
+
+    // Section 2
+    groceryS2Title: 'Shop right in your area',
+    groceryS2Desc: 'The key difference of Grocery Shopping is focusing on shopping needs where users live. Instead of just searching for generic products, users can access stores, sellers, and local sources.',
+    groceryS2Flow: 'Grocery shopping journey',
+    groceryS2Step1: 'Identify area',
+    groceryS2Step2: 'Find stores',
+    groceryS2Step3: 'Choose products',
+    groceryS2Step4: 'Place order',
+    groceryS2Step5: 'Make payment',
+    groceryS2Step6: 'Deliver to doorstep',
+    groceryS2Note: 'This helps shorten the distance between buyer – seller – product – order.',
+
+    // Section 3
+    groceryS3Title: 'Buy multiple items in one go',
+    groceryS3Desc: 'A typical grocery trip is not just about buying one item. Biteo Grocery Shopping aims to help users consolidate those needs into a more convenient shopping experience.',
+    groceryS3SubDesc: 'Example of a grocery basket:',
+    groceryS3Item1: 'Vegetables',
+    groceryS3Item2: 'Meat',
+    groceryS3Item3: 'Fish',
+    groceryS3Item4: 'Eggs',
+    groceryS3Item5: 'Spices',
+    groceryS3Item6: 'Beverages',
+    groceryS3Item7: 'Essential items',
+    groceryS3Note: 'Instead of traveling to many places, users can search for, select, and order the products they need on the same platform.',
+
+    // Section 4
+    groceryS4Title: 'Easily find products you need',
+    groceryS4Desc: 'Users can search according to their actual needs.',
+    groceryS4SubDesc: 'Example search keywords:',
+    groceryS4Item1: 'Product name',
+    groceryS4Item2: 'Food group',
+    groceryS4Item3: 'Essential items',
+    groceryS4Item4: 'Store',
+    groceryS4Item5: 'Seller',
+    groceryS4Item6: 'Area',
+    groceryS4Note: 'From "Green vegetables", "Beef", "Fresh fish", "Chicken eggs", "Spices" – quickly access suitable choices.',
+
+    // Section 5
+    groceryS5Title: 'Connect markets, stores, and local sellers',
+    groceryS5Desc: 'Grocery Shopping serves not only buyers but also creates an additional channel for local sellers to reach customers.',
+    groceryS5Item1: 'Small vendors',
+    groceryS5Item2: 'Food stores',
+    groceryS5Item3: 'Convenience stores',
+    groceryS5Item4: 'Household businesses',
+    groceryS5Item5: 'Food sellers',
+    groceryS5Item6: 'Suppliers',
+    groceryS5Item7: 'Production facilities',
+    groceryS5Item8: 'Consumer goods businesses',
+    groceryS5Note: 'Sellers can list their products on the platform to reach local customers. This creates connections: Buyer ↔ Seller ↔ Product ↔ Delivery',
+
+    // Section 6
+    groceryS6Title: 'Prioritize fresh food shopping experience',
+    groceryS6Desc: 'For food items, users particularly care about freshness, quality, origin, and product condition upon receipt.',
+    groceryS6Item1: 'Freshness',
+    groceryS6Item2: 'Quality',
+    groceryS6Item3: 'Origin',
+    groceryS6Item4: 'Delivery time',
+    groceryS6Item5: 'Storage method',
+    groceryS6Item6: 'Product condition on receipt',
+    groceryS6Note: 'The Biteo project identifies logistics partners who can participate in cold chain/perishable goods control if available, and coordinate handling delivery complaints.',
+
+    // Section 7
+    groceryS7Title: 'Place orders right on Biteo',
+    groceryS7Desc: 'When product selection is complete, users can complete the full shopping journey.',
+    groceryS7Step1: 'Choose products',
+    groceryS7Step2: 'Add to cart',
+    groceryS7Step3: 'Review order',
+    groceryS7Step4: 'Enter delivery address',
+    groceryS7Step5: 'Select payment method',
+    groceryS7Step6: 'Place order',
+    groceryS7Step7: 'Track order',
+    groceryS7Note: 'This aligns with the Biteo model: users can access products/services, order online, pay, and receive delivery through logistics services on the platform.',
+
+    // Section 8
+    groceryS8Title: 'Deliver to doorstep',
+    groceryS8Desc: 'After placing an order, users don\'t need to go to the market themselves. The order goes through processing and delivery.',
+    groceryS8SubDesc: 'The Biteo project identifies logistics as having roles in delivery, returns, cold chain/perishable goods control if available.',
+    groceryS8Step1: 'Seller prepares goods',
+    groceryS8Step2: 'Delivery partner receives',
+    groceryS8Step3: 'In transit',
+    groceryS8Step4: 'Delivered to address',
+    groceryS8Note: 'No need to go to the market, no need to carry items home – orders are delivered to your doorstep as requested.',
+
+    // Section 9
+    groceryS9Title: 'Save time for daily life',
+    groceryS9Desc: 'Grocery Shopping is especially suitable when users are busy or don\'t have time to go to the market.',
+    groceryS9SubDesc: 'Grocery Shopping helps you when:',
+    groceryS9Item1: 'Busy with work',
+    groceryS9Item2: 'No time to go to market',
+    groceryS9Item3: 'Don\'t want to travel far',
+    groceryS9Item4: 'Need to buy urgently',
+    groceryS9Item5: 'Need to restock food during the day',
+    groceryS9Item6: 'Want to shop right in your area',
+    groceryS9Instead: 'Instead of:',
+    groceryS9Old: 'Prepare → Travel → Find items → Buy → Carry home',
+    groceryS9New: 'Open Biteo → Choose items → Place order → Receive delivery',
+
+    // Section 10
+    groceryS10Title: 'Serve family needs',
+    groceryS10Desc: 'Grocery Shopping is not just for a specific user group. It can be a convenient choice for many people.',
+    groceryS10Item1: 'Busy families',
+    groceryS10Item2: 'Working people',
+    groceryS10Item3: 'Family caregivers',
+    groceryS10Item4: 'Elderly needing shopping support',
+    groceryS10Item5: 'People who need regular food purchases',
+    groceryS10Item6: 'People who want to proactively order from home',
+    groceryS10Note: 'Needs can change daily, from a few items to a full basket for the whole family.',
+
+    // Section 11
+    groceryS11Title: 'Shopping experience tied to local community',
+    groceryS11Desc: 'Biteo Grocery Shopping creates direct connections between users and local goods supply systems.',
+    groceryS11SubDesc: 'Example of a local shopping journey:',
+    groceryS11Flow: 'Local shopping journey',
+    groceryS11Step1: 'User in area A',
+    groceryS11Step2: 'Find stores near me',
+    groceryS11Step3: 'Choose vegetables, meat, fish',
+    groceryS11Step4: 'Place order',
+    groceryS11Step5: 'Seller prepares',
+    groceryS11Step6: 'Delivery partner',
+    groceryS11Step7: 'User receives goods',
+    groceryS11Note: 'Thus, daily shopping becomes part of the local economic ecosystem.',
+
+    // Section 12
+    groceryS12Title: 'Connect Grocery Shopping with other services',
+    groceryS12Desc: 'Grocery Shopping can link with other categories in the Biteo ecosystem.',
+    groceryS12Link1: 'Culinary: See a dish → find ingredients → order',
+    groceryS12Link2: 'Video: Watch cooking tutorials → buy ingredients',
+    groceryS12Link3: 'Shopping: Explore products → find sellers → order',
+    groceryS12Link4: 'Local: Discover local products → buy specialties',
+    groceryS12Note: 'This creates a journey: Explore → Learn → Choose → Shop → Delivery → Experience',
+
+    // Section 13
+    groceryS13Title: 'Connect with Biteo e-commerce',
+    groceryS13Desc: 'Grocery Shopping is not a separate function from the Biteo ecosystem. Biteo is a social media platform integrated with e-commerce.',
+    groceryS13Flow: 'Integrated journey',
+    groceryS13Step1: 'Watch dish video',
+    groceryS13Step2: 'See ingredients',
+    groceryS13Step3: 'Grocery Shopping',
+    groceryS13Step4: 'Choose food items',
+    groceryS13Step5: 'Order & receive delivery',
+    groceryS13Step6: 'Start cooking',
+    groceryS13Note: 'This is how Grocery Shopping can become a natural part of the Biteo ecosystem.',
+
+    // Section 14
+    groceryS14Title: 'Value of Grocery Shopping for Biteo',
+    groceryS14Desc: 'Grocery Shopping solves a need very close to daily life.',
+    groceryS14Question: 'User need:',
+    groceryS14Quote: 'I need to buy food and essentials but don\'t want to spend time going to the market.',
+    groceryS14Flow: 'Need to buy → Find products → Choose products → Place order → Deliver to doorstep',
+    groceryS14Journey: 'The service creates connections between consumers, small vendors, stores, suppliers, and logistics partners.',
+    groceryS14Item1: 'Consumers',
+    groceryS14Item2: 'Small vendors',
+    groceryS14Item3: 'Stores',
+    groceryS14Item4: 'Suppliers',
+    groceryS14Item5: 'Logistics partners',
+    groceryS14Note: 'Contributing to bringing traditional shopping to the digital environment.',
+
+    // Grocery Stats & CTA
+    groceryProducts: 'Products',
+    grocerySellers: 'Sellers',
+    groceryOrders: 'Orders',
+    groceryCtaTitle: 'Start Grocery Shopping Today!',
+    groceryCtaDesc: 'Download the Biteo app and experience convenient grocery shopping. Save time, shop easily right where you live!',
+
     // Shopping Page
     shoppingHero: 'Shopping',
     shoppingTitle: 'Vietnamese Specialties at Your Fingertips',
@@ -1204,6 +3340,15 @@ const translations: Record<Language, Record<string, string>> = {
     topSellers: 'Top Sellers',
     shopNow2: 'Shop Specialties Today!',
     shopNow2Desc: 'Download the Biteo app to discover a rich catalog of specialties from across Vietnam. Get 20% off your first order!',
+    shopPageTitle: 'SHOPPING – DISCOVER SPECIALTIES ACROSS VIETNAM',
+    shopPageHeroTag: '🛒 Find products, discover specialties and shop easily on Biteo',
+    shopPageIntroTitle: 'Biteo Shopping',
+    shopPageIntroDesc: 'Find products, discover specialties and shop easily on Biteo.',
+    shopPageIntroText1: 'Biteo Shopping is a space that helps users explore a diverse world of products, from regional specialties, OCOP products, agricultural products to curated items from across Vietnam.',
+    shopPageIntroText2: 'Here, users can search for products by needs, categories or regions, view images and videos, refer to community reviews, view seller information and place orders online.',
+    shopPageSlogan: 'Find a product – Discover a region – Experience a flavor – Connect with the community.',
+    shopPageIntroText3: 'Biteo – Discover, connect and enjoy every shopping experience.',
+    shopPageIntroText4: 'Not only helping you find a product to buy, Biteo aims to help everyone discover new products, interesting regions and distinctive specialty values in Vietnam.',
 
     // Travel Page
     travelHero: 'Travel',
@@ -1211,7 +3356,6 @@ const translations: Record<Language, Record<string, string>> = {
     travelDesc: 'Book rooms, find destinations and plan memorable journeys. All in one app with the best prices.',
     exploreNow: 'Explore Now',
     planTrip: 'Plan Trip',
-    destinations: 'Destinations',
     hotels: 'Hotels',
     travelers: 'Travelers',
     travelFeatures: 'Key Features',
@@ -1359,6 +3503,91 @@ const translations: Record<Language, Record<string, string>> = {
     restPizza: 'Pizza Milano',
     restItaly: 'Italy',
 
+    // Blog Categories
+    blogCatGiaiTri: 'Entertainment',
+    blogCatAmThuc: 'Culinary',
+    blogCatDuLich: 'Travel',
+    blogCatMuaSam: 'Shopping',
+    blogCatReview: 'Review',
+    blogCatCongDong: 'Community',
+
+    // Blog Hero Titles
+    blogHeroTimKiem: 'Search',
+    blogHeroDatBan: 'Book Table',
+    blogHeroReview: 'Review',
+
+    // Blog Section Titles
+    blogAmThucQuocGia: 'Cuisine by Country',
+    blogMonAnDacTrung: 'Signature Dishes',
+    blogLoaiHinhAmThuc: 'Cuisine Types',
+    blogMonChinh: 'Main Dishes',
+    blogDoUong: 'Beverages',
+    blogAnVat: 'Snacks',
+    blogAnChay: 'Vegetarian',
+    blogFineDining: 'Fine Dining',
+    blogStreetFood: 'Street Food',
+
+    // Blog Local Titles
+    blogVungMienDuLich: 'Travel Regions',
+    blogMienBac: 'Northern',
+    blogMienTrung: 'Central',
+    blogMienNam: 'Southern',
+    blogMienTay: 'Mekong',
+    blogTayBac: 'Northwest',
+    blogDongBac: 'Northeast',
+    blogNamTrungBo: 'South Central',
+    blogDiaDiemNoiBat: 'Featured Locations',
+    blogLoaiHinhDuLich: 'Travel Types',
+    blogLeoNui: 'Mountain Trekking',
+    blogBienDao: 'Beach & Islands',
+    blogCityTour: 'City Tour',
+    blogCamTri: 'Camping',
+    blogNghiDuong: 'Resort & Spa',
+    blogDiSan: 'Heritage',
+
+    // Blog Shopping Titles
+    blogDACSanDiaPhuong: 'Local Specialties',
+    blogSanPhamNoiBat: 'Featured Products',
+    blogDACSan: 'Specialties',
+    blogOCOP: 'OCOP',
+    blogNoiBat: 'Featured',
+    blogQuaTang: 'Gifts',
+    blogHuuCo: 'Organic',
+    blogMuaSam: 'Shopping',
+    blogVideoTheoChuDe: 'Videos by Topic',
+    blogVideoNoiBat: 'Featured Videos',
+
+    // Blog Grocery Titles
+    blogThucPhamDaDang: 'Diverse Foods',
+    blogDanhMucSanPham: 'Product Categories',
+    blogRauCu: 'Vegetables',
+    blogTraiCay: 'Fruits',
+    blogThitCa: 'Meat & Fish',
+    blogSua: 'Milk',
+    blogGiaVi: 'Spices',
+    blogDongGoi: 'Packaged',
+    blogThucPhamTuoi: 'Fresh Food',
+    blogMuaHang: 'Shopping',
+    blogGiaoHang: 'Delivery',
+    blogRauCuTuoi: 'Fresh Vegetables',
+    blogTraiCayNhietDoi: 'Tropical Fruits',
+    blogThitTuoiSong: 'Fresh Meat',
+    blogSuaCacSanPham: 'Milk & Products',
+    blogGiaViDiaPhuong: 'Local Spices',
+    blogThucPhamDongGoi: 'Packaged Food',
+
+    // Blog Flow Steps
+    blogFlowDiaPhuong: 'Local',
+    blogFlowDACSan: 'Specialties',
+    blogFlowSanPham: 'Products',
+    blogFlowNguoiBan: 'Sellers',
+    blogFlowCauChuyen: 'Stories',
+    blogTayNguyen: 'Central Highlands',
+    blogCaPhe: 'Coffee',
+    blogThoCam: 'Brocade',
+    blogNonLa: 'Conical Hat',
+    blogTraSen: 'Lotus Tea',
+
     // Video categories
     catShortFilm: 'Short Films',
     catVideoFood: 'Food',
@@ -1370,6 +3599,794 @@ const translations: Record<Language, Record<string, string>> = {
     creatorFood: 'Food Paradise',
     creatorComedy: 'Comedy VN',
     creatorTravelKid: 'Travel Kid',
+
+    // Video Page - New Sections
+    videoPageTitle: 'ENTERTAINMENT VIDEO – DISCOVER WITH BITEO',
+    videoPageHeroTag: '🎬 Where interesting videos connect people every day',
+    videoPageIntroTitle: 'Entertainment Video',
+    videoPageIntroDesc: 'Discover short videos, connect with community and enjoy exciting experiences every day.',
+    videoPageIntroText1: 'Biteo Entertainment Video is a space for you to watch, discover and share diverse content from the community. From entertainment, lifestyle, cuisine, travel to stories, places and distinctive local experiences.',
+    videoPageIntroText2: 'You can like, comment, share, follow Creators, Affiliates and accounts you care about. For suitable content, you can also directly explore products, services, places or stores featured on Biteo.',
+    videoPageSlogan: 'Watch a video – discover something new – connect with another person – experience more value.',
+    videoPageIntroText3: 'Biteo – Discover, connect and enjoy every experience.',
+    videoPageIntroText4: 'Biteo Entertainment Video is a space for short videos, creative content, lifestyle stories and interesting moments shared on the platform.',
+    videoPageIntroText5: 'Here, users can watch – discover – interact – follow – share content that suits their interests and concerns.',
+    videoPageIntroText6: 'Not just a place to watch videos, Entertainment Video is also a part of Biteo\'s content and community ecosystem, where content can connect users with people, localities, products, services and real experiences.',
+
+    // Section 1
+    videoS1Title: 'What can users watch?',
+    videoS1Desc: 'When accessing Entertainment Video, users can explore many different content groups such as:',
+    videoS1Cat1: '🎭 Entertainment & Lifestyle',
+    videoS1Cat1List: 'Funny short videos. Everyday moments. Interesting stories. Inspirational content. Creative content from the community. Trends of interest.',
+    videoS1Cat2: '🍜 Cuisine',
+    videoS1Cat2List: 'Delicious food. Cooking recipes. Cooking instruction videos. Restaurant and eatery experiences. Regional specialties. Local signature dishes.',
+    videoS1Cat3: '📍 Local',
+    videoS1Cat3List: 'Interesting places. Local culture. Beautiful corners in provinces. Community activities. Stories about local people and life.',
+    videoS1Cat4: '✈️ Travel & Experience',
+    videoS1Cat4List: 'Tourist destinations. Discovery experiences. Hotels, homestays. Memorable experiences. Entertainment venue suggestions.',
+    videoS1Note: 'The Biteo website also identifies an ecosystem including Video, Cuisine, Travel, Shopping, Grocery Shopping and Discovery, so Video can become a content layer that helps users access other Biteo services.',
+
+    // Section 2
+    videoS2Title: 'Video Watching Experience',
+    videoS2Desc: 'Biteo can design Entertainment Video as a continuous video feed, helping users easily switch from one video to another.',
+    videoS2Flow: 'Watch video → Like → Comment → Share → Follow creator → View more content',
+    videoS2Note: 'The project also describes Biteo\'s home page interface as a full-screen content/video feed, with features like like, comment, share and follow account.',
+    videoS2Conclusion: 'This makes the video watching experience fast, visual and continuous.',
+
+    // Section 3
+    videoS3Title: 'Content Interaction',
+    videoS3Desc: 'Each video is not just for watching but also allows users to participate in the community.',
+    videoS3Like: 'Like',
+    videoS3LikeDesc: 'Users can like videos they are interested in.',
+    videoS3Comment: 'Comment',
+    videoS3CommentDesc: 'Users can give opinions, share feelings or exchange with others.',
+    videoS3Share: 'Share',
+    videoS3ShareDesc: 'Videos can be shared to introduce interesting content to friends and community.',
+    videoS3Follow: 'Follow',
+    videoS3FollowDesc: 'Users can follow their favorite accounts to continue watching new content.',
+    videoS3Note: 'These are social network features clearly identified in the Biteo project including like, comment, follow, friend activities and user/Affiliate suggestions.',
+
+    // Section 4
+    videoS4Title: 'Discover Suitable Content',
+    videoS4Desc: 'Entertainment Video should not only display random videos.',
+    videoS4SubDesc: 'The system can help users access suitable content based on:',
+    videoS4Item1: 'Content users usually watch.',
+    videoS4Item2: 'Topics users are interested in.',
+    videoS4Item3: 'Liked videos.',
+    videoS4Item4: 'Accounts being followed.',
+    videoS4Item5: 'Content of community interest.',
+    videoS4Item6: 'Content by region/locality.',
+    videoS4Item7: 'Trending topics on Biteo.',
+    videoS4Conclusion: 'The goal is to create an experience: Every time you open Biteo, there\'s something new to discover.',
+
+    // Section 5
+    videoS5Title: 'Video Connects with Other Biteo Services',
+    videoS5Desc: 'This is a very important point that makes Biteo Video different from a video-only platform.',
+    videoS5SubDesc: 'A user can start with a video:',
+    videoS5Flow1Title: 'Watch food video',
+    videoS5Flow1: 'Interested in restaurant → View place info → View reviews → Book table/order',
+    videoS5Flow2Title: 'Watch product video',
+    videoS5Flow2: 'Interested in product → View store → Add to cart → Order',
+    videoS5Flow3Title: 'Watch location video',
+    videoS5Flow3: 'Explore locality → Find hotel/place → Book service',
+    videoS5Note: 'The Biteo project identifies interconnected function groups: users can start from content, then follow Affiliate/seller, view attached products, add to cart, order, pay, receive and review.',
+
+    // Section 6
+    videoS6Title: 'Videos Can Attach Products and Services',
+    videoS6Desc: 'For content with commercial elements, Biteo can allow attaching products/services to videos.',
+    videoS6Ex1: '🎥 Food introduction video → Attach restaurant',
+    videoS6Ex2: '🎥 Specialty introduction video → Attach product',
+    videoS6Ex3: '🎥 Hotel experience video → Attach accommodation',
+    videoS6Ex4: '🎥 Product review video → Attach product to video',
+    videoS6Ex5: '🎥 Affiliate video → Attach product + discount code',
+    videoS6Note: 'The project specifies that Affiliates can create content, promote products/services, use discount codes and attach products to video/livestream/post to support order generation.',
+
+    // Section 7
+    videoS7Title: 'For Creators and Affiliates',
+    videoS7Desc: 'Entertainment Video can also become a space for Creators/Affiliates to build community and develop content.',
+    videoS7Creator: 'Creators can:',
+    videoS7CreatorList: 'Create videos. Build personal page. Attract followers. Share experiences. Introduce places. Introduce suitable products/services.',
+    videoS7Affiliate: 'Affiliates can use content to introduce products/services and attach products to videos according to Biteo\'s mechanism.',
+
+    // Section 8
+    videoS8Title: 'Connect Video with Livestream',
+    videoS8Desc: 'Video and Livestream can work complementary to each other.',
+    videoS8Flow: 'Short video → Attract viewers → Interested viewers → Follow Creator → Creator streams Livestream → Users join Live → Introduce products/services → Order on Biteo',
+    videoS8Note: 'The project has identified separate function groups for livestream, commercial video and Affiliate, where users can watch livestream, comment, follow livestreamers/Affiliates and access shopping content integrated in Live sessions.',
+
+    // Section 9
+    videoS9Title: 'Community Content Creation',
+    videoS9Desc: 'Entertainment Video is not only provided by Biteo.',
+    videoS9SubDesc: 'Content can come from:',
+    videoS9Note: 'The project determines that users can interact with content posted by the platform, users, Affiliates or sellers.',
+    videoS9Conclusion: 'Thereby, Biteo builds a content ecosystem created by the community together.',
+
+    // Section 10
+    videoS10Title: 'Content Quality Control and Safety',
+    videoS10Desc: 'Since Video is an area with content created by many subjects, Biteo needs to have a mechanism to moderate and handle violating content.',
+    videoS10SubDesc: 'Especially for commercial/livestream content, the project requires subjects to comply with regulations on goods, advertising, intellectual property, personal data and prohibited content.',
+    videoS10Item1: 'Receive content reports.',
+    videoS10Item2: 'Content moderation.',
+    videoS10Item3: 'Remove violating content.',
+    videoS10Item4: 'Restrict or lock violating accounts.',
+    videoS10Item5: 'Control products attached in content.',
+    videoS10Item6: 'Store data for inspection/post-inspection as required.',
+
+    // Section 11
+    videoS11Title: 'Value of Entertainment Video to Biteo',
+    videoS11Desc: 'Video not only brings entertainment value to users but also plays a role as a bridge between content and commerce.',
+    videoS11Journey: 'Content → Interest → Interaction → Discovery → Follow → Product/Service → Order → Experience → Review',
+    videoS11Conclusion: 'This is exactly the point that aligns with Biteo\'s direction: connecting content, community, locality and e-commerce in the same ecosystem. The project identifies Biteo as both a content/community environment and a channel for introduction, promotion, sales and support for electronic contract conclusion.',
+    videoS9Contributors: 'Users',
+    videoS9ContribCreator: 'Creator',
+    videoS9ContribAffiliate: 'Affiliate',
+    videoS9ContribSeller: 'Seller',
+    videoS9ContribRestaurant: 'Restaurant/Eatery',
+    videoS9ContribStore: 'Store',
+    videoS9ContribPartner: 'Partner',
+    videoS9ContribBiteo: 'Biteo',
+
+    // Culinary Page - Detailed Sections (1-14)
+    culinaryPageTitle: 'CULINARY – EXPLORE FLAVORS ACROSS VIETNAM',
+    culinaryPageHeroTag: '🍜 Find delicious food, discover places and experience culinary around you',
+    culinaryPageIntroTitle: 'Biteo Culinary',
+    culinaryPageIntroDesc: 'Find delicious food, discover places and experience culinary around you.',
+    culinaryPageIntroText1: 'Biteo Culinary is a space that helps users explore the diverse culinary world, from familiar restaurants, eateries, cafes to new places, distinctive dishes and culinary experiences shared by the community.',
+    culinaryPageIntroText2: 'Here, users can search for dining places, discover dishes, view images and videos, refer to community reviews, view restaurant information and book tables online.',
+    culinaryPageSlogan: 'Find a delicious dish – Discover a place – Experience a flavor – Connect with the community.',
+    culinaryPageIntroText3: 'Biteo – Discover, connect and enjoy every culinary experience.',
+    culinaryPageIntroText4: 'Not only helping you find a place to eat, Biteo aims to help everyone discover new flavors, interesting places and distinctive culinary values in Vietnam.',
+
+    // Local Explore Page
+    localHero: 'Local Explore',
+    localHeroTitleLine1: 'Discover interesting',
+    localHeroTitleLine2: 'things right around you',
+    localPageTitle: 'LOCAL EXPLORE – INTERESTING THINGS RIGHT AROUND YOU',
+    localPageHeroTag: '📍 Find places, discover services and experience distinctive things around you',
+    localPageIntroTitle: 'Biteo Local Explore',
+    localPageIntroDesc: 'Search for places, services and distinctive experiences around you.',
+    localPageIntroText1: 'Biteo Local Explore helps you find interesting things right where you live or in the localities you want to visit.',
+    localPageIntroText2: 'From restaurants, cafes, entertainment spots, shops, accommodations to cultural experiences, cuisine and distinctive places, Biteo helps you easily search, discover and choose what fits your needs.',
+    localPageSlogan: '📍 Find places. 🏪 Discover services. 🍜 Find delicious food. 🎭 Experience the local. ❤️ Save favorite places.',
+    localPageIntroText3: 'Biteo – Connecting you with the distinctive things around you.',
+    localPageIntroText4: 'A place can open up a new dish. A dish can take you to a new locality. An experience can become a memorable story. Explore where you live. Explore new lands. Explore the distinctive values of Vietnam.',
+
+    // Local Explore - Section 1: Find locations
+    localS1Title: '📍 Find places around you',
+    localS1Subtitle: 'Interesting things right where you live',
+    localS1Intro: 'Sometimes the most interesting things are right near where you live. Biteo helps you discover:',
+    localS1Item1: 'Restaurants, eateries',
+    localS1Item2: 'Cafes',
+    localS1Item3: 'Entertainment spots',
+    localS1Item4: 'Sightseeing places',
+    localS1Item5: 'Stores',
+    localS1Item6: 'Shopping places',
+    localS1Item7: 'Hotels, accommodations',
+    localS1Item8: 'Featured local spots',
+
+    // Local Explore - Section 2: Explore by region
+    localS2Title: '🗺️ Explore by region',
+    localS2Subtitle: 'From where you live to provinces you want to visit',
+    localS2Example1City: 'Currently in Da Nang',
+    localS2Example1Item1: '→ Explore restaurants',
+    localS2Example1Item2: '→ Find cafes',
+    localS2Example1Item3: '→ Find entertainment',
+    localS2Example1Item4: '→ Find hotels',
+    localS2Example1Item5: '→ Explore local spots',
+    localS2Example2City: 'Planning to visit Lam Dong',
+    localS2Example2Item1: '→ Explore destinations',
+    localS2Example2Item2: '→ Find accommodation',
+    localS2Example2Item3: '→ Find food',
+    localS2Example2Item4: '→ Find services',
+    localS2Example2Item5: '→ Plan your experience',
+    localS2Desc: 'The Biteo project defines local exploration by province/city, helping users continue to learn about landmarks, images, stories, experiences, culture and cuisine of each place.',
+
+    // Local Explore - Section 3: Find services
+    localS3Title: '🏪 Find services around you',
+    localS3Subtitle: 'Not only find places, but also the services you need',
+    localS3Intro: 'Beyond finding places, Biteo aims to help users find the services they need:',
+    localS3Item1: 'Dining',
+    localS3Item2: 'Stay',
+    localS3Item3: 'Beauty',
+    localS3Item4: 'Shopping',
+    localS3Item5: 'Entertainment',
+    localS3Item6: 'Life services',
+
+    // Local Explore - Section 4: Local cuisine
+    localS4Title: '🍜 Explore local cuisine',
+    localS4Subtitle: 'Each locality has its own flavors',
+    localS4Intro: 'You can discover:',
+    localS4Item1: 'Dishes',
+    localS4Item2: 'Eateries',
+    localS4Item3: 'Restaurants',
+    localS4Item4: 'Specialties',
+    localS4Item5: 'Local stories',
+    localS4Desc: 'The Culinary section in the project is also connected with restaurants, eateries, local specialties, food sellers and experiential content.',
+
+    // Local Explore - Section 5: Culture & experience
+    localS5Title: '🎭 Discover culture and experience',
+    localS5Subtitle: 'More than just finding an address on the map',
+    localS5Intro: 'Local exploration is more than just finding an address on the map. It is also an opportunity to learn about:',
+    localS5Item1: 'Culture',
+    localS5Item2: 'People',
+    localS5Item3: 'Life',
+    localS5Item4: 'Festivals',
+    localS5Item5: 'Specialties',
+    localS5Item6: 'Traditional crafts',
+    localS5Item7: 'Craft villages',
+    localS5Item8: 'Distinctive experiences',
+    localS5Item9: 'Stories of each region',
+    localS5Desc: 'Biteo project orients local content including cultural experiences, cuisine, landmarks and tourism in Vietnam.',
+
+    // Local Explore - Section 6: Videos & content
+    localS6Title: '🎥 Watch videos and real content',
+    localS6Subtitle: 'A place is easier to imagine through images and videos',
+    localS6Intro: 'Users can discover:',
+    localS6Item1: 'Experience videos',
+    localS6Item2: 'Place images',
+    localS6Item3: 'Reviews',
+    localS6Item4: 'Shared posts',
+    localS6Item5: 'Creator content',
+    localS6Item6: 'Community content',
+    localS6Desc: 'Biteo is designed as a platform combining social media, digital content and e-commerce, allowing users to view content, like, comment, follow and interact with content from users, Affiliates or sellers.',
+
+    // Local Explore - Section 7: Community experience
+    localS7Title: '⭐ Discover from community experience',
+    localS7Subtitle: 'A place becomes known through those who have experienced it',
+    localS7Intro: 'A place can become known through those who have experienced it. Users can:',
+    localS7Item1: 'View',
+    localS7Item2: 'Like',
+    localS7Item3: 'Comment',
+    localS7Item4: 'Share',
+    localS7Item5: 'Follow',
+    localS7Item6: 'Discover more',
+    localS7Desc: 'This is also how Biteo builds the social discovery layer, where community content can lead users to places, products or services.',
+
+    // Local Explore - Section 8: Save favorites
+    localS8Title: '❤️ Save places you want to visit',
+    localS8Subtitle: 'Save places to experience in the future',
+    localS8Intro: 'When you find an interesting place, you can save it to:',
+    localS8Item1: 'Visit later',
+    localS8Item2: 'Share with friends',
+    localS8Item3: 'Plan weekend',
+    localS8Item4: 'Prepare for trip',
+    localS8Item5: 'Create favorites list',
+    localS8Desc: 'So Biteo not only helps you explore today, but also saves places for you to experience in the future.',
+
+    // Local Explore - Section 9: Connect community
+    localS9Title: '🤝 Connect users with local community',
+    localS9Subtitle: 'A bridge between users and local value creators',
+    localS9Intro: 'Local exploration is also a bridge between users and those creating value in the locality. Participants include:',
+    localS9Item1: 'Restaurants',
+    localS9Item2: 'Eateries',
+    localS9Item3: 'Stores',
+    localS9Item4: 'Households',
+    localS9Item5: 'Cooperatives',
+    localS9Item6: 'Local businesses',
+    localS9Item7: 'Specialty sellers',
+    localS9Item8: 'Service providers',
+    localS9Item9: 'Affiliates',
+    localS9Item10: 'Creators',
+    localS9Desc: 'The Biteo project identifies these local subjects can use the platform to introduce places, products, services and content to users.',
+
+    // Local Explore - Section 10: From explore to shopping
+    localS10Title: '🛍️ From exploration to shopping',
+    localS10Subtitle: 'A place can lead to a product',
+    localS10Intro: 'A place can lead to a product. Example:',
+    localS10Item1: 'Explore locality',
+    localS10Item2: 'Discover specialty',
+    localS10Item3: 'View products',
+    localS10Item4: 'Place order',
+    localS10Desc: 'This is the connection between Local Explore and Shopping in the Biteo ecosystem.',
+
+    // Local Explore - Section 11: From explore to order
+    localS11Title: '🍽️ From exploration to ordering',
+    localS11Subtitle: 'From local content to culinary activity',
+    localS11Intro: 'Similarly, a local content can lead to a culinary activity:',
+    localS11Item1: 'View place',
+    localS11Item2: 'Find restaurant',
+    localS11Item3: 'View menu',
+    localS11Item4: 'View reviews',
+    localS11Item5: 'Book/Order',
+    localS11Desc: 'The project defines Biteo content can lead users from exploring places, dishes, products or services to following accounts, viewing stores/livestreams and performing shopping activities on the platform.',
+
+    // Local Explore - Section 12: Complete journey
+    localS12Title: '🧭 From exploration to a complete journey',
+    localS12Subtitle: 'A starting point for an entire journey',
+    localS12Intro: 'Local exploration can become the starting point for an entire journey:',
+    localS12Item1: 'Find place',
+    localS12Item2: 'Discover service',
+    localS12Item3: 'Find restaurant',
+    localS12Item4: 'Find stay',
+    localS12Item5: 'Discover fun',
+    localS12Item6: 'Buy specialty',
+    localS12Item7: 'Share experience',
+    localS12Desc: 'So users not only search for a place but can explore the entire ecosystem of services around it.',
+
+    // Local Explore - Section 13: Spread local values
+    localS13Title: '🇻🇳 Spread local values',
+    localS13Subtitle: 'Help distinctive things become more widely known',
+    localS13Intro: 'One of the important values of this section is to help distinctive things in each locality become more widely known. All can become content for the community to explore together:',
+    localS13Item1: 'A small eatery',
+    localS13Item2: 'A specialty product',
+    localS13Item3: 'A lesser-known destination',
+    localS13Item4: 'A craft village',
+    localS13Item5: 'A local story',
+    localS13ChainTitle: 'Biteo creates connection',
+    localS14User: 'Users',
+    localS14Place: 'Locality',
+    localS14Business: 'Business',
+    localS14Product: 'Product',
+    localS14Service: 'Service',
+    localS14Community: 'Community',
+
+    // Local Explore - Section 14: Value for Biteo
+    localS14Title: '🌟 Value of Local Explore to Biteo',
+    localS14Subtitle: 'A bridge between sections in the ecosystem',
+    localS14Intro: 'Local Explore can become a bridge between sections in the entire Biteo ecosystem. A user can start with the question:',
+    localS14Question: 'What is interesting near me?',
+    localS14Item1: 'Places',
+    localS14Item2: 'Dining',
+    localS14Item3: 'Shopping',
+    localS14Item4: 'Services',
+    localS14Item5: 'Travel',
+    localS14Item6: 'Experience',
+    localS14Item7: 'Sharing',
+    localS14Desc: 'This also aligns with Biteo direction as a platform combining content, community and e-commerce, where users can start from social content then continue to discover places, products or services.',
+
+    // Local Explore - CTA
+    localCtaTitle: 'Start exploring your local area',
+    localCtaDesc: 'Discover interesting things right around you — from restaurants, cafes, entertainment spots to distinctive cultural experiences.',
+    localCtaButton1: 'Explore now',
+    localCtaButton2: 'Explore Culinary',
+
+    // Section 1
+    culinaryS1Title: '🔎 Search restaurants and eateries around you',
+    culinaryS1Desc: 'Are you looking for an eatery near you?',
+    culinaryS1SubDesc: 'Biteo supports searching for culinary places based on user needs, helping you easily discover:',
+    culinaryS1Item1: 'Restaurants.',
+    culinaryS1Item2: 'Eateries.',
+    culinaryS1Item3: 'Cafes.',
+    culinaryS1Item4: 'Dining places.',
+    culinaryS1Item5: 'Dishes by preference.',
+    culinaryS1Item6: 'Places of community interest.',
+    culinaryS1Note: 'Users can search for places near current location or search specifically by needs. The Biteo website currently has the function of finding nearby eateries and specific search, with filters by dish type, distance and ratings.',
+
+    // Section 2
+    culinaryS2Title: '📍 Discover places by map',
+    culinaryS2Desc: 'Not only displaying information, Biteo helps users identify where the restaurant/eatery is.',
+    culinaryS2Item1: 'View location on map.',
+    culinaryS2Item2: 'Determine distance.',
+    culinaryS2Item3: 'Find places near you.',
+    culinaryS2Item4: 'View directions.',
+    culinaryS2Item5: 'Move to the restaurant more conveniently.',
+    culinaryS2Note: 'This is a function that connects culinary content with real locations, so users can not only see a dish but also find the place serving it.',
+
+    // Section 3
+    culinaryS3Title: '🍜 Discover dishes and flavors',
+    culinaryS3Desc: 'Biteo Culinary section does not only focus on restaurant names.',
+    culinaryS3SubDesc: 'It is also a place for users to discover:',
+    culinaryS3Item1: 'Dishes.',
+    culinaryS3Item2: 'Cooking recipes.',
+    culinaryS3Item3: 'Dish images.',
+    culinaryS3Item4: 'Culinary videos.',
+    culinaryS3Item5: 'Local specialties.',
+    culinaryS3Item6: 'Experiences at restaurants/eateries.',
+    culinaryS3Item7: 'Culinary trends of interest.',
+    culinaryS3Note: 'In the project, the Culinary screen is identified as a content and dish discovery section, displaying content cards including dishes, videos, images, short descriptions, posting accounts and likes. Therefore, users can start from a video or image of a dish, then continue to explore places, accounts or related content.',
+
+    // Section 4
+    culinaryS4Title: '⭐ Real reviews from the community',
+    culinaryS4Desc: 'Before choosing a dining place, users can refer to community experiences.',
+    culinaryS4SubDesc: 'Reviews help users have more basis for selection:',
+    culinaryS4Item1: 'Food quality.',
+    culinaryS4Item2: 'Experience at the place.',
+    culinaryS4Item3: 'Level of preference.',
+    culinaryS4Item4: 'Reviews from those who have experienced.',
+    culinaryS4Note: 'The Biteo website currently introduces the real review function, with the goal of helping users choose more suitable places. Thereby, Biteo creates a discovery system based on community experience and interaction, rather than just promotional information from restaurants.',
+
+    // Section 5
+    culinaryS5Title: '📋 View information before going',
+    culinaryS5Desc: 'Users can learn the necessary information before deciding to choose a place.',
+    culinaryS5Item1: 'Restaurant/eatery name',
+    culinaryS5Item2: 'Address',
+    culinaryS5Item3: 'Location on map',
+    culinaryS5Item4: 'Prices',
+    culinaryS5Item5: 'Menu',
+    culinaryS5Item6: 'Opening hours',
+    culinaryS5Item7: 'Reviews',
+    culinaryS5Item8: 'Images/Content',
+    culinaryS5Item9: 'Book table',
+    culinaryS5Note: 'The Biteo website clearly states the ability to view prices, menus and opening hours before deciding.',
+
+    // Section 6
+    culinaryS6Title: '6. 📅 Book tables online',
+    culinaryS6Desc: 'When you have found a suitable place, users can book a table online instead of having to call or come directly to ask if there is a table.',
+    culinaryS6Flow: 'Find restaurant → View information → View reviews → Choose time → Book table → Come to restaurant and experience',
+    culinaryS6Note: 'This is one of the highlighted features introduced by Biteo on the Culinary page.',
+
+    // Section 7
+    culinaryS7Title: '7. ❤️ Save favorite places',
+    culinaryS7Desc: 'When you find a delicious eatery or a restaurant you want to return to, users can save that place to a favorites list.',
+    culinaryS7Item1: 'Favorite eateries',
+    culinaryS7Item2: 'Restaurants to try',
+    culinaryS7Item3: 'Cafes you often visit',
+    culinaryS7Item4: 'Places for the next date',
+    culinaryS7Note: 'The Biteo website currently has the Save Favorites function, and supports sharing place lists with friends.',
+
+    // Section 8
+    culinaryS8Title: '8. 🌎 Discover many culinary backgrounds',
+    culinaryS8Desc: 'Biteo Culinary is not limited to one type of food.',
+    culinaryS8SubDesc: 'The website currently introduces culinary groups such as:',
+    culinaryS8Note: 'Thereby, users can explore different culinary styles right on the same platform.',
+
+    // Section 9
+    culinaryS9Title: '9. 📍 Discover local culinary',
+    culinaryS9Desc: 'Culinary is not only about food but also associated with people, locality and culture.',
+    culinaryS9Journey: 'A dish → An eatery → An area → A locality → A story',
+    culinaryS9Note: 'In the project, the Culinary section is identified as having the participation of Culinary Affiliates, food sellers, restaurants/eateries, business households, cooperatives and local specialty production facilities.',
+
+    // Section 10
+    culinaryS10Title: '10. 👥 Community sharing experiences',
+    culinaryS10Desc: 'Biteo Culinary is not only for those looking for eateries.',
+    culinaryS10SubDesc: 'It is also a place for the community to share:',
+    culinaryS10Item1: 'Favorite dishes.',
+    culinaryS10Item2: 'Restaurants you have experienced.',
+    culinaryS10Item3: 'Worth-trying eateries.',
+    culinaryS10Item4: 'Cooking recipes.',
+    culinaryS10Item5: 'Hometown specialties.',
+    culinaryS10Item6: 'Experience videos.',
+    culinaryS10Item7: 'Lesser-known places.',
+    culinaryS10Note: 'Users can view content, like, comment, follow accounts and interact with content posted on the platform.',
+
+    // Section 11
+    culinaryS11Title: '🤝 Connecting restaurants, sellers and users',
+    culinaryS11Desc: 'For restaurants, eateries and food sellers, the Culinary section is not only a place to introduce locations.',
+    culinaryS11SubDesc: 'It can also be a channel to:',
+    culinaryS11Item1: 'Introduce dishes.',
+    culinaryS11Item2: 'Introduce restaurants.',
+    culinaryS11Item3: 'Share images/videos.',
+    culinaryS11Item4: 'Build customer community.',
+    culinaryS11Item5: 'Increase followers.',
+    culinaryS11Item6: 'Introduce products.',
+    culinaryS11Item7: 'Lead users to ordering or livestream activities.',
+    culinaryS11Note: 'The project identifies Culinary as a content layer that directly supports Biteo\'s social commerce, connecting users with Affiliates, sellers, restaurants and related products/services.',
+
+    // Section 12
+    culinaryS12Title: '🛒 Connect Culinary with e-commerce',
+    culinaryS12Desc: 'This is an important point in the Biteo model.',
+    culinaryS12SubDesc: 'A culinary content can create a journey:',
+    culinaryS12Flow: 'Watch food video → Interested in dish → View restaurant/seller → Follow account → View product or livestream → Use discount code → Order on Biteo',
+    culinaryS12Note: 'The Biteo project directly describes this journey and allows the Culinary section to link with product attachment, shopping cart, ordering, discount codes and livestream. Thus, Culinary does not stand alone but can become a bridge between content – experience – restaurant – product – e-commerce.',
+
+    // Section 13
+    culinaryS13Title: '🎥 Connect with Video and Livestream',
+    culinaryS13Desc: 'A dish can be introduced by:',
+    culinaryS13Flow: 'Images → Video → Articles/experiences → Livestream → Restaurant/product → Order',
+    culinaryS13Ex1: 'You see a video introducing a dish → want to know where that dish is → view restaurant → read reviews → view menu → book a table.',
+    culinaryS13Ex2: 'You watch a video introducing specialties → interested in product → view store → view livestream → order.',
+    culinaryS13Note: 'This helps users have many ways to approach the same content.',
+
+    // Section 14
+    culinaryS14Title: '14. 🌟 Value of Culinary section to Biteo',
+    culinaryS14Desc: 'Culinary can become one of the most natural connection points between users and the Biteo ecosystem.',
+    culinaryS14Question: 'Users come to Biteo to find:',
+    culinaryS14Quote: 'What to eat today?',
+    culinaryS14Journey1: 'Find eatery → View reviews → View location → Book table → Experience → Share reviews',
+    culinaryS14Journey2: 'View dish → Discover product → Follow seller → View livestream → Order',
+    culinaryS14Note: 'Therefore, the Culinary section both meets the needs of discovery and experience, and supports the orientation of social network combined with e-commerce of Biteo. The project identifies Biteo as a platform where users can view content, interact, follow, access products/services and perform commercial activities on the same system.',
+
+    // Travel Page
+    travelPageIntroTitle: 'Biteo Travel',
+    travelPageTitle: 'Biteo Travel - Explore Vietnam',
+    travelPageIntroDesc: 'Biteo Travel is a place to find inspiration for new journeys – from exploring destinations, finding accommodations to experiencing culture, cuisine and distinctive landmarks.',
+    travelPageIntroText1: 'Learn about provinces and cities, explore notable attractions, view images and experience videos from the community, find suitable accommodations and discover local dishes and specialties worth trying.',
+    travelPageIntroText2: 'You can start from a destination, then continue searching for places to stay, attractions, restaurants, experiences and specialties to gradually plan your trip.',
+    travelPageIntroText3: 'Each locality is a story. Each journey is an experience.',
+    travelPageSlogan: 'Let Biteo accompany you from finding inspiration → choosing destination → preparing journey → experiencing → sharing.',
+    travelPageIntroText4: 'Find destinations.',
+    travelPageIntroText5: 'Find places to stay.',
+    travelPageIntroText6: 'Explore cuisine.',
+    travelPageIntroText7: 'Plan your journey.',
+    travelPageIntroText8: 'Save experiences.',
+    travelPageIntroText9: 'Biteo – Explore more, experience more fully.',
+    travelPageIntroText10: 'Find destinations, book accommodations and plan memorable journeys. Biteo Travel is a space that helps you discover exciting destinations, search for accommodations and find inspiration for domestic and international trips.',
+
+    // Section 1: Explore Destinations
+    travelS1Title: '🗺️ Explore Destinations',
+    travelS1SubTitle: 'Don\'t know where to go for your next trip?',
+    travelS1Desc: 'Biteo helps you find inspiration through content about:',
+    travelS1SubDesc: 'You can explore by province/city and locality, thereby learning more about places you want to visit.',
+    travelS1Item1: 'Notable tourist attractions.',
+    travelS1Item2: 'Famous scenic spots.',
+    travelS1Item3: 'Cities and provinces.',
+    travelS1Item4: 'Distinctive landmarks.',
+    travelS1Item5: 'Lesser-known destinations.',
+    travelS1Item6: 'Local cultural experiences.',
+    travelS1Item7: 'Cuisine at destinations.',
+    travelS1Item8: 'Worthwhile activities.',
+    travelS1Note: 'The project describes Travel as a local exploration category with province/city tags and content related to destinations, landmarks, culture, cuisine and experiences.',
+
+    // Section 2: Find Accommodation
+    travelS2Title: '🏨 Find Accommodations',
+    travelS2Desc: 'A complete trip needs a suitable place to rest. Biteo aims to help users search and discover:',
+    travelS2Item1: 'Hotels.',
+    travelS2Item2: 'Resorts.',
+    travelS2Item3: 'Homestays.',
+    travelS2Item4: 'Accommodation facilities.',
+    travelS2Item5: 'Vacation spots.',
+    travelS2Item6: 'Accommodations suitable for your journey.',
+    travelS2Note: 'Users can start from a destination, then find accommodations suitable for their needs and trip plans. Where to go → Where to stay → What to do → What to eat → What to experience',
+
+    // Section 3: Explore by Local
+    travelS3Title: '📍 Explore by Locality',
+    travelS3Desc: 'Biteo Travel doesn\'t only focus on famous destinations. Each locality has its own stories, people, culture and experiences.',
+    travelS3SubTitle: 'You can start by choosing a province/city, then explore:',
+    travelS3Item1: 'Locations',
+    travelS3Item2: 'Travel',
+    travelS3Item3: 'Culture',
+    travelS3Item4: 'Cuisine',
+    travelS3Item5: 'Experiences',
+    travelS3Item6: 'Accommodation',
+    travelS3Flow: 'Location → Travel → Culture → Cuisine → Experience → Accommodation',
+
+    // Section 4: Explore Local Cuisine
+    travelS4Title: '🍜 Explore Local Cuisine',
+    travelS4Desc: 'One of the things that makes a trip memorable is the cuisine. At each destination, users can continue to explore:',
+    travelS4Item1: 'Specialty dishes.',
+    travelS4Item2: 'Restaurants.',
+    travelS4Item3: 'Local eateries.',
+    travelS4Item4: 'Regional specialties.',
+    travelS4Item5: 'Must-try dishes.',
+    travelS4Item6: 'Culinary experiences.',
+    travelS4Note: 'This creates a natural connection between Travel and Cuisine in the Biteo ecosystem. Example: Da Nang → Destination → Hotels → Dishes → Restaurants → Local experiences.',
+
+    // Section 5: Watch Videos and Experiences
+    travelS5Title: '🎥 Watch Videos and Real Experiences',
+    travelS5Desc: 'Not just reading information, users can explore destinations through images, videos and content shared by the community. You can watch:',
+    travelS5Item1: 'Experience videos.',
+    travelS5Item2: 'Location images.',
+    travelS5Item3: 'Trip reviews.',
+    travelS5Item4: 'Local stories.',
+    travelS5Item5: 'Travel tips.',
+    travelS5Item6: 'Content from Creators/Affiliates.',
+    travelS5Note: 'The Biteo project allows travel content to be provided by members, while identifying participating entities including users, travel affiliates, specialty sellers, restaurants, business households, cooperatives, local businesses and travel service providers if any.',
+
+    // Section 6: Plan Your Journey
+    travelS6Title: '🧳 Plan Your Journey',
+    travelS6Desc: 'Biteo aims to help users not only find a place, but be able to start forming an entire journey.',
+    travelS6Flow: 'Choose destination ↓ Find accommodation ↓ Explore attractions ↓ Find dishes ↓ Find restaurants ↓ Explore activities ↓ Make itinerary',
+    travelS6Note: 'From there, users can proactively prepare for their trip instead of having to search for information on multiple different platforms.',
+
+    // Section 7: Save Favorite Destinations
+    travelS7Title: '❤️ Save Favorite Destinations',
+    travelS7Desc: 'When you find a place you want to visit, you can save it to:',
+    travelS7Item1: 'Review later',
+    travelS7Item2: 'Compare options',
+    travelS7Item3: 'Make a list of places to go',
+    travelS7Item4: 'Share with friends',
+    travelS7Item5: 'Prepare for next trip',
+    travelS7Note: 'Saved destinations can become personal travel inspiration lists for each user.',
+
+    // Section 8: Explore from Community
+    travelS8Title: '👥 Explore from Community',
+    travelS8Desc: 'Travel doesn\'t only come from official information. Real experiences from the community can also become inspiration for trips.',
+    travelS8SubDesc: 'Users can:',
+    travelS8Item1: 'View travel content.',
+    travelS8Item2: 'Like posts.',
+    travelS8Item3: 'Comment and share.',
+    travelS8Item4: 'Share experiences.',
+    travelS8Item5: 'Follow other users.',
+    travelS8Item6: 'Save great content.',
+    travelS8View: 'View',
+    travelS8Like: 'Like',
+    travelS8Comment: 'Comment',
+    travelS8Share: 'Share',
+    travelS8Save: 'Save',
+    travelS8Note: 'Someone sharing an experience at a destination can help another person find a place they want to visit. The Biteo project identifies the platform as allowing users to view content, like, comment, follow other users and interact with content posted by the platform, users, Affiliates or sellers.',
+
+    // Section 9: Connect with Sellers and Local Services
+    travelS9Title: '🤝 Connect Travel with Sellers and Local Services',
+    travelS9Desc: 'Biteo Travel also creates opportunities for local entities to showcase their value to tourists.',
+    travelS9SubDesc: 'Entities that can participate include:',
+    travelS9Item1: 'Accommodation providers.',
+    travelS9Item2: 'Travel service providers.',
+    travelS9Item3: 'Restaurants/eateries.',
+    travelS9Item4: 'Specialty shops.',
+    travelS9Item5: 'Business households.',
+    travelS9Item6: 'Cooperatives.',
+    travelS9Item7: 'Local businesses.',
+    travelS9Item8: 'Travel affiliates.',
+    travelS9Note: 'Through content, images, videos and activities on the platform, users can directly access services and products suitable for their journey.',
+
+    // Section 10: Connect with Local Specialties
+    travelS10Title: '🛍️ Connect Travel with Local Specialties',
+    travelS10Desc: 'A trip often doesn\'t end when tourists leave the destination.',
+    travelS10SubDesc: 'Characteristic products of the locality can continue to be explored and purchased on Biteo.',
+    travelS10Flow: 'Explore locality → Learn about specialty → View products → View sellers → Research products → Place order',
+    travelS10Note: 'The project also identifies local specialty sellers, restaurants, business households, cooperatives and local businesses as entities that can participate in the Travel category.',
+
+    // Section 11: From Exploration to Experience
+    travelS11Title: '🌏 From Exploration to Experience',
+    travelS11Desc: 'The goal of Biteo Travel is not just to help users know a place, but to help them continue their journey.',
+    travelS11SubTitle1: 'Exploration journey',
+    travelS11SubTitle2: 'Guide users',
+    travelS11Flow1: 'Explore → Choose → Plan → Experience → Share',
+    travelS11Flow2: 'Hotels → Restaurants → Attractions → Specialties → Activities → Community content',
+    travelS11Item1: 'Find inspiration',
+    travelS11Item2: 'Make plans',
+    travelS11Item3: 'Have real experiences',
+    travelS11Item4: 'Share stories',
+    travelS11Note: 'All together create a seamless exploration journey in the Biteo ecosystem.',
+
+    // Section 12: Value to Biteo
+    travelS12Title: '🌟 Value of Travel to Biteo',
+    travelS12Desc: 'Travel is one of the categories with the ability to connect many different services on Biteo.',
+    travelS12Question: 'A user can start with the question:',
+    travelS12Quote: 'Where should I go this weekend?',
+    travelS12Journey: 'Find destination → Find hotel → Find restaurant → Find attractions → Explore specialties → Plan → Experience → Share journey',
+    travelS12Note: 'The Biteo project positions the Travel category as a space for exploring destinations, localities, culture, cuisine and experiences, while linking with other functional groups of the ecosystem.',
+
+    // Additional labels
+    accommodations: 'Accommodations',
+    readyTravel: 'Ready to Explore?',
+    readyTravelDesc: 'Start your journey today with Biteo. Find destinations, make plans and create memorable memories.',
+
+    // Section 1: Product Discovery
+    shopS1Title: 'Discover products from across Vietnam',
+    shopS1SubTitle: '🔎 Diverse product groups',
+    shopS1Desc: 'Biteo helps users explore many different product groups from across Vietnam.',
+    shopS1Item1: 'Local specialties',
+    shopS1Item2: 'OCOP products',
+    shopS1Item3: 'Agricultural products',
+    shopS1Item4: 'Food',
+    shopS1Item5: 'Beverages',
+    shopS1Item6: 'Handcrafted products',
+    shopS1Item7: 'Consumer products',
+    shopS1Item8: 'Products from sellers',
+    shopS1Note: 'Users can search for products by needs, categories or regions, making it easy to find suitable products.',
+
+    // Section 2: Local Specialties
+    shopS2Title: 'Discover local specialties',
+    shopS2Desc: 'Every region in Vietnam has products with its own distinctive character. Biteo creates a space for users to explore values linked to products and localities.',
+    shopS2Flow: 'Specialty discovery journey',
+    shopS2Item1: 'Learn about the locality',
+    shopS2Item2: 'Discover famous specialties',
+    shopS2Item3: 'Learn about sellers',
+    shopS2Item4: 'View product stories',
+    shopS2Item5: 'Order products',
+    shopS2Item6: 'Receive and experience',
+    shopS2Note: 'The Biteo project identifies local specialty sellers, business households, cooperatives and local businesses as subjects that can participate in the platform ecosystem.',
+
+    // Section 3: OCOP Products
+    shopS3Title: 'Discover OCOP products',
+    shopS3Desc: 'Biteo can become a space for users to access OCOP products from many localities.',
+    shopS3SubDesc: 'Users can explore:',
+    shopS3Item1: 'OCOP products by locality',
+    shopS3Item2: 'OCOP products by product category',
+    shopS3Item3: 'Specialties from local raw materials',
+    shopS3Item4: 'Products linked to craft villages',
+    shopS3Item5: 'Products from production regions',
+    shopS3Note: 'This gives buyers additional opportunities to discover products they may never have approached before.',
+
+    // Section 4: Seller Discovery
+    shopS4Title: 'Search and discover sellers',
+    shopS4Desc: 'Each product on Biteo can be linked to a seller/store.',
+    shopS4SubDesc: 'Users can:',
+    shopS4Item1: 'View product information',
+    shopS4Item2: 'Visit the store',
+    shopS4Item3: 'Explore other products',
+    shopS4Item4: 'Follow the seller',
+    shopS4Item5: 'View shared content',
+    shopS4Item6: 'Research before buying',
+    shopS4Note: 'The Biteo project defines the platform to allow users to follow Affiliates/sellers, access products/services and order online on the same system.',
+
+    // Section 5: Shopping with Content
+    shopS5Title: 'Shopping combined with content',
+    shopS5Desc: 'Shopping on Biteo doesn\'t just start from searching for a product. Users can start from content and convert to orders.',
+    shopS5SubDesc: 'Shopping journey:',
+    shopS5Step1: 'Video',
+    shopS5Step2: 'Post',
+    shopS5Step3: 'Livestream',
+    shopS5Step4: 'Product',
+    shopS5Step5: 'Store',
+    shopS5Step6: 'Order',
+    shopS5Ex1: 'You watch a specialty introduction video → interested in product → view information → visit store → explore more products → place order.',
+    shopS5Ex2: 'You read about OCOP product → learn more → watch livestream → add to cart → checkout.',
+    shopS5Note: 'The Biteo project defines the platform combining digital content, social media, livestream, Affiliate and e-commerce, where products can be attached to videos, livestreams or posts.',
+
+    // Section 6: Video & Livestream
+    shopS6Title: 'Discover products through Video & Livestream',
+    shopS6Desc: 'Products can be introduced visually through videos and livestreams.',
+    shopS6Item1: 'Product videos',
+    shopS6Item2: 'Experience videos',
+    shopS6Item3: 'Introduction livestreams',
+    shopS6Item4: 'Content from sellers',
+    shopS6Item5: 'Content from Affiliates',
+    shopS6Item6: 'Community content',
+    shopS6Note: 'Especially, Affiliates can create promotional content for products/services and attach products to videos, livestreams or posts according to Biteo\'s mechanism.',
+
+    // Section 7: Ordering Process
+    shopS7Title: 'Research and order',
+    shopS7Desc: 'When finding suitable products, users can continue their shopping journey conveniently.',
+    shopS7Step1: 'View product',
+    shopS7Step2: 'Research information',
+    shopS7Step3: 'Select product',
+    shopS7Step4: 'Add to cart',
+    shopS7Step5: 'Place order',
+    shopS7Step6: 'Checkout',
+    shopS7Step7: 'Receive product',
+    shopS7Note: 'The Biteo project defines that users can access products/services, order online, receive goods through logistics services and participate in promotions and reward programs on the platform.',
+
+    // Section 8: Promotions
+    shopS8Title: 'Promotions and programs for buyers',
+    shopS8Desc: 'Biteo connects shopping with attractive promotional programs.',
+    shopS8Item1: 'Discount codes',
+    shopS8Item2: 'Seller promotions',
+    shopS8Item3: 'Marketing programs',
+    shopS8Item4: 'Reward points',
+    shopS8Item5: 'Affiliate offers',
+    shopS8Item6: 'Membership programs',
+    shopS8Note: 'The project defines that users can participate in promotional programs and reward points on the same platform.',
+
+    // Section 9: Delivery
+    shopS9Title: 'Delivery connection',
+    shopS9Desc: 'After ordering, products are connected with delivery services to bring goods to buyers.',
+    shopS9SubDesc: 'Delivery journey:',
+    shopS9Step1: 'Order',
+    shopS9Step2: 'Confirm',
+    shopS9Step3: 'Process',
+    shopS9Step4: 'Deliver',
+    shopS9Step5: 'Receive',
+    shopS9Note: 'The Biteo project defines that logistics partners have roles in delivery, returns, cold chain/perishable control if any, and coordinating handling of delivery complaints.',
+
+    // Section 10: Product Selection
+    shopS10Title: 'Discover and choose suitable products',
+    shopS10Desc: 'Shopping is not just about finding products at the right price. Users can consider many factors before deciding.',
+    shopS10SubDesc: 'Users can consider:',
+    shopS10Item1: 'Product origin',
+    shopS10Item2: 'Detailed information',
+    shopS10Item3: 'Seller',
+    shopS10Item4: 'Introduction content',
+    shopS10Item5: 'Community reviews',
+    shopS10Item6: 'Purchase policies',
+    shopS10Item7: 'Available offers',
+    shopS10Note: 'Through this, Biteo aims for proactive shopping experience, helping users research in advance – choose appropriately – shop conveniently.',
+
+    // Section 11: Buyer-Seller Connection
+    shopS11Title: 'Connecting buyers with Vietnamese sellers',
+    shopS11Desc: 'One of the important values of Biteo Shopping is creating connections between subjects in the ecosystem.',
+    shopS11SubDesc: 'Main connections:',
+    shopS11Item1: 'Buyers have more opportunities to explore products from many regions',
+    shopS11Item2: 'Sellers have more space to introduce products and build content',
+    shopS11Item3: 'Products reach the right interested audience',
+    shopS11Item4: 'Localities are promoted through specialty products',
+    shopS11Buyer: 'Buyer',
+    shopS11Seller: 'Seller',
+    shopS11Product: 'Product',
+    shopS11Local: 'Locality',
+    shopS11Note: 'This also aligns with Biteo\'s direction as a platform combining social media and e-commerce, where users can explore content then access products and make transactions.',
+
+    // Section 12: Value to Biteo
+    shopS12Title: 'Value of Shopping to Biteo',
+    shopS12Desc: 'Shopping is where many components in the Biteo ecosystem connect.',
+    shopS12Question: 'How can a local product be discovered?',
+    shopS12Quote: 'From content → research → explore → order → receive',
+    shopS12Flow: 'Video → Explore → Product → Seller → Affiliate → Cart → Order → Checkout → Logistics → Receive & Review',
+    shopS12Journey: 'This way, a local product can be discovered by users through content, researched through the community, seller explored, and finally purchased on the same ecosystem.',
+    shopS12Note: 'Biteo Shopping is not just a commercial transaction, but also a bridge between buyers, sellers, products and localities – contributing to local economic development and promoting Vietnamese values.',
+
+    // Ecosystem Flow
+    shopFlow1: 'Video',
+    shopFlow2: 'Explore',
+    shopFlow3: 'Product',
+    shopFlow4: 'Seller',
+    shopFlow5: 'Affiliate',
+    shopFlow6: 'Cart',
+    shopFlow7: 'Order',
+    shopFlow8: 'Checkout',
+    shopFlow9: 'Logistics',
+    shopFlow10: 'Receive',
   },
 }
 
