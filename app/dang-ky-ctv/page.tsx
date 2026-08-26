@@ -18,6 +18,7 @@ import {
   TrendingUp,
   Users,
   AlertCircle,
+  NotebookPen,ArrowRight, Rocket
 } from 'lucide-react'
 import Link from 'next/link'
 import { useLanguage } from '@/context/LanguageContext'
@@ -38,29 +39,13 @@ export default function CTVRegister() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [errorMessage, setErrorMessage] = useState('')
 
-  /*
-   * ========================================
-   * EMAILJS
-   * ========================================
-   *
-   * .env.local
-   *
-   * NEXT_PUBLIC_EMAILJS_SERVICE_ID=service_22nlwdi
-   *
-   * NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=Fxt_rd4n5OdxznTMb
-   *
-   * NEXT_PUBLIC_EMAILJS_DANG_KY_DI_CHO_HO=template_2tpehvh
-   *
-   * ========================================
-   *
-   * FORM NÀY DÙNG CHUNG TEMPLATE
-   * VỚI FORM ĐĂNG KÝ ĐI CHỢ HỘ.
-   *
-   * Biến "type" sẽ cho EmailJS biết
-   * loại đăng ký là gì.
-   */
 
   const benefits = [
+    {
+      icon: NotebookPen,
+      titleKey: 'registerAsBiteoPartner',
+      descKey: 'registerAsBiteoPartnerDesc',
+    },
     {
       icon: Wallet,
       titleKey: 'ctvUnlimitedIncome',
@@ -85,11 +70,6 @@ export default function CTVRegister() {
       icon: Star,
       titleKey: 'ctvTraining',
       descKey: 'ctvTrainingDesc',
-    },
-    {
-      icon: Users,
-      titleKey: 'ctvCommunity',
-      descKey: 'ctvCommunityDesc',
     },
   ]
 
@@ -597,6 +577,33 @@ export default function CTVRegister() {
 
               </div>
             </div>
+
+
+            <div className="relative mt-10 p-6 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl text-white">
+              {/* Decorative background */}
+              <div className="absolute -right-24 -top-24 h-64 w-64 rounded-full bg-white/10" />
+              <div className="absolute -bottom-32 -left-24 h-72 w-72 rounded-full bg-white/10" />
+              <div className="absolute left-1/2 top-1/2 h-40 w-40 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white/5 blur-3xl" />
+
+              <div className="relative z-10 mx-auto max-w-3xl">
+                {/* Icon */}
+                <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-white/15 shadow-sm backdrop-blur-sm">
+                  <Rocket className="h-8 w-8 text-white" />
+                </div>
+
+                {/* Title */}
+                <h2 className="text-2xl font-bold tracking-tight text-white md:text-3xl lg:text-4xl">
+                {t('readyToStartWithBiteo')}
+                </h2>
+
+                {/* Description */}
+                <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-green-50 md:text-base">
+                {t('readyToStartWithBiteoDesc')}
+
+                </p>
+              </div>
+            </div>
+
 
             {/* Testimonial */}
 

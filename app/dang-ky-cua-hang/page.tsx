@@ -17,6 +17,12 @@ import {
   Headphones,
   Star,
   AlertCircle,
+  ShoppingBag,
+  Settings2,
+  Megaphone,
+  BarChart3,
+  Handshake,
+  ArrowRight
 } from 'lucide-react'
 import Link from 'next/link'
 import { useLanguage } from '@/context/LanguageContext'
@@ -55,19 +61,29 @@ export default function StoreRegister() {
       descKey: 'storeIncreaseRevenueDesc',
     },
     {
-      icon: Star,
+      icon: ShoppingBag,
       titleKey: 'storeModernTools',
       descKey: 'storeModernToolsDesc',
     },
     {
-      icon: DollarSign,
+      icon: Settings2,
       titleKey: 'storeMarketing',
       descKey: 'storeMarketingDesc',
     },
     {
-      icon: Headphones,
+      icon: Megaphone,
       titleKey: 'storeReports',
       descKey: 'storeReportsDesc',
+    },
+    {
+      icon: BarChart3,
+      titleKey: 'businessInsights',
+      descKey: 'businessInsightsDesc',
+    },
+    {
+      icon: Handshake,
+      titleKey: 'partnerWithBiteo',
+      descKey: 'partnerWithBiteoDesc',
     },
   ]
 
@@ -486,6 +502,31 @@ export default function StoreRegister() {
 
               </div>
             </div>
+
+            <div className="relative mt-10 rounded-2xl bg-gradient-to-r from-orange-500 to-amber-500 p-6 text-white">
+              {/* Decorative background */}
+              <div className="absolute -right-24 -top-24 h-64 w-64 rounded-full bg-white/10" />
+              <div className="absolute -bottom-32 -left-24 h-72 w-72 rounded-full bg-white/10" />
+              <div className="absolute left-1/2 top-1/2 h-40 w-40 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white/5 blur-3xl" />
+
+              <div className="relative z-10 mx-auto max-w-3xl">
+                {/* Icon */}
+                <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-white/15 shadow-sm backdrop-blur-sm">
+                  <Store className="h-8 w-8 text-white" />
+                </div>
+
+                {/* Title */}
+                <h2 className="text-2xl font-bold tracking-tight text-white md:text-3xl lg:text-4xl">
+                  {t('registerStorePartner')}
+                </h2>
+
+                {/* Description */}
+                <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-green-50 md:text-base">
+                {t('registerStorePartnerDesc')}
+                </p>
+              </div>
+            </div>
+
           </motion.div>
 
           {/* =========================================

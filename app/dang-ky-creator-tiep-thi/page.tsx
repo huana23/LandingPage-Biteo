@@ -15,6 +15,12 @@ import {
   Users,
   Zap,
   AlertCircle,
+  Wallet,
+  Clock,
+  Clapperboard,
+  Wrench,
+  LifeBuoy,
+  Rocket
 } from 'lucide-react'
 import Link from 'next/link'
 import { useLanguage } from '@/context/LanguageContext'
@@ -46,29 +52,39 @@ export default function CreatorRegister() {
    */
   const benefits = [
     {
-      icon: TrendingUp,
+      icon: Wallet,
       titleKey: 'creatorIncome',
       descKey: 'creatorIncomeDesc',
     },
     {
-      icon: Users,
+      icon: Clock,
       titleKey: 'creatorFlexible',
       descKey: 'creatorFlexibleDesc',
     },
     {
-      icon: Zap,
-      titleKey: 'creatorSupport',
-      descKey: 'creatorSupportDesc',
-    },
-    {
-      icon: Gift,
+      icon: Clapperboard,
       titleKey: 'creatorTools',
       descKey: 'creatorToolsDesc',
+    },
+    {
+      icon: Wrench,
+      titleKey: 'creativeAndManagementTools',
+      descKey: 'creativeAndManagementToolsDesc',
     },
     {
       icon: Users,
       titleKey: 'creatorCommunity',
       descKey: 'creatorCommunityDesc',
+    },
+    {
+      icon: LifeBuoy,
+      titleKey: 'creatorSupport',
+      descKey: 'creatorSupportDesc',
+    },
+    {
+      icon: Rocket,
+      titleKey: 'startCreatorJourney',
+      descKey: 'startCreatorJourneyDesc',
     },
   ]
 

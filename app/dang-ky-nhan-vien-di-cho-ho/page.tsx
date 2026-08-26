@@ -15,8 +15,11 @@ import {
   Clock,
   Shield,
   TrendingUp,
-  Heart,
+  ArrowRight,
   AlertCircle,
+  Rocket,
+  Handshake,
+  Sprout
 } from 'lucide-react'
 import Link from 'next/link'
 import { useLanguage } from '@/context/LanguageContext'
@@ -470,6 +473,12 @@ export default function ShoppingAssistantRegister() {
 
               {[
                 {
+                  icon: Rocket,
+                  title: t('opportunityForYou'),
+                  description:
+                    t('opportunityForYouDesc'),
+                },
+                {
                   icon: Clock,
                   title: t('flexibleWork'),
                   description:
@@ -482,16 +491,28 @@ export default function ShoppingAssistantRegister() {
                     t('extraIncomeDesc'),
                 },
                 {
+                  icon: MapPin,
+                  title: t('workInYourArea'),
+                  description:
+                    t('workInYourAreaDesc'),
+                },
+                {
                   icon: Shield,
                   title: t('safe'),
                   description:
                     t('safeDesc'),
                 },
                 {
-                  icon: Heart,
-                  title: t('support247'),
+                  icon: Handshake,
+                  title: t('supportedByBiteo'),
                   description:
-                    t('support247Desc'),
+                    t('supportedByBiteoDesc'),
+                },
+                {
+                  icon: Sprout,
+                  title: t('buildLocalEcosystem'),
+                  description:
+                    t('buildLocalEcosystemDesc'),
                 },
               ].map(
                 (benefit, index) => (
@@ -534,44 +555,26 @@ export default function ShoppingAssistantRegister() {
 
             </div>
 
+
+
             {/* Stats */}
 
-            <div className="mt-10 rounded-2xl bg-gradient-to-r from-green-600 to-emerald-600 p-6 text-white">
+            <div className="mt-10 relative overflow-hidden rounded-3xl bg-gradient-to-r from-green-600 to-emerald-500 px-8 py-10 text-center shadow-lg md:px-12">
+              <div className="absolute -right-20 -top-20 h-48 w-48 rounded-full bg-white/10" />
+              <div className="absolute -bottom-24 -left-16 h-48 w-48 rounded-full bg-white/10" />
 
-              <div className="grid grid-cols-3 gap-4 text-center">
+              <div className="relative z-10 mx-auto max-w-3xl">
+                <h2 className="text-2xl font-bold tracking-tight text-white md:text-3xl">
+                  {t('becomeBiteoShopper')}
+                </h2>
 
-                <div>
-                  <div className="text-2xl font-bold">
-                    5K+
-                  </div>
-
-                  <div className="text-sm text-green-100">
-                    {t('collaborators')}
-                  </div>
-                </div>
-
-                <div>
-                  <div className="text-2xl font-bold">
-                    500K+
-                  </div>
-
-                  <div className="text-sm text-green-100">
-                    {t('orders')}/month
-                  </div>
-                </div>
-
-                <div>
-                  <div className="text-2xl font-bold">
-                    98%
-                  </div>
-
-                  <div className="text-sm text-green-100">
-                    {t('rating')}
-                  </div>
-                </div>
-
+                <p className="mt-4 text-sm leading-7 text-green-50 md:text-base">
+                  {t('becomeBiteoShopperDesc')}
+                </p>
               </div>
             </div>
+
+
 
           </motion.div>
 
@@ -708,7 +711,7 @@ export default function ShoppingAssistantRegister() {
                       type="tel"
                       id="phone"
                       name="phone"
-                      value={formData.phone}
+                      value={formData.phone}  
                       onChange={handleChange}
                       required
                       autoComplete="tel"
