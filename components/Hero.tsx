@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Download, Play, Sparkles, X } from 'lucide-react'
 import { useState } from 'react'
 import HeroImage from '../assets/images/Hero-phone.png'
-import BGHero from '../assets/images/BG-Hero.jpg'
+import BGHero from '../assets/images/BG-Hero.jpeg'
 import { useLanguage } from '@/context/LanguageContext'
 
 export default function Hero() {
